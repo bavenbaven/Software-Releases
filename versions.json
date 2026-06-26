@@ -1,0 +1,26 @@
+{
+  "latest": "3.1.0",
+  "min_version": "0.3.0",
+  "versions": [
+    {
+      "version": "3.1.0",
+      "url": "https://github.com/bavenbaven/Software-Releases/releases/download/v3.1.0/ERS_Tech_ISP_3.1.0_x64-setup.exe",
+      "changelog": "v3.1.0 鏇存柊鍐呭锛歕n- 缁熶竴鍙戝竷鍒?Software-Releases 浠撳簱\n- 淇鐧诲綍楠岃瘉\n- 鏈湴鍥剧墖鍔犺浇浼樺寲\n- 绉婚櫎璋冭瘯鏃ュ織"
+    },
+    {
+      "version": "2.1.0",
+      "url": "https://github.com/bavenbaven/ERS-Tech-ISP-Images/releases/download/v2.1.0/ERS_Tech_ISP_2.1.0_x64-setup.exe",
+      "changelog": "v2.1.0 鏇存柊鍐呭锛歕n- 淇鎺堟潈楠岃瘉\n- 淇鏇存柊鍦板潃URL\n- 娣诲姞200涓处鍙穃n- 杩佺Щ鍒版纭粨搴?
+    },
+    {
+      "version": "1.1.0",
+      "url": "https://github.com/bavenbaven/ERS-Tech-ISP-%E7%9F%AD%E6%8E%A5%E5%AE%9D%E5%85%B8/releases/download/v1.1.0/ERS.Tech.ISP.%E7%9F%AD%E6%8E%A5%E5%AE%9D%E5%85%B8_1.1.0_x64-setup.exe",
+      "changelog": "v1.1.0 鏇存柊鍐呭锛歕n- 娣诲姞Tauri鑷姩鏇存柊绛惧悕楠岃瘉\n- 鐗堟湰鎺у埗浼樺寲"
+    },
+    {
+      "version": "0.3.0",
+      "url": "https://github.com/bavenbaven/ERS-Tech-ISP-%E7%9F%AD%E6%8E%A5%E5%AE%9D%E5%85%B8/releases/download/v0.3.0/ERS.Tech.ISP.%E7%9F%AD%E6%8E%A5%E5%AE%9D%E5%85%B8_0.3.0_x64-setup.exe",
+      "changelog": "v0.3.0 鐗堟湰"
+    }
+  ]
+}
