@@ -1,0 +1,56 @@
+name: Transfer ISP Images to PICTURES-ONLY
+
+on:
+  workflow_dispatch:
+
+jobs:
+  transfer:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source repo (Software-Releases)
+        uses: actions/checkout@v4
+        with:
+          path: source
+          fetch-depth: 1
+
+      - name: Checkout target repo (ERS-TECH-ISP-PICTURES-ONLY)
+        uses: actions/checkout@v4
+        with:
+          repository: bavenbaven/ERS-TECH-ISP-PICTURES-ONLY
+          token: ${{ secrets.TRANSFER_TOKEN }}
+          path: target
+          fetch-depth: 1
+
+      - name: Copy ISP folder to target
+        run: |
+          SRC="source/ERS-TECH-ISP鐭帴瀹濆吀"
+          DST="target"
+          
+          echo "=== Source folder contents ==="
+          ls -la "$SRC/"
+          echo ""
+          echo "Files in source:"
+          find "$SRC" -type f | wc -l
+          
+          echo ""
+          echo "=== Copying to target ==="
+          # Use rsync for reliable copy with Unicode support
+          rsync -a --progress "$SRC/" "$DST/"
+          
+          echo ""
+          echo "Files in target after copy:"
+          find "$DST" -type f | wc -l
+
+      - name: Commit and push to target
+        run: |
+          cd target
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Transfer ISP images from Software-Releases $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push origin main
+            echo "Push successful!"
+          fi
