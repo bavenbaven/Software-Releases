@@ -23,23 +23,48 @@ jobs:
 
       - name: Copy ISP folder to target
         run: |
-          SRC="source/ERS-TECH-ISP鐭帴瀹濆吀"
-          DST="target"
+          python3 << 'PYEOF'
+          import os, shutil
           
-          echo "=== Source folder contents ==="
-          ls -la "$SRC/"
-          echo ""
-          echo "Files in source:"
-          find "$SRC" -type f | wc -l
+          source_root = "source"
+          target_root = "target"
           
-          echo ""
-          echo "=== Copying to target ==="
-          # Use rsync for reliable copy with Unicode support
-          rsync -a --progress "$SRC/" "$DST/"
+          # Find the ISP folder (contains Chinese chars, find dynamically)
+          isp_folder = None
+          for name in os.listdir(source_root):
+              full = os.path.join(source_root, name)
+              if os.path.isdir(full) and "ISP" in name.upper() and "PICTURE" not in name.upper():
+                  isp_folder = full
+                  print(f"Found ISP folder: {name}")
+                  break
           
-          echo ""
-          echo "Files in target after copy:"
-          find "$DST" -type f | wc -l
+          if not isp_folder:
+              print("ERROR: Could not find ISP folder!")
+              print("Contents of source:")
+              for n in os.listdir(source_root):
+                  print(f"  {n}")
+              exit(1)
+          
+          # Count files
+          file_count = sum(len(files) for _, _, files in os.walk(isp_folder))
+          print(f"Files to copy: {file_count}")
+          
+          # Copy all contents to target root
+          for item in os.listdir(isp_folder):
+              src = os.path.join(isp_folder, item)
+              dst = os.path.join(target_root, item)
+              if os.path.isdir(src):
+                  if os.path.exists(dst):
+                      shutil.rmtree(dst)
+                  shutil.copytree(src, dst)
+              else:
+                  shutil.copy2(src, dst)
+          
+          # Verify
+          target_count = sum(len(files) for _, _, files in os.walk(target_root))
+          print(f"Files in target after copy: {target_count}")
+          print("Copy complete!")
+          PYEOF
 
       - name: Commit and push to target
         run: |
