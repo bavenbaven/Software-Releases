@@ -1,6 +1,1 @@
-{
-  "latest_version": "2.6.0",
-  "min_version": "2.1.0",
-  "download_url": "https://github.com/bavenbaven/Software-Releases/releases/download/v2.6.0/ERS.Tech._2.6.0_x64-setup.exe",
-  "changelog": "v2.6.0 - 鏂板鐧诲綍楠岃瘉绯荤粺锛堝瘑閽?璐﹀彿瀵嗙爜鍙屾ā寮忥級锛?00涓巿鏉冨瘑閽ワ紝寮哄埗鏇存柊銆?
-}
+{"latest_version":"2.6.0","min_version":"2.1.0","download_url":"https://github.com/bavenbaven/Software-Releases/releases/download/v2.6.0/ERS.Tech._2.6.0_x64-setup.exe","changelog":"v2.6.0 - 新增登录验证系统（密钥+账号密码双模式），200个授权密钥，强制更新。"}
