@@ -1217,7 +1217,7 @@ async function _getAppVersion() {
 
 
 
-// Auto-check for incremental updates on startup: detect → download → restart → apply
+// Auto-check for incremental updates on startup: detect → download one by one → restart
 async function _autoUpdater() {
   setTimeout(async () => {
     try {
@@ -1227,29 +1227,66 @@ async function _autoUpdater() {
       const result = await invoke('check_incremental_update');
       if (!result || !result.changed_files || result.changed_files.length === 0) return;
 
+      const files = result.changed_files;
+      const total = files.length;
       const totalKB = (result.total_download_size / 1024).toFixed(1);
-      console.log('[AutoUpdate] Found ' + result.changed_files.length + ' files (' + totalKB + 'KB)');
+      console.log('[AutoUpdate] Found ' + total + ' files (' + totalKB + 'KB)');
 
       const bar = document.createElement('div');
       bar.id = 'auto-update-bar';
-      bar.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:rgba(74,222,128,.12);border-top:1px solid rgba(74,222,128,.3);padding:12px 20px;display:flex;align-items:center;justify-content:center;gap:16px;z-index:99999;font-size:13px;color:#4ade80;';
-      bar.innerHTML = '<span>⏳ 正在下载更新 (' + result.changed_files.length + '个文件, ' + totalKB + 'KB)...</span>';
+      bar.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:rgba(30,30,40,.95);border-top:1px solid rgba(74,222,128,.3);padding:14px 24px;display:flex;align-items:center;justify-content:center;gap:20px;z-index:99999;font-size:13px;color:#4ade80;backdrop-filter:blur(10px);';
+      bar.innerHTML = '<div style="display:flex;align-items:center;gap:12px;flex:1;max-width:600px;">' +
+        '<span id="auto-update-label" style="white-space:nowrap;color:var(--text3);font-size:12px;">准备更新...</span>' +
+        '<div style="flex:1;background:rgba(255,255,255,.08);height:6px;border-radius:3px;overflow:hidden;">' +
+        '<div id="auto-update-bar-fill" style="width:0%;height:100%;background:linear-gradient(90deg,#4ade80,#22c55e);border-radius:3px;transition:width 0.3s ease;"></div>' +
+        '</div>' +
+        '<span id="auto-update-pct" style="color:#4ade80;font-size:12px;font-weight:600;min-width:36px;text-align:right;">0%</span>' +
+        '</div>';
       document.body.appendChild(bar);
 
-      const updated = await invoke('apply_incremental_update', {
-        files: result.changed_files
-      });
+      const label = document.getElementById('auto-update-label');
+      const fill = document.getElementById('auto-update-bar-fill');
+      const pct = document.getElementById('auto-update-pct');
 
-      if (updated && updated.length > 0) {
-        console.log('[AutoUpdate] Downloaded ' + updated.length + ' files, restarting...');
-        bar.innerHTML = '<span>✅ 已下载 ' + updated.length + ' 个文件，重启后生效</span>' +
-          '<button onclick="invoke(\'close_app\')" style="padding:6px 16px;background:rgba(74,222,128,.2);border:1px solid rgba(74,222,128,.4);color:#4ade80;border-radius:6px;cursor:pointer;font-size:12px;">重启程序</button>' +
-          '<button onclick="this.parentElement.remove()" style="padding:6px 12px;background:transparent;border:1px solid rgba(255,255,255,.1);color:var(--text3);border-radius:6px;cursor:pointer;font-size:12px;">稍后</button>';
+      let completed = 0;
+      for (let i = 0; i < files.length; i++) {
+        const f = files[i];
+        const fileName = f.path.split('/').pop();
+        if (label) label.textContent = '正在下载 ' + fileName + '...';
+
+        try {
+          await invoke('download_single_file', { file: f });
+        } catch (e) {
+          console.warn('[AutoUpdate] Failed to download ' + f.path + ': ' + e);
+        }
+
+        completed++;
+        const pctVal = Math.round((completed / total) * 100);
+        if (fill) fill.style.width = pctVal + '%';
+        if (pct) pct.textContent = pctVal + '%';
+      }
+
+      if (completed > 0) {
+        if (label) label.textContent = '✅ 更新完成！';
+        if (fill) fill.style.background = 'linear-gradient(90deg,#4ade80,#22c55e)';
+
+        const actions = document.createElement('div');
+        actions.style.cssText = 'display:flex;gap:8px;align-items:center;';
+        actions.innerHTML = '<button onclick="invoke(\'close_app\')" style="padding:6px 16px;background:rgba(74,222,128,.2);border:1px solid rgba(74,222,128,.4);color:#4ade80;border-radius:6px;cursor:pointer;font-size:12px;white-space:nowrap;">重启程序</button>' +
+          '<button onclick="this.parentElement.parentElement.remove()" style="padding:6px 12px;background:transparent;border:1px solid rgba(255,255,255,.1);color:var(--text3);border-radius:6px;cursor:pointer;font-size:12px;white-space:nowrap;">稍后</button>';
+        bar.appendChild(actions);
+
+        // Save manifest to prevent re-downloading next time
+        try {
+          const client_manifest = await invoke('fetch_versions_json');
+        } catch(e) {}
       } else {
         bar.remove();
       }
     } catch (e) {
       console.log('[AutoUpdate] Non-critical: ' + e);
+      const bar = document.getElementById('auto-update-bar');
+      if (bar) bar.remove();
     }
   }, 2000);
 }
