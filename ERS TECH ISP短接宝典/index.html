@@ -670,38 +670,7 @@ img {
       <label>🔄 在线更新</label>
       <div style="font-size:12px;color:var(--text2);margin-top:6px;background:rgba(255,255,255,.03);padding:12px 14px;border-radius:var(--radius-sm);border:1px solid rgba(255,255,255,.06);line-height:1.8;">
         <div>当前版本: <span id="settings-current-version" style="color:var(--accent);font-weight:600;">检查中...</span></div>
-        <div id="update-status-text" style="margin-top:4px;color:var(--text3);">点击下方按钮检查是否有新版本</div>
-        <div id="update-result-box" style="display:none;margin-top:10px;padding:10px;background:rgba(94,175,255,.06);border-radius:6px;border:1px solid rgba(94,175,255,.12);">
-          <div id="update-result-info" style="color:var(--text);font-size:12px;line-height:1.6;"></div>
-          <div id="update-changelog-box" style="display:none;margin-top:6px;padding:8px;background:rgba(0,0,0,.2);border-radius:4px;font-size:11px;color:var(--text2);line-height:1.6;white-space:pre-wrap;"></div>
-        </div>
-        <div style="margin-top:10px;display:flex;gap:8px;align-items:center;">
-          <button id="btn-settings-check-update" onclick="settingsCheckUpdate()" style="padding:6px 14px;font-size:12px;border:1px solid var(--border);background:var(--card2);color:var(--text);border-radius:6px;cursor:pointer;transition:all .2s;">检查更新</button>
-          <button id="btn-settings-download-update" onclick="settingsDownloadUpdate()" style="display:none;padding:6px 14px;font-size:12px;border:1px solid rgba(94,175,255,.3);background:rgba(94,175,255,.1);color:var(--accent);border-radius:6px;cursor:pointer;transition:all .2s;">下载并安装</button>
-        </div>
-        <div id="settings-download-progress" style="display:none;margin-top:10px;">
-          <div style="width:100%;background:rgba(255,255,255,.08);height:4px;border-radius:2px;overflow:hidden;">
-            <div id="settings-download-bar" style="width:0%;height:100%;background:var(--accent);transition:width 0.3s;"></div>
-          </div>
-          <div id="settings-download-status" style="font-size:11px;color:var(--text3);margin-top:4px;">准备下载...</div>
-        </div>
-      </div>
-    </div>
-    <div class="form-group" style="margin-top:12px;border-top:1px solid rgba(255,255,255,.06);padding-top:12px">
-      <label>⚡ 增量更新</label>
-      <div style="font-size:12px;color:var(--text2);margin-top:6px;background:rgba(255,255,255,.03);padding:12px 14px;border-radius:var(--radius-sm);border:1px solid rgba(255,255,255,.06);line-height:1.8;">
-        <div id="inc-update-status" style="color:var(--text3);">只下载有更改的文件，节省流量</div>
-        <div id="inc-update-result" style="display:none;margin-top:8px;padding:8px;background:rgba(74,222,128,.06);border-radius:6px;border:1px solid rgba(74,222,128,.12);font-size:12px;color:var(--text);"></div>
-        <div style="margin-top:10px;display:flex;gap:8px;align-items:center;">
-          <button id="btn-inc-check" onclick="checkIncrementalUpdate()" style="padding:6px 14px;font-size:12px;border:1px solid var(--border);background:var(--card2);color:var(--text);border-radius:6px;cursor:pointer;transition:all .2s;">检查增量更新</button>
-          <button id="btn-inc-apply" onclick="applyIncrementalUpdate()" style="display:none;padding:6px 14px;font-size:12px;border:1px solid rgba(74,222,128,.3);background:rgba(74,222,128,.1);color:#4ade80;border-radius:6px;cursor:pointer;transition:all .2s;">应用更新</button>
-        </div>
-        <div id="inc-progress" style="display:none;margin-top:10px;">
-          <div style="width:100%;background:rgba(255,255,255,.08);height:4px;border-radius:2px;overflow:hidden;">
-            <div id="inc-progress-bar" style="width:0%;height:100%;background:#4ade80;transition:width 0.3s;"></div>
-          </div>
-          <div id="inc-progress-text" style="font-size:11px;color:var(--text3);margin-top:4px;">准备中...</div>
-        </div>
+        <div id="update-status-text" style="margin-top:4px;color:var(--text3);">启动时自动检查并更新</div>
       </div>
     </div>
     <div class="form-group" style="margin-top:12px;border-top:1px solid rgba(255,255,255,.06);padding-top:12px">
@@ -778,25 +747,7 @@ img {
   </div>
 </div>
 
-<!-- 版本锁定弹窗 -->
-<div class="modal-overlay" id="version-block-modal" style="display:none;z-index:10000;">
-  <div class="modal" style="max-width:420px;text-align:center;">
-    <div style="font-size:48px;margin-bottom:16px;">⚠️</div>
-    <h2 style="font-size:18px;margin-bottom:12px;color:var(--accent2);">版本已过期</h2>
-    <p id="block-message" style="font-size:14px;color:var(--text2);line-height:1.6;margin-bottom:24px;">
-      您的版本已不再支持，请更新到最新版本以继续使用。
-    </p>
-    <button id="btn-block-update" onclick="blockDownloadUpdate()" class="btn-primary" style="width:100%;padding:12px;font-size:15px;">
-      🔄 立即更新
-    </button>
-    <div id="block-progress" style="display:none;margin-top:16px;">
-      <div style="width:100%;background:rgba(255,255,255,.1);height:6px;border-radius:3px;overflow:hidden;">
-        <div id="block-bar" style="width:0%;height:100%;background:var(--accent);transition:width 0.3s;"></div>
-      </div>
-      <div id="block-status" style="font-size:12px;color:var(--text2);margin-top:8px;">下载中...</div>
-    </div>
-  </div>
-</div>
+
 
 <script>
 let data = [];
@@ -1147,7 +1098,7 @@ async function rebuildMetadata() {
 
 // ── Online Update Functions ──────────────────────────────────────────────────
 
-let _updateData = null; // cached version info from check_version_block
+
 
 function _parseVersion(v) {
   return (v || '0.0.0').split('.').map(Number);
@@ -1263,300 +1214,18 @@ async function _getAppVersion() {
 }
 
 // Startup version block check — called at the very beginning of init()
-async function _startupVersionCheck() {
-  try {
-    const result = await invoke('check_version_block');
-    _updateData = result;
 
-    // Always update version display
-    const verEl = document.getElementById('app-version');
-    if (verEl) verEl.textContent = 'v' + result.current;
 
-    if (result.blocked) {
-      // Show block modal
-      const modal = document.getElementById('version-block-modal');
-      const msgEl = document.getElementById('block-message');
-      if (modal && msgEl) {
-        msgEl.textContent = result.message;
-        modal.style.display = 'flex';
-      }
-      return true; // blocked
-    }
-
-    // Not blocked — but there may be an update available
-    // We'll show a subtle notification if there's a newer version
-    if (result.latest && _isVersionNewer(result.latest, result.current)) {
-      console.log('[Update] New version available: v' + result.latest);
-    }
-  } catch (e) {
-    console.warn('[Update] Version check failed:', e);
-    // Network failure or error => allow use
-    const verEl = document.getElementById('app-version');
-    if (verEl) verEl.textContent = 'v' + (await _getAppVersion());
-  }
-  return false; // not blocked
-}
-
-// Block modal download handler
-async function blockDownloadUpdate() {
-  if (!_updateData || !_updateData.latest_url) {
-    alert('无法获取更新地址，请检查网络后重试。');
-    return;
-  }
-  const btn = document.getElementById('btn-block-update');
-  const progressEl = document.getElementById('block-progress');
-  const bar = document.getElementById('block-bar');
-  const status = document.getElementById('block-status');
-
-  btn.style.display = 'none';
-  progressEl.style.display = 'block';
-  bar.style.width = '30%';
-  status.textContent = '正在下载更新 v' + _updateData.latest + '...';
-
-  try {
-    const filePath = await invoke('download_update', {
-      url: _updateData.latest_url,
-      version: _updateData.latest
-    });
-    bar.style.width = '100%';
-    status.textContent = '下载完成，正在启动安装程序...';
-
-    // Open the installer
-    if (window.__TAURI__ && window.__TAURI__.shell && window.__TAURI__.shell.open) {
-      await window.__TAURI__.shell.open(filePath);
-    } else if (window.__TAURI_INTERNALS__) {
-      await invoke('open_url', { url: filePath });
-    }
-
-    status.textContent = '安装完成后请重启程序。';
-  } catch (e) {
-    console.error('[Update] Download failed:', e);
-    status.textContent = '下载失败: ' + e;
-    btn.style.display = 'inline-block';
-    progressEl.style.display = 'none';
-  }
-}
-
-// Settings page — check for update
-async function settingsCheckUpdate() {
-  const btn = document.getElementById('btn-settings-check-update');
-  const statusEl = document.getElementById('update-status-text');
-  const resultBox = document.getElementById('update-result-box');
-  const resultInfo = document.getElementById('update-result-info');
-  const changelogBox = document.getElementById('update-changelog-box');
-  const dlBtn = document.getElementById('btn-settings-download-update');
-  const currentVerEl = document.getElementById('settings-current-version');
-
-  btn.disabled = true;
-  btn.textContent = '检查中...';
-  statusEl.textContent = '';
-  resultBox.style.display = 'none';
-  dlBtn.style.display = 'none';
-
-  try {
-    // Fetch fresh version data
-    const jsonStr = await invoke('fetch_versions_json');
-    const versionsData = JSON.parse(jsonStr);
-    const current = await _getAppVersion();
-    const latest = versionsData.latest || '';
-
-    if (currentVerEl) currentVerEl.textContent = 'v' + current;
-
-    if (!latest || !_isVersionNewer(latest, current)) {
-      statusEl.textContent = '✅ 已是最新版本 v' + current;
-      statusEl.style.color = '#4ade80';
-      btn.textContent = '检查更新';
-      btn.disabled = false;
-      return;
-    }
-
-    // Find changelog for latest version
-    let changelog = '';
-    if (versionsData.versions) {
-      const latestEntry = versionsData.versions.find(v => v.version === latest);
-      if (latestEntry) changelog = latestEntry.changelog || '';
-    }
-
-    statusEl.textContent = '发现新版本!';
-    statusEl.style.color = 'var(--accent3)';
-    resultBox.style.display = 'block';
-    resultInfo.innerHTML = '最新版本: <span style="color:var(--accent);font-weight:600;">v' + latest + '</span>' +
-      '<br>当前版本: <span style="color:var(--text3);">v' + current + '</span>';
-
-    if (changelog) {
-      changelogBox.style.display = 'block';
-      changelogBox.textContent = '更新内容: ' + changelog;
-    } else {
-      changelogBox.style.display = 'none';
-    }
-
-    // Store for download
-    _updateData = {
-      latest: latest,
-      latest_url: versionsData.versions?.find(v => v.version === latest)?.url || '',
-      changelog: changelog
-    };
-
-    dlBtn.style.display = 'inline-block';
-  } catch (e) {
-    console.error('[Update] Check failed:', e);
-    statusEl.textContent = '❌ 检查失败，请稍后重试';
-    statusEl.style.color = 'var(--accent2)';
-  }
-
-  btn.textContent = '检查更新';
-  btn.disabled = false;
-}
-
-// Settings page — download and install
-async function settingsDownloadUpdate() {
-  if (!_updateData || !_updateData.latest_url) {
-    alert('无法获取更新地址，请稍后重试。');
-    return;
-  }
-
-  const dlBtn = document.getElementById('btn-settings-download-update');
-  const progressEl = document.getElementById('settings-download-progress');
-  const bar = document.getElementById('settings-download-bar');
-  const statusEl = document.getElementById('settings-download-status');
-
-  dlBtn.style.display = 'none';
-  progressEl.style.display = 'block';
-  bar.style.width = '20%';
-  statusEl.textContent = '正在下载 v' + _updateData.latest + '...';
-
-  try {
-    const filePath = await invoke('download_update', {
-      url: _updateData.latest_url,
-      version: _updateData.latest
-    });
-    bar.style.width = '100%';
-    statusEl.textContent = '下载完成，正在启动安装...';
-
-    if (window.__TAURI__ && window.__TAURI__.shell && window.__TAURI__.shell.open) {
-      await window.__TAURI__.shell.open(filePath);
-    } else if (window.__TAURI_INTERNALS__) {
-      await invoke('open_url', { url: filePath });
-    }
-
-    statusEl.textContent = '✅ 安装完成后请重启程序。';
-  } catch (e) {
-    console.error('[Update] Download failed:', e);
-    statusEl.textContent = '❌ 下载失败: ' + e;
-    dlBtn.style.display = 'inline-block';
-    progressEl.style.display = 'none';
-  }
-}
-
-// ── Incremental Update Functions ──────────────────────────────────────────────
-
-let _incUpdateData = null;
-
-async function checkIncrementalUpdate() {
-  const btn = document.getElementById('btn-inc-check');
-  const statusEl = document.getElementById('inc-update-status');
-  const resultEl = document.getElementById('inc-update-result');
-  const applyBtn = document.getElementById('btn-inc-apply');
-
-  btn.disabled = true;
-  btn.textContent = '检查中...';
-  statusEl.textContent = '正在检查更新...';
-  resultEl.style.display = 'none';
-  applyBtn.style.display = 'none';
-
-  try {
-    const result = await invoke('check_incremental_update');
-    _incUpdateData = result;
-
-    if (!result.has_update && result.changed_files.length === 0) {
-      statusEl.textContent = '✅ 已是最新版本 v' + result.remote_version;
-      btn.disabled = false;
-      btn.textContent = '检查增量更新';
-      return;
-    }
-
-    if (result.changed_files.length === 0) {
-      statusEl.textContent = '✅ 已是最新版本 v' + result.remote_version;
-      btn.disabled = false;
-      btn.textContent = '检查增量更新';
-      return;
-    }
-
-    // Show changed files
-    const fileList = result.changed_files.map(f => {
-      const sizeKB = (f.size / 1024).toFixed(1);
-      return `<div style="display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px solid rgba(255,255,255,.05);">
-        <span style="color:var(--text);">${f.path}</span>
-        <span style="color:var(--text3);">${sizeKB}KB</span>
-      </div>`;
-    }).join('');
-
-    const totalKB = (result.total_download_size / 1024).toFixed(1);
-    resultEl.innerHTML = `<div style="font-weight:600;color:#4ade80;margin-bottom:6px;">发现 ${result.changed_files.length} 个文件需要更新 (共 ${totalKB}KB)</div>${fileList}`;
-    resultEl.style.display = 'block';
-    statusEl.textContent = '点击"应用更新"开始下载';
-    applyBtn.style.display = 'inline-block';
-    btn.textContent = '检查增量更新';
-    btn.disabled = false;
-  } catch (e) {
-    console.error('[IncrementalUpdate] Check failed:', e);
-    statusEl.textContent = '❌ 检查失败: ' + e;
-    btn.disabled = false;
-    btn.textContent = '检查增量更新';
-  }
-}
-
-async function applyIncrementalUpdate() {
-  if (!_incUpdateData || !_incUpdateData.changed_files || _incUpdateData.changed_files.length === 0) {
-    alert('没有需要更新的文件');
-    return;
-  }
-
-  const btn = document.getElementById('btn-inc-apply');
-  const checkBtn = document.getElementById('btn-inc-check');
-  const progressEl = document.getElementById('inc-progress');
-  const bar = document.getElementById('inc-progress-bar');
-  const textEl = document.getElementById('inc-progress-text');
-  const statusEl = document.getElementById('inc-update-status');
-
-  btn.style.display = 'none';
-  checkBtn.style.display = 'none';
-  progressEl.style.display = 'block';
-  bar.style.width = '10%';
-  textEl.textContent = '正在下载文件...';
-
-  try {
-    const total = _incUpdateData.changed_files.length;
-    let completed = 0;
-
-    // Apply updates one by one for progress tracking
-    const result = await invoke('apply_incremental_update', {
-      files: _incUpdateData.changed_files
-    });
-
-    bar.style.width = '100%';
-    textEl.textContent = `✅ 已更新 ${result.length} 个文件，请重启程序生效。`;
-    statusEl.textContent = '更新完成！';
-
-    // Show restart button
-    const restartBtn = document.createElement('button');
-    restartBtn.textContent = '重启程序';
-    restartBtn.onclick = () => { if (window.__TAURI_INTERNALS__) invoke('close_app'); };
-    restartBtn.style.cssText = 'margin-top:8px;padding:6px 14px;font-size:12px;border:1px solid rgba(74,222,128,.3);background:rgba(74,222,128,.1);color:#4ade80;border-radius:6px;cursor:pointer;';
-    progressEl.appendChild(restartBtn);
-  } catch (e) {
-    console.error('[IncrementalUpdate] Apply failed:', e);
-    textEl.textContent = '❌ 更新失败: ' + e;
-    btn.style.display = 'inline-block';
-    checkBtn.style.display = 'inline-block';
-  }
-}
 
 // Auto-check and apply ALL incremental updates on startup
 async function _autoIncrementalUpdate() {
   // Wait 2s after startup, then run in background
   setTimeout(async () => {
     try {
+      // Update version display
+      const verEl = document.getElementById('settings-current-version');
+      if (verEl) verEl.textContent = 'v' + (await _getAppVersion());
+
       const result = await invoke('check_incremental_update');
       if (!result || !result.changed_files || result.changed_files.length === 0) return;
 
@@ -1592,8 +1261,6 @@ async function _settingsShowVersion() {
 }
 
 async function init() {
-  // Version check — run in background, don't block startup
-  const versionPromise = _startupVersionCheck();
 
   // License verification check
   const isAuth = await checkAuthStatus();
