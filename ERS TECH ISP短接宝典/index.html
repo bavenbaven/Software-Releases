@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ERS Tech ISP短接宝典</title>
+<title>ERS Tech ISP鐭帴瀹濆吀</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -551,7 +551,7 @@ img {
 <div id="app">
 <div id="upload-progress-overlay" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.7);z-index:9999;align-items:center;justify-content:center;flex-direction:column;">
     <div style="background:var(--bg-card);padding:24px;border-radius:12px;width:300px;text-align:center;box-shadow:0 8px 32px rgba(0,0,0,0.5);">
-        <h3 style="margin-top:0;">上传图片中</h3>
+        <h3 style="margin-top:0;">涓婁紶鍥剧墖涓?/h3>
         <div style="width:100%;background:rgba(255,255,255,0.1);height:8px;border-radius:4px;overflow:hidden;margin:16px 0;">
             <div id="upload-progress-bar" style="width:0%;height:100%;background:var(--accent);transition:width 0.1s linear;"></div>
         </div>
@@ -561,13 +561,13 @@ img {
 </div>
         <header>
     <img id="main-logo" src="logo.png" style="height:24px;margin-right:8px;border-radius:4px;vertical-align:middle;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,.3)">
-    <h1 id="main-title" style="display:inline-block;vertical-align:middle;font-size:15px;white-space:nowrap;flex-shrink:0;">ERS Tech ISP短接宝典</h1>
+    <h1 id="main-title" style="display:inline-block;vertical-align:middle;font-size:15px;white-space:nowrap;flex-shrink:0;">ERS Tech ISP鐭帴瀹濆吀</h1>
     <span id="app-version" style="font-size:11px;color:var(--text3);margin-left:8px;vertical-align:middle;opacity:.7;"></span>
-    <input id="search" type="text" placeholder="加载中..." style="width:240px;flex-shrink:0;" onfocus="if(this.placeholder.includes('型号')) { this.dataset.ph = this.placeholder; this.placeholder = '搜索...'; }" onblur="if(this.dataset.ph && !this.value) { this.placeholder = this.dataset.ph; }">
+    <input id="search" type="text" placeholder="鍔犺浇涓?.." style="width:240px;flex-shrink:0;" onfocus="if(this.placeholder.includes('鍨嬪彿')) { this.dataset.ph = this.placeholder; this.placeholder = '鎼滅储...'; }" onblur="if(this.dataset.ph && !this.value) { this.placeholder = this.dataset.ph; }">
 
-    <button class="settings-btn" id="btn-rebuild" onclick="syncLibrary()" title="扫描图片目录并同步"><span style="font-size:12px">🔄</span> 同步</button>
-    <button class="settings-btn" id="btn-upload-local" onclick="uploadImages()" title="上传本地图片到当前品牌型号" style="display:none;"><span style="font-size:12px">📤</span> 上传图片</button>
-    <button class="settings-btn" onclick="openSettingsModal()"><span style="font-size:12px">⚙️</span> 设置</button>
+    <button class="settings-btn" id="btn-rebuild" onclick="syncLibrary()" title="鎵弿鍥剧墖鐩綍骞跺悓姝?><span style="font-size:12px">馃攧</span> 鍚屾</button>
+    <button class="settings-btn" id="btn-upload-local" onclick="uploadImages()" title="涓婁紶鏈湴鍥剧墖鍒板綋鍓嶅搧鐗屽瀷鍙? style="display:none;"><span style="font-size:12px">馃摛</span> 涓婁紶鍥剧墖</button>
+    <button class="settings-btn" onclick="openSettingsModal()"><span style="font-size:12px">鈿欙笍</span> 璁剧疆</button>
 
         <!-- Viewer tools merged into header -->
     <div id="header-viewer-tools" style="display:none;align-items:center;gap:4px;flex:1;flex-wrap:nowrap;overflow:hidden;justify-content:flex-end;">
@@ -575,44 +575,49 @@ img {
       
       <!-- Annot tools inline (Modernized) -->
       <div id="annot-tools-inline" style="display:none;gap:2px;align-items:center; background: rgba(255,255,255,.03); padding: 2px 6px; border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,.06);">
-        <button class="tool-btn active" data-tool="free" onclick="setTool('free')" title="自由画笔">✏️ 画笔</button>
-        <button class="tool-btn" data-tool="arrow" onclick="setTool('arrow')" title="箭头">↗ 箭头</button>
-        <button class="tool-btn" data-tool="rect" onclick="setTool('rect')" title="矩形">⬜ 矩形</button>
-        <button class="tool-btn" data-tool="text" onclick="setTool('text')" title="文字">T 文字</button>
+        <button class="tool-btn active" data-tool="free" onclick="setTool('free')" title="鑷敱鐢荤瑪">鉁忥笍 鐢荤瑪</button>
+        <button class="tool-btn" data-tool="arrow" onclick="setTool('arrow')" title="绠ご">鈫?绠ご</button>
+        <button class="tool-btn" data-tool="rect" onclick="setTool('rect')" title="鐭╁舰">猬?鐭╁舰</button>
+        <button class="tool-btn" data-tool="text" onclick="setTool('text')" title="鏂囧瓧">T 鏂囧瓧</button>
         <div style="width:1px;height:14px;background:rgba(255,255,255,.08);margin:0 2px;flex-shrink:0;"></div>
-        <button class="tool-btn" id="v-edit-btn" onclick="toggleEditMode()" title="编辑模式">👆 选择</button>
-        <button class="tool-btn" onclick="deleteSelected()" style="color:var(--accent2)" title="删除选中">🗑️ 删除</button>
+        <button class="tool-btn" id="v-edit-btn" onclick="toggleEditMode()" title="缂栬緫妯″紡">馃憜 閫夋嫨</button>
+        <button class="tool-btn" onclick="deleteSelected()" style="color:var(--accent2)" title="鍒犻櫎閫変腑">馃棏锔?鍒犻櫎</button>
         <input type="color" value="#ff4444" onchange="setAnnotColor(this.value)" style="width:22px;height:22px;padding:0;border:none;border-radius:4px;cursor:pointer;flex-shrink:0;">
       </div>
 
-      <button class="btn-action" onclick="toggleAnnot()" id="v-annot-btn" title="开启标注">✏️ 标注</button>
+      <button class="btn-action" onclick="toggleAnnot()" id="v-annot-btn" title="寮€鍚爣娉?>鉁忥笍 鏍囨敞</button>
       
       <div style="display:flex;gap:2px;background: rgba(255,255,255,.03); padding: 2px; border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,.06);">
-        <button class="tool-btn" onclick="zoomIn()" title="放大">➕</button>
-        <button class="tool-btn" onclick="zoomOut()" title="缩小">➖</button>
-        <button class="tool-btn" onclick="resetView()" title="重置">🔄</button>
+        <button class="tool-btn" onclick="zoomIn()" title="鏀惧ぇ">鉃?/button>
+        <button class="tool-btn" onclick="zoomOut()" title="缂╁皬">鉃?/button>
+        <button class="tool-btn" onclick="resetView()" title="閲嶇疆">馃攧</button>
       </div>
       
       <!-- Modern close button -->
-      <button class="btn-action" onclick="closeViewer()" style="color:var(--accent2);border-color:rgba(233,69,96,.3);padding:0 10px;display:flex;align-items:center;gap:4px;">✖ 退出</button>
+      <button class="btn-action" onclick="closeViewer()" style="color:var(--accent2);border-color:rgba(233,69,96,.3);padding:0 10px;display:flex;align-items:center;gap:4px;">鉁?閫€鍑?/button>
     </div>
 
     <div class="header-ctrl">
-      <button onclick="winMinimize()" title="最小化">─</button>
-      <button onclick="winToggleMaximize()" title="最大化">□</button>
-      <button class="btn-close" onclick="winClose()" title="关闭">✕</button>
+      <button onclick="winMinimize()" title="鏈€灏忓寲">鈹€</button>
+      <button onclick="winToggleMaximize()" title="鏈€澶у寲">鈻?/button>
+      <button class="btn-close" onclick="winClose()" title="鍏抽棴">鉁?/button>
     </div>
   </header>
   <div class="sync-notice" id="sync-notice">
-    <span id="sync-notice-text"><strong>发现新内容</strong>，本机已刷新。需要给其他人看到时，请点击同步。</span>
-    <button onclick="syncLibrary()">立即同步</button>
+    <span id="sync-notice-text"><strong>鍙戠幇鏂板唴瀹?/strong>锛屾湰鏈哄凡鍒锋柊銆傞渶瑕佺粰鍏朵粬浜虹湅鍒版椂锛岃鐐瑰嚮鍚屾銆?/span>
+    <button onclick="syncLibrary()">绔嬪嵆鍚屾</button>
   </div>
-  <div id="body">
+    <!-- Tab 切换栏 -->
+  <div class="bv-tab-bar" id="tab-bar">
+    <div class="bv-tab active" data-tab="isp" onclick="switchTab('isp')">📱 ISP 短接图</div>
+    <div class="bv-tab" data-tab="boardview" onclick="switchTab('boardview')">🔌 BoardView 点位图</div>
+  </div>
+<div id="body">
     <div id="sidebar"><div id="sidebar-list"></div><div id="sidebar-ads"></div></div>
     <div id="main">
       <div class="empty-state" id="empty">
-        <div class="big">📱</div>
-        <div>选择一个品牌开始浏览</div>
+        <div class="big">馃摫</div>
+        <div>閫夋嫨涓€涓搧鐗屽紑濮嬫祻瑙?/div>
       </div>
       <div class="grid" id="grid" style="display:none"></div>
       <div id="viewer" style="display:none">
@@ -620,118 +625,118 @@ img {
 <div id="v-body">
 <img id="v-img" src="" alt=""/>
 <canvas id="v-canvas"></canvas>
-<div class="v-nav-overlay left" id="v-nav-prev" onclick="prevImage()"><span style="display:flex;flex-direction:column;align-items:center;gap:4px"><span style="font-size:72px;line-height:1">◀</span><span style="font-size:12px;opacity:.7">上一张</span></span></div>
-<div class="v-nav-overlay right" id="v-nav-next" onclick="nextImage()"><span style="display:flex;flex-direction:column;align-items:center;gap:4px"><span style="font-size:72px;line-height:1">▶</span><span style="font-size:12px;opacity:.7">下一张</span></span></div>
+<div class="v-nav-overlay left" id="v-nav-prev" onclick="prevImage()"><span style="display:flex;flex-direction:column;align-items:center;gap:4px"><span style="font-size:72px;line-height:1">鈼€</span><span style="font-size:12px;opacity:.7">涓婁竴寮?/span></span></div>
+<div class="v-nav-overlay right" id="v-nav-next" onclick="nextImage()"><span style="display:flex;flex-direction:column;align-items:center;gap:4px"><span style="font-size:72px;line-height:1">鈻?/span><span style="font-size:12px;opacity:.7">涓嬩竴寮?/span></span></div>
 <div class="v-zoom-badge" id="v-zoom-badge">100%</div>
 </div>
 </div>
 
-<!-- 系统配置模态弹窗 -->
+<!-- 绯荤粺閰嶇疆妯℃€佸脊绐?-->
 <div class="modal-overlay" id="settings-modal">
   <div class="modal">
     <div class="modal-header">
-      <h2>⚙️ 系统配置</h2>
-      <button class="modal-close" onclick="closeSettingsModal()">×</button>
+      <h2>鈿欙笍 绯荤粺閰嶇疆</h2>
+      <button class="modal-close" onclick="closeSettingsModal()">脳</button>
     </div>
     <div class="form-group">
-      <label>工作模式</label>
+      <label>宸ヤ綔妯″紡</label>
       <div id="setting-mode" style="display:flex;gap:8px;margin-top:6px;">
         <label style="display:flex;align-items:center;gap:6px;padding:8px 12px;border:1px solid var(--border);border-radius:var(--radius-sm);cursor:pointer;background:rgba(255,255,255,.03);transition:all .2s;flex:1;" id="mode-local-label">
-          <input type="radio" name="work-mode" value="local" onchange="toggleModeFields()" style="accent-color:var(--accent);"> 本地离线模式
+          <input type="radio" name="work-mode" value="local" onchange="toggleModeFields()" style="accent-color:var(--accent);"> 鏈湴绂荤嚎妯″紡
         </label>
         <label style="display:flex;align-items:center;gap:6px;padding:8px 12px;border:1px solid var(--border);border-radius:var(--radius-sm);cursor:pointer;background:rgba(255,255,255,.03);transition:all .2s;flex:1;" id="mode-github-label">
-          <input type="radio" name="work-mode" value="github" onchange="toggleModeFields()" style="accent-color:var(--accent);"> 云端模式 (推荐)
+          <input type="radio" name="work-mode" value="github" onchange="toggleModeFields()" style="accent-color:var(--accent);"> 浜戠妯″紡 (鎺ㄨ崘)
         </label>
       </div>
     </div>
     <div id="local-fields" style="display:none">
       <div class="form-group">
-        <label>本地图纸库文件夹路径</label>
-        <input type="text" id="setting-local-path" placeholder="例如: D:\ERS-TECH-ISP短接宝典">
+        <label>鏈湴鍥剧焊搴撴枃浠跺す璺緞</label>
+        <input type="text" id="setting-local-path" placeholder="渚嬪: D:\ERS-TECH-ISP鐭帴瀹濆吀">
       </div>
     </div>
     <div id="github-fields" style="display:none">
       <div class="form-group" style="display:none;">
-        <label>🌐 CDN 加速节点</label>
+        <label>馃寪 CDN 鍔犻€熻妭鐐?/label>
         <select id="setting-cdn">
-          <option value="jsdelivr">🌍 国外 - jsDelivr（海外推荐）</option>
+          <option value="jsdelivr">馃實 鍥藉 - jsDelivr锛堟捣澶栨帹鑽愶級</option>
         </select>
       </div>
       <div class="form-group">
-        <label>云端数据源状态</label>
+        <label>浜戠鏁版嵁婧愮姸鎬?/label>
         <div style="font-size:12px;color:var(--text2);margin-top:6px;background:rgba(255,255,255,.03);padding:12px 14px;border-radius:var(--radius-sm);border:1px solid rgba(255,255,255,.06);line-height:1.8">
-          <span style="color:#4ade80">✓</span> 全球CDN加速网络已就绪<br>
-          <span style="color:#4ade80">✓</span> 数据端到端流媒体传输<br>
-          <span style="color:#4ade80">✓</span> 群友免登录、免配置即开即用
+          <span style="color:#4ade80">鉁?/span> 鍏ㄧ悆CDN鍔犻€熺綉缁滃凡灏辩华<br>
+          <span style="color:#4ade80">鉁?/span> 鏁版嵁绔埌绔祦濯掍綋浼犺緭<br>
+          <span style="color:#4ade80">鉁?/span> 缇ゅ弸鍏嶇櫥褰曘€佸厤閰嶇疆鍗冲紑鍗崇敤
         </div>
       </div>
     </div>
     <div class="form-group" style="margin-top:12px;border-top:1px solid rgba(255,255,255,.06);padding-top:12px">
-      <label>🔄 在线更新</label>
+      <label>馃攧 鍦ㄧ嚎鏇存柊</label>
       <div style="font-size:12px;color:var(--text2);margin-top:6px;background:rgba(255,255,255,.03);padding:12px 14px;border-radius:var(--radius-sm);border:1px solid rgba(255,255,255,.06);line-height:1.8;">
-        <div>当前版本: <span id="settings-current-version" style="color:var(--accent);font-weight:600;">检查中...</span></div>
-        <div id="update-status-text" style="margin-top:4px;color:var(--text3);">启动时自动检查并更新</div>
+        <div>褰撳墠鐗堟湰: <span id="settings-current-version" style="color:var(--accent);font-weight:600;">妫€鏌ヤ腑...</span></div>
+        <div id="update-status-text" style="margin-top:4px;color:var(--text3);">鍚姩鏃惰嚜鍔ㄦ鏌ュ苟鏇存柊</div>
       </div>
     </div>
     <div class="form-group" style="margin-top:12px;border-top:1px solid rgba(255,255,255,.06);padding-top:12px">
       <select id="setting-theme" onchange="applyTheme(this.value)">
-        <option value="default">默认暗黑</option>
-        <option value="deep-night">深邃暗夜</option>
-        <option value="aurora">极光绿</option>
-        <option value="sunset">日落橙</option>
-        <option value="cherry">樱花粉</option>
-        <option value="ocean">海洋蓝</option>
-        <option value="lavender">薰衣草</option>
-        <option value="forest">森林绿</option>
-        <option value="rose">玫瑰红</option>
-        <option value="metal">金属灰</option>
-        <option value="amber">琥珀色</option>
-        <option value="jade">翡翠绿</option>
-        <option value="sapphire">宝石蓝</option>
-        <option value="flame">烈焰红</option>
-        <option value="sky">天空蓝</option>
-        <option value="mint">薄荷绿</option>
-        <option value="grape">葡萄紫</option>
-        <option value="coffee">咖啡棕</option>
-        <option value="ice">冰晶蓝</option>
-        <option value="neon">霓虹粉</option>
-        <option value="carbon">炭黑经典</option>
+        <option value="default">榛樿鏆楅粦</option>
+        <option value="deep-night">娣遍們鏆楀</option>
+        <option value="aurora">鏋佸厜缁?/option>
+        <option value="sunset">鏃ヨ惤姗?/option>
+        <option value="cherry">妯辫姳绮?/option>
+        <option value="ocean">娴锋磱钃?/option>
+        <option value="lavender">钖拌。鑽?/option>
+        <option value="forest">妫灄缁?/option>
+        <option value="rose">鐜懓绾?/option>
+        <option value="metal">閲戝睘鐏?/option>
+        <option value="amber">鐞ョ弨鑹?/option>
+        <option value="jade">缈＄繝缁?/option>
+        <option value="sapphire">瀹濈煶钃?/option>
+        <option value="flame">鐑堢劙绾?/option>
+        <option value="sky">澶╃┖钃?/option>
+        <option value="mint">钖勮嵎缁?/option>
+        <option value="grape">钁¤悇绱?/option>
+        <option value="coffee">鍜栧暋妫?/option>
+        <option value="ice">鍐版櫠钃?/option>
+        <option value="neon">闇撹櫣绮?/option>
+        <option value="carbon">鐐粦缁忓吀</option>
       </select>
     </div>
     <div class="btn-group">
-      <button class="btn-secondary" onclick="closeSettingsModal()">取消</button>
-      <button class="btn-primary" onclick="saveSettings()">保存并重载</button>
+      <button class="btn-secondary" onclick="closeSettingsModal()">鍙栨秷</button>
+      <button class="btn-primary" onclick="saveSettings()">淇濆瓨骞堕噸杞?/button>
     </div>
   </div>
 </div>
 
-<!-- License 验证弹窗 -->
+<!-- License 楠岃瘉寮圭獥 -->
 <div class="modal-overlay" id="license-modal" style="display:none;z-index:10001;">
   <div class="modal" style="max-width:420px;text-align:center;">
-    <div style="font-size:48px;margin-bottom:16px;">🔐</div>
-    <h2 style="font-size:18px;margin-bottom:12px;color:var(--accent);">软件授权验证</h2>
+    <div style="font-size:48px;margin-bottom:16px;">馃攼</div>
+    <h2 style="font-size:18px;margin-bottom:12px;color:var(--accent);">杞欢鎺堟潈楠岃瘉</h2>
     <p style="font-size:14px;color:var(--text2);line-height:1.6;margin-bottom:20px;">
-      请输入授权码或账号密码以继续使用
+      璇疯緭鍏ユ巿鏉冪爜鎴栬处鍙峰瘑鐮佷互缁х画浣跨敤
     </p>
     <div id="license-tab-key" style="margin-bottom:16px;">
-      <input id="license-key-input" type="text" placeholder="授权码 (如: ISP-2024-ABCD-EFGH)"
+      <input id="license-key-input" type="text" placeholder="鎺堟潈鐮?(濡? ISP-2024-ABCD-EFGH)"
         style="width:100%;padding:12px;border-radius:8px;border:1px solid var(--border);background:var(--bg2);color:var(--text);font-size:14px;margin-bottom:12px;">
       <button onclick="verifyLicenseKey()" class="btn-primary" style="width:100%;padding:12px;font-size:14px;">
-        ✅ 验证授权码
+        鉁?楠岃瘉鎺堟潈鐮?
       </button>
     </div>
-    <div style="text-align:center;color:var(--text3);font-size:12px;margin:12px 0;">— 或 —</div>
+    <div style="text-align:center;color:var(--text3);font-size:12px;margin:12px 0;">鈥?鎴?鈥?/div>
     <div id="license-tab-user">
-      <input id="license-user-input" type="text" placeholder="用户名"
+      <input id="license-user-input" type="text" placeholder="鐢ㄦ埛鍚?
         style="width:100%;padding:12px;border-radius:8px;border:1px solid var(--border);background:var(--bg2);color:var(--text);font-size:14px;margin-bottom:8px;">
-      <input id="license-pass-input" type="password" placeholder="密码"
+      <input id="license-pass-input" type="password" placeholder="瀵嗙爜"
         style="width:100%;padding:12px;border-radius:8px;border:1px solid var(--border);background:var(--bg2);color:var(--text);font-size:14px;margin-bottom:8px;">
       <label style="display:flex;align-items:center;gap:8px;margin-bottom:12px;cursor:pointer;font-size:13px;color:var(--text2);">
         <input type="checkbox" id="remember-me-checkbox" style="width:16px;height:16px;accent-color:var(--accent);cursor:pointer;">
-        记住密码
+        璁颁綇瀵嗙爜
       </label>
       <button onclick="verifyLicenseUser()" class="btn-primary" style="width:100%;padding:12px;font-size:14px;">
-        🔑 登录验证
+        馃攽 鐧诲綍楠岃瘉
       </button>
     </div>
     <div id="license-error" style="color:var(--accent2);font-size:13px;margin-top:12px;display:none;"></div>
@@ -739,10 +744,10 @@ img {
       <div style="width:100%;background:rgba(255,255,255,.1);height:4px;border-radius:2px;overflow:hidden;">
         <div id="license-bar" style="width:30%;height:100%;background:var(--accent);animation:loading 1s infinite;"></div>
       </div>
-      <div style="font-size:12px;color:var(--text2);margin-top:8px;">验证中...</div>
+      <div style="font-size:12px;color:var(--text2);margin-top:8px;">楠岃瘉涓?..</div>
     </div>
     <button onclick="closeLicenseApp()" style="margin-top:16px;padding:8px 16px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--text3);font-size:13px;cursor:pointer;transition:all .2s;">
-      ✕ 关闭软件
+      鉁?鍏抽棴杞欢
     </button>
   </div>
 </div>
@@ -758,34 +763,34 @@ let currentModel = null;
 let searchTerm = '';
 let brandCache = {};
 
-// ===== 图片懒加载系统 =====
-let gridObserver = null;       // IntersectionObserver 实例
-let imageLoadQueue = [];       // 等待加载的卡片队列
-let activeImageLoads = 0;      // 当前正在加载的图片数
+// ===== 鍥剧墖鎳掑姞杞界郴缁?=====
+let gridObserver = null;       // IntersectionObserver 瀹炰緥
+let imageLoadQueue = [];       // 绛夊緟鍔犺浇鐨勫崱鐗囬槦鍒?
+let activeImageLoads = 0;      // 褰撳墠姝ｅ湪鍔犺浇鐨勫浘鐗囨暟
 let MAX_CONCURRENT_LOADS = 3; // Updated when mode changes
 
 var THEMES = {
-  'default':{n:'默认暗黑',accent:'#5eafff',a2:'#e94560',a3:'#f0a500',a4:'#a78bfa',bg:'#0a0e14',bg2:'#10151d',card:'#151c27',card2:'#1a2332',border:'#252d3a',text:'#dfe6f0',text2:'#7a8ba0',text3:'#4e5d6e',hover:'#1a2535',glowR:94,glowG:175,glowB:255,bodyR:94,bodyG:175,bodyB:255,body2R:167,body2G:139,body2B:250,body3R:78,body3G:205,body3B:196},
-  'deep-night':{n:'深邃暗夜',accent:'#b388ff',a2:'#ff6ec7',a3:'#ea80fc',a4:'#7c4dff',bg:'#0d0a18',bg2:'#16102e',card:'#1e1640',card2:'#261e50',border:'#2e2458',text:'#e0d6f0',text2:'#9a8aa0',text3:'#6e5e8e',hover:'#221a40',glowR:179,glowG:136,glowB:255,bodyR:124,bodyG:77,bodyB:255,body2R:179,body2G:136,body2B:255,body3R:234,body3G:128,body3B:252},
-  'aurora':{n:'极光绿',accent:'#69f0ae',a2:'#00e676',a3:'#76ff03',a4:'#1de9b6',bg:'#080f0c',bg2:'#0c2a1e',card:'#103828',card2:'#144530',border:'#1a5038',text:'#d0f0e0',text2:'#7aaa8a',text3:'#4e7a5e',hover:'#103020',glowR:105,glowG:240,glowB:174,bodyR:0,bodyG:230,bodyB:118,body2R:105,body2G:240,body2B:174,body3R:29,body3G:233,body3B:182},
-  'sunset':{n:'日落橙',accent:'#ff9100',a2:'#ff5722',a3:'#ffc107',a4:'#ff6d00',bg:'#100c08',bg2:'#2a1c10',card:'#382818',card2:'#443020',border:'#504028',text:'#f0e0d0',text2:'#aa8a6a',text3:'#7a5a3a',hover:'#302018',glowR:255,glowG:145,glowB:0,bodyR:255,bodyG:145,bodyB:0,body2R:255,body2G:109,body2B:0,body3R:255,body3G:193,body3B:7},
-  'cherry':{n:'樱花粉',accent:'#ff4081',a2:'#f50057',a3:'#ff80ab',a4:'#ff1744',bg:'#10080c',bg2:'#2a1020',card:'#3a1828',card2:'#452030',border:'#502840',text:'#f0d0e0',text2:'#aa7090',text3:'#7a4060',hover:'#301028',glowR:255,glowG:64,glowB:129,bodyR:255,bodyG:64,bodyB:129,body2R:245,body2G:0,body2B:87,body3R:255,body3G:128,body3B:171},
-  'ocean':{n:'海洋蓝',accent:'#00bcd4',a2:'#0097a7',a3:'#26c6da',a4:'#006064',bg:'#080c10',bg2:'#0c2838',card:'#103545',card2:'#144050',border:'#1a4d5e',text:'#c0e8f0',text2:'#6a9aaa',text3:'#3a6a7a',hover:'#103040',glowR:0,glowG:188,glowB:212,bodyR:0,bodyG:188,bodyB:212,body2R:0,body2G:96,body2B:96,body3R:38,body3G:198,body3B:218},
-  'lavender':{n:'薰衣草',accent:'#ce93d8',a2:'#ab47bc',a3:'#e1bee7',a4:'#7b1fa2',bg:'#0e0a14',bg2:'#1e1430',card:'#281c3c',card2:'#302448',border:'#3c2e58',text:'#e0d0f0',text2:'#9a80b0',text3:'#6e508e',hover:'#201838',glowR:206,glowG:147,glowB:216,bodyR:123,bodyG:31,bodyB:162,body2R:206,body2G:147,body2B:216,body3R:225,body3G:190,body3B:231},
-  'forest':{n:'森林绿',accent:'#66bb6a',a2:'#388e3c',a3:'#a5d6a7',a4:'#1b5e20',bg:'#0a0e0a',bg2:'#12281a',card:'#183420',card2:'#1e4028',border:'#264e32',text:'#d0f0d0',text2:'#7aaa7a',text3:'#4e7a4e',hover:'#103018',glowR:102,glowG:187,glowB:106,bodyR:27,bodyG:94,bodyB:32,body2R:102,body2G:187,body2B:106,body3R:165,body3G:214,body3B:167},
-  'rose':{n:'烈焰红',accent:'#ef5350',a2:'#c62828',a3:'#ef9a9a',a4:'#b71c1c',bg:'#100a0a',bg2:'#281414',card:'#341c1c',card2:'#402424',border:'#4e3030',text:'#f0d0d0',text2:'#aa7070',text3:'#7a4040',hover:'#301818',glowR:239,glowG:83,glowB:80,bodyR:183,bodyG:28,bodyB:28,body2R:239,body2G:83,body2B:80,body3R:239,body3G:154,body3B:154},
-  'metal':{n:'金属灰',accent:'#b0bec5',a2:'#78909c',a3:'#cfd8dc',a4:'#546e7a',bg:'#0d0e10',bg2:'#181c20',card:'#20262c',card2:'#28303a',border:'#343e4a',text:'#d8dee4',text2:'#8a949e',text3:'#5e6872',hover:'#1e242a',glowR:176,glowG:190,glowB:197,bodyR:84,bodyG:110,bodyB:122,body2R:176,body2G:190,body2B:197,body3R:207,body3G:216,body3B:220},
-  'amber':{n:'琥珀黄',accent:'#ffd54f',a2:'#ff8f00',a3:'#ffe082',a4:'#ff6f00',bg:'#100e08',bg2:'#2a2610',card:'#383218',card2:'#443c20',border:'#504828',text:'#f0e8d0',text2:'#aa9a6a',text3:'#7a6a3a',hover:'#302a18',glowR:255,glowG:213,glowB:79,bodyR:255,bodyG:111,bodyB:0,body2R:255,body2G:213,body2B:79,body3R:255,body3G:224,body3B:130},
-  'jade':{n:'翡翠绿',accent:'#4caf50',a2:'#2e7d32',a3:'#81c784',a4:'#1b5e20',bg:'#0a0e0a',bg2:'#12281c',card:'#183622',card2:'#1e422a',border:'#265034',text:'#d0f0d8',text2:'#7aaa80',text3:'#4e7a54',hover:'#10321a',glowR:76,glowG:175,glowB:80,bodyR:27,bodyG:94,bodyB:32,body2R:76,body2G:175,body2B:80,body3R:129,body3G:199,body3B:132},
-  'sapphire':{n:'宝石蓝',accent:'#42a5f5',a2:'#1565c0',a3:'#90caf9',a4:'#0d47a1',bg:'#080a12',bg2:'#0c1a38',card:'#102245',card2:'#142a50',border:'#1a3460',text:'#c0d8f0',text2:'#6a8aaa',text3:'#3a5a7a',hover:'#0e2040',glowR:66,glowG:165,glowB:245,bodyR:13,bodyG:71,bodyB:161,body2R:66,body2G:165,body2B:245,body3R:144,body3G:202,body3B:249},
-  'flame':{n:'烈焰橙',accent:'#ff7043',a2:'#d84315',a3:'#ffab91',a4:'#bf360c',bg:'#100a08',bg2:'#2a1810',card:'#382218',card2:'#442a20',border:'#503428',text:'#f0ddd0',text2:'#aa8a6a',text3:'#7a5a3a',hover:'#30201a',glowR:255,glowG:112,glowB:67,bodyR:216,bodyG:67,bodyB:21,body2R:255,body2G:112,body2B:67,body3R:255,body3G:171,body3B:145},
-  'sky':{n:'天空蓝',accent:'#29b6f6',a2:'#0288d1',a3:'#81d4fa',a4:'#01579b',bg:'#080c10',bg2:'#0c2030',card:'#102a3e',card2:'#143248',border:'#1a3c56',text:'#c0e0f0',text2:'#6a94aa',text3:'#3a647a',hover:'#102438',glowR:41,glowG:182,glowB:246,bodyR:1,bodyG:87,bodyB:155,body2R:41,body2G:182,body2B:246,body3R:129,body3G:212,body3B:250},
-  'mint':{n:'薄荷绿',accent:'#26a69a',a2:'#00897b',a3:'#80cbc4',a4:'#00695c',bg:'#0a0e0c',bg2:'#102a24',card:'#143830',card2:'#184538',border:'#1e5544',text:'#c8f0e8',text2:'#70aa9a',text3:'#447a6a',hover:'#10302a',glowR:38,glowG:166,glowB:154,bodyR:0,bodyG:105,bodyB:92,body2R:38,body2G:166,body2B:154,body3R:128,body3G:203,body3B:196},
-  'grape':{n:'葡萄紫',accent:'#ab47bc',a2:'#6a1b9a',a3:'#ce93d8',a4:'#4a148c',bg:'#0e0812',bg2:'#281030',card:'#341840',card2:'#40204e',border:'#502860',text:'#e8d0f0',text2:'#aa70b0',text3:'#7a4080',hover:'#301040',glowR:171,glowG:71,glowB:188,bodyR:74,bodyG:20,bodyB:140,body2R:171,body2G:71,body2B:188,body3R:206,body3G:147,body3B:216},
-  'coffee':{n:'咖啡棕',accent:'#8d6e63',a2:'#5d4037',a3:'#bcaaa4',a4:'#3e2723',bg:'#0e0c0a',bg2:'#201a14',card:'#2a221c',card2:'#342a22',border:'#40342a',text:'#e8ddd0',text2:'#9a8a7a',text3:'#6e5e4e',hover:'#2a201a',glowR:141,glowG:110,glowB:99,bodyR:62,bodyG:39,bodyB:35,body2R:141,body2G:110,body2B:99,body3R:188,body3G:170,body3B:164},
-  'ice':{n:'冰晶蓝',accent:'#4dd0e1',a2:'#0097a7',a3:'#80deea',a4:'#00838f',bg:'#080c10',bg2:'#0c2030',card:'#102a40',card2:'#143248',border:'#1a3e56',text:'#c0e8f8',text2:'#6a9aac',text3:'#3a6a7c',hover:'#102438',glowR:77,glowG:208,glowB:225,bodyR:0,bodyG:131,bodyB:143,body2R:77,body2G:208,body2B:225,body3R:128,body3G:222,body3B:234},
-  'neon':{n:'霓虹粉',accent:'#f06292',a2:'#c2185b',a3:'#f48fb1',a4:'#880e4f',bg:'#10080e',bg2:'#2a1028',card:'#381838',card2:'#442044',border:'#502858',text:'#f0d0e8',text2:'#aa7098',text3:'#7a4068',hover:'#301030',glowR:240,glowG:98,glowB:146,bodyR:136,bodyG:14,bodyB:79,body2R:240,body2G:98,body2B:146,body3R:244,body3G:143,body3B:177},
-  'carbon':{n:'炭黑经典',accent:'#78909c',a2:'#455a64',a3:'#b0bec5',a4:'#263238',bg:'#080a0c',bg2:'#101214',card:'#161a1e',card2:'#1c2026',border:'#242a32',text:'#d8dee4',text2:'#8a929c',text3:'#586068',hover:'#14181e',glowR:120,glowG:144,glowB:156,bodyR:38,bodyG:50,bodyB:56,body2R:120,body2G:144,body2B:156,body3R:176,body3G:190,body3B:197},
+  'default':{n:'榛樿鏆楅粦',accent:'#5eafff',a2:'#e94560',a3:'#f0a500',a4:'#a78bfa',bg:'#0a0e14',bg2:'#10151d',card:'#151c27',card2:'#1a2332',border:'#252d3a',text:'#dfe6f0',text2:'#7a8ba0',text3:'#4e5d6e',hover:'#1a2535',glowR:94,glowG:175,glowB:255,bodyR:94,bodyG:175,bodyB:255,body2R:167,body2G:139,body2B:250,body3R:78,body3G:205,body3B:196},
+  'deep-night':{n:'娣遍們鏆楀',accent:'#b388ff',a2:'#ff6ec7',a3:'#ea80fc',a4:'#7c4dff',bg:'#0d0a18',bg2:'#16102e',card:'#1e1640',card2:'#261e50',border:'#2e2458',text:'#e0d6f0',text2:'#9a8aa0',text3:'#6e5e8e',hover:'#221a40',glowR:179,glowG:136,glowB:255,bodyR:124,bodyG:77,bodyB:255,body2R:179,body2G:136,body2B:255,body3R:234,body3G:128,body3B:252},
+  'aurora':{n:'鏋佸厜缁?,accent:'#69f0ae',a2:'#00e676',a3:'#76ff03',a4:'#1de9b6',bg:'#080f0c',bg2:'#0c2a1e',card:'#103828',card2:'#144530',border:'#1a5038',text:'#d0f0e0',text2:'#7aaa8a',text3:'#4e7a5e',hover:'#103020',glowR:105,glowG:240,glowB:174,bodyR:0,bodyG:230,bodyB:118,body2R:105,body2G:240,body2B:174,body3R:29,body3G:233,body3B:182},
+  'sunset':{n:'鏃ヨ惤姗?,accent:'#ff9100',a2:'#ff5722',a3:'#ffc107',a4:'#ff6d00',bg:'#100c08',bg2:'#2a1c10',card:'#382818',card2:'#443020',border:'#504028',text:'#f0e0d0',text2:'#aa8a6a',text3:'#7a5a3a',hover:'#302018',glowR:255,glowG:145,glowB:0,bodyR:255,bodyG:145,bodyB:0,body2R:255,body2G:109,body2B:0,body3R:255,body3G:193,body3B:7},
+  'cherry':{n:'妯辫姳绮?,accent:'#ff4081',a2:'#f50057',a3:'#ff80ab',a4:'#ff1744',bg:'#10080c',bg2:'#2a1020',card:'#3a1828',card2:'#452030',border:'#502840',text:'#f0d0e0',text2:'#aa7090',text3:'#7a4060',hover:'#301028',glowR:255,glowG:64,glowB:129,bodyR:255,bodyG:64,bodyB:129,body2R:245,body2G:0,body2B:87,body3R:255,body3G:128,body3B:171},
+  'ocean':{n:'娴锋磱钃?,accent:'#00bcd4',a2:'#0097a7',a3:'#26c6da',a4:'#006064',bg:'#080c10',bg2:'#0c2838',card:'#103545',card2:'#144050',border:'#1a4d5e',text:'#c0e8f0',text2:'#6a9aaa',text3:'#3a6a7a',hover:'#103040',glowR:0,glowG:188,glowB:212,bodyR:0,bodyG:188,bodyB:212,body2R:0,body2G:96,body2B:96,body3R:38,body3G:198,body3B:218},
+  'lavender':{n:'钖拌。鑽?,accent:'#ce93d8',a2:'#ab47bc',a3:'#e1bee7',a4:'#7b1fa2',bg:'#0e0a14',bg2:'#1e1430',card:'#281c3c',card2:'#302448',border:'#3c2e58',text:'#e0d0f0',text2:'#9a80b0',text3:'#6e508e',hover:'#201838',glowR:206,glowG:147,glowB:216,bodyR:123,bodyG:31,bodyB:162,body2R:206,body2G:147,body2B:216,body3R:225,body3G:190,body3B:231},
+  'forest':{n:'妫灄缁?,accent:'#66bb6a',a2:'#388e3c',a3:'#a5d6a7',a4:'#1b5e20',bg:'#0a0e0a',bg2:'#12281a',card:'#183420',card2:'#1e4028',border:'#264e32',text:'#d0f0d0',text2:'#7aaa7a',text3:'#4e7a4e',hover:'#103018',glowR:102,glowG:187,glowB:106,bodyR:27,bodyG:94,bodyB:32,body2R:102,body2G:187,body2B:106,body3R:165,body3G:214,body3B:167},
+  'rose':{n:'鐑堢劙绾?,accent:'#ef5350',a2:'#c62828',a3:'#ef9a9a',a4:'#b71c1c',bg:'#100a0a',bg2:'#281414',card:'#341c1c',card2:'#402424',border:'#4e3030',text:'#f0d0d0',text2:'#aa7070',text3:'#7a4040',hover:'#301818',glowR:239,glowG:83,glowB:80,bodyR:183,bodyG:28,bodyB:28,body2R:239,body2G:83,body2B:80,body3R:239,body3G:154,body3B:154},
+  'metal':{n:'閲戝睘鐏?,accent:'#b0bec5',a2:'#78909c',a3:'#cfd8dc',a4:'#546e7a',bg:'#0d0e10',bg2:'#181c20',card:'#20262c',card2:'#28303a',border:'#343e4a',text:'#d8dee4',text2:'#8a949e',text3:'#5e6872',hover:'#1e242a',glowR:176,glowG:190,glowB:197,bodyR:84,bodyG:110,bodyB:122,body2R:176,body2G:190,body2B:197,body3R:207,body3G:216,body3B:220},
+  'amber':{n:'鐞ョ弨榛?,accent:'#ffd54f',a2:'#ff8f00',a3:'#ffe082',a4:'#ff6f00',bg:'#100e08',bg2:'#2a2610',card:'#383218',card2:'#443c20',border:'#504828',text:'#f0e8d0',text2:'#aa9a6a',text3:'#7a6a3a',hover:'#302a18',glowR:255,glowG:213,glowB:79,bodyR:255,bodyG:111,bodyB:0,body2R:255,body2G:213,body2B:79,body3R:255,body3G:224,body3B:130},
+  'jade':{n:'缈＄繝缁?,accent:'#4caf50',a2:'#2e7d32',a3:'#81c784',a4:'#1b5e20',bg:'#0a0e0a',bg2:'#12281c',card:'#183622',card2:'#1e422a',border:'#265034',text:'#d0f0d8',text2:'#7aaa80',text3:'#4e7a54',hover:'#10321a',glowR:76,glowG:175,glowB:80,bodyR:27,bodyG:94,bodyB:32,body2R:76,body2G:175,body2B:80,body3R:129,body3G:199,body3B:132},
+  'sapphire':{n:'瀹濈煶钃?,accent:'#42a5f5',a2:'#1565c0',a3:'#90caf9',a4:'#0d47a1',bg:'#080a12',bg2:'#0c1a38',card:'#102245',card2:'#142a50',border:'#1a3460',text:'#c0d8f0',text2:'#6a8aaa',text3:'#3a5a7a',hover:'#0e2040',glowR:66,glowG:165,glowB:245,bodyR:13,bodyG:71,bodyB:161,body2R:66,body2G:165,body2B:245,body3R:144,body3G:202,body3B:249},
+  'flame':{n:'鐑堢劙姗?,accent:'#ff7043',a2:'#d84315',a3:'#ffab91',a4:'#bf360c',bg:'#100a08',bg2:'#2a1810',card:'#382218',card2:'#442a20',border:'#503428',text:'#f0ddd0',text2:'#aa8a6a',text3:'#7a5a3a',hover:'#30201a',glowR:255,glowG:112,glowB:67,bodyR:216,bodyG:67,bodyB:21,body2R:255,body2G:112,body2B:67,body3R:255,body3G:171,body3B:145},
+  'sky':{n:'澶╃┖钃?,accent:'#29b6f6',a2:'#0288d1',a3:'#81d4fa',a4:'#01579b',bg:'#080c10',bg2:'#0c2030',card:'#102a3e',card2:'#143248',border:'#1a3c56',text:'#c0e0f0',text2:'#6a94aa',text3:'#3a647a',hover:'#102438',glowR:41,glowG:182,glowB:246,bodyR:1,bodyG:87,bodyB:155,body2R:41,body2G:182,body2B:246,body3R:129,body3G:212,body3B:250},
+  'mint':{n:'钖勮嵎缁?,accent:'#26a69a',a2:'#00897b',a3:'#80cbc4',a4:'#00695c',bg:'#0a0e0c',bg2:'#102a24',card:'#143830',card2:'#184538',border:'#1e5544',text:'#c8f0e8',text2:'#70aa9a',text3:'#447a6a',hover:'#10302a',glowR:38,glowG:166,glowB:154,bodyR:0,bodyG:105,bodyB:92,body2R:38,body2G:166,body2B:154,body3R:128,body3G:203,body3B:196},
+  'grape':{n:'钁¤悇绱?,accent:'#ab47bc',a2:'#6a1b9a',a3:'#ce93d8',a4:'#4a148c',bg:'#0e0812',bg2:'#281030',card:'#341840',card2:'#40204e',border:'#502860',text:'#e8d0f0',text2:'#aa70b0',text3:'#7a4080',hover:'#301040',glowR:171,glowG:71,glowB:188,bodyR:74,bodyG:20,bodyB:140,body2R:171,body2G:71,body2B:188,body3R:206,body3G:147,body3B:216},
+  'coffee':{n:'鍜栧暋妫?,accent:'#8d6e63',a2:'#5d4037',a3:'#bcaaa4',a4:'#3e2723',bg:'#0e0c0a',bg2:'#201a14',card:'#2a221c',card2:'#342a22',border:'#40342a',text:'#e8ddd0',text2:'#9a8a7a',text3:'#6e5e4e',hover:'#2a201a',glowR:141,glowG:110,glowB:99,bodyR:62,bodyG:39,bodyB:35,body2R:141,body2G:110,body2B:99,body3R:188,body3G:170,body3B:164},
+  'ice':{n:'鍐版櫠钃?,accent:'#4dd0e1',a2:'#0097a7',a3:'#80deea',a4:'#00838f',bg:'#080c10',bg2:'#0c2030',card:'#102a40',card2:'#143248',border:'#1a3e56',text:'#c0e8f8',text2:'#6a9aac',text3:'#3a6a7c',hover:'#102438',glowR:77,glowG:208,glowB:225,bodyR:0,bodyG:131,bodyB:143,body2R:77,body2G:208,body2B:225,body3R:128,body3G:222,body3B:234},
+  'neon':{n:'闇撹櫣绮?,accent:'#f06292',a2:'#c2185b',a3:'#f48fb1',a4:'#880e4f',bg:'#10080e',bg2:'#2a1028',card:'#381838',card2:'#442044',border:'#502858',text:'#f0d0e8',text2:'#aa7098',text3:'#7a4068',hover:'#301030',glowR:240,glowG:98,glowB:146,bodyR:136,bodyG:14,bodyB:79,body2R:240,body2G:98,body2B:146,body3R:244,body3G:143,body3B:177},
+  'carbon':{n:'鐐粦缁忓吀',accent:'#78909c',a2:'#455a64',a3:'#b0bec5',a4:'#263238',bg:'#080a0c',bg2:'#101214',card:'#161a1e',card2:'#1c2026',border:'#242a32',text:'#d8dee4',text2:'#8a929c',text3:'#586068',hover:'#14181e',glowR:120,glowG:144,glowB:156,bodyR:38,bodyG:50,bodyB:56,body2R:120,body2G:144,body2B:156,body3R:176,body3G:190,body3B:197},
 };
 
 function applyTheme(id) {
@@ -878,7 +883,7 @@ let editMode = false;
 let selectedAnnot = -1;
 
 let appMode = localStorage.getItem('app_mode') || 'github';
-let localCustomPath = localStorage.getItem('local_custom_path') || 'D:\\ERS-TECH-ISP短接宝典';
+let localCustomPath = localStorage.getItem('local_custom_path') || 'D:\\ERS-TECH-ISP鐭帴瀹濆吀';
 let localPreviewMode = false;
 let pendingLocalChanges = false;
 let isSyncing = false;
@@ -908,7 +913,7 @@ function setSyncNotice(message, show) {
 
 function updateSearchStats(label) {
   const total = data.reduce((s, e) => s + e.fileCount, 0);
-  const msg = `${data.length} 个型号 · ${total} 张图片${label ? ' · ' + label : ''}`;
+  const msg = `${data.length} 涓瀷鍙?路 ${total} 寮犲浘鐗?{label ? ' 路 ' + label : ''}`;
   const s = document.getElementById('search');
   if (s) { s.placeholder = msg; s.dataset.ph = msg; }
 }
@@ -921,7 +926,7 @@ async function loadLocalLibrary(basePath, label) {
 }
 
 async function loadOnlineLibrary(skipCache) {
-  document.getElementById('search').placeholder = '正在获取数据...';
+  document.getElementById('search').placeholder = '姝ｅ湪鑾峰彇鏁版嵁...';
   
   if (!window.currentGhSha) {
     try {
@@ -950,43 +955,43 @@ async function loadOnlineLibrary(skipCache) {
       if (res.ok) {
         const ghText = await res.text();
         data = JSON.parse(ghText.replace(/^\uFEFF/, ''));
-        updateSearchStats('云端');
+        updateSearchStats('浜戠');
         return data;
       }
     } catch (e) {
       console.warn('metadata fetch failed:', ghUrl, e);
     }
   }
-  throw new Error('网络连接失败，请检查网络。');
+  throw new Error('缃戠粶杩炴帴澶辫触锛岃妫€鏌ョ綉缁溿€?);
 }
 
 async function checkLocalUpdatesOnStart() {
   if (appMode !== 'github') return false;
-  const scanPath = localCustomPath || 'D:\\ERS-TECH-ISP短接宝典';
+  const scanPath = localCustomPath || 'D:\\ERS-TECH-ISP鐭帴瀹濆吀';
   const res = await invoke('rebuild_metadata', { basePath: scanPath });
   localBaseDir = scanPath;
   localPreviewMode = true;
   data = JSON.parse(res.json.replace(/^\uFEFF/, ''));
   if (res.changed) {
     pendingLocalChanges = false;
-    setSyncNotice('<strong>自动同步中</strong>，您可先正常浏览图片...', true);
+    setSyncNotice('<strong>鑷姩鍚屾涓?/strong>锛屾偍鍙厛姝ｅ父娴忚鍥剧墖...', true);
     // Let the sync run in the background without blocking startup
     invoke('sync_to_github', { basePath: scanPath }).then(sync => {
       ghBlobCache = {};
       localImageCache = {};
       if (sync.commit_hash) {
         window.currentGhSha = sync.commit_hash;
-        setSyncNotice('<strong>已自动同步</strong>，CDN 缓存已清除，刷新后即可看到更新。', true);
-        updateSearchStats('已同步');
+        setSyncNotice('<strong>宸茶嚜鍔ㄥ悓姝?/strong>锛孋DN 缂撳瓨宸叉竻闄わ紝鍒锋柊鍚庡嵆鍙湅鍒版洿鏂般€?, true);
+        updateSearchStats('宸插悓姝?);
       } else {
         setSyncNotice('', false);
-        updateSearchStats('无新内容');
+        updateSearchStats('鏃犳柊鍐呭');
       }
     }).catch(e => {
       console.error('auto-sync failed:', e);
       pendingLocalChanges = true;
-      setSyncNotice('<strong>自动同步失败</strong>，本机已刷新但云端未更新，请手动点击同步。', true);
-      updateSearchStats('同步失败');
+      setSyncNotice('<strong>鑷姩鍚屾澶辫触</strong>锛屾湰鏈哄凡鍒锋柊浣嗕簯绔湭鏇存柊锛岃鎵嬪姩鐐瑰嚮鍚屾銆?, true);
+      updateSearchStats('鍚屾澶辫触');
     });
   } else {
     pendingLocalChanges = false;
@@ -1003,8 +1008,8 @@ async function syncLibrary() {
   const origHtml = btn ? btn.innerHTML : null;
   const scanPath = localCustomPath || 'D:\\ERS-Tech-ISP-Images';
   try {
-    if (btn) { btn.disabled = true; btn.innerHTML = '<span style="font-size:12px">⏳</span> 扫描中...'; }
-    setSyncNotice('<strong>正在扫描</strong>，请稍候...', true);
+    if (btn) { btn.disabled = true; btn.innerHTML = '<span style="font-size:12px">鈴?/span> 鎵弿涓?..'; }
+    setSyncNotice('<strong>姝ｅ湪鎵弿</strong>锛岃绋嶅€?..', true);
 
     const res = await invoke('rebuild_metadata', { basePath: scanPath });
     localBaseDir = scanPath;
@@ -1025,8 +1030,8 @@ async function syncLibrary() {
     buildBrandSidebar(!!searchTerm);
     if (currentBrand && currentModel) renderGrid(currentBrand, currentModel);
 
-    if (btn) { btn.disabled = false; btn.innerHTML = `<span style="font-size:12px">⏳</span> 同步中...`; }
-    setSyncNotice('<strong>正在后台同步到云端</strong>，您可以继续浏览...', true);
+    if (btn) { btn.disabled = false; btn.innerHTML = `<span style="font-size:12px">鈴?/span> 鍚屾涓?..`; }
+    setSyncNotice('<strong>姝ｅ湪鍚庡彴鍚屾鍒颁簯绔?/strong>锛屾偍鍙互缁х画娴忚...', true);
 
     invoke('sync_to_github', { basePath: scanPath }).then(async sync => {
       pendingLocalChanges = false;
@@ -1053,19 +1058,19 @@ async function syncLibrary() {
           }
           buildBrandSidebar(!!searchTerm);
           if (currentBrand && currentModel) renderGrid(currentBrand, currentModel);
-          setSyncNotice('<strong>同步完成</strong> CDN 缓存已清除，云端已更新。', true);
-          updateSearchStats('已同步');
+          setSyncNotice('<strong>鍚屾瀹屾垚</strong> CDN 缂撳瓨宸叉竻闄わ紝浜戠宸叉洿鏂般€?, true);
+          updateSearchStats('宸插悓姝?);
         } catch(e) {
           localPreviewMode = true;
-          setSyncNotice('<strong>同步完成</strong>，但云端数据刷新失败，已切换至本地预览。', true);
-          updateSearchStats('本地预览');
+          setSyncNotice('<strong>鍚屾瀹屾垚</strong>锛屼絾浜戠鏁版嵁鍒锋柊澶辫触锛屽凡鍒囨崲鑷虫湰鍦伴瑙堛€?, true);
+          updateSearchStats('鏈湴棰勮');
         }
       } else {
         localPreviewMode = true;
-        setSyncNotice(`<strong>同步完成</strong>，${sync.commit_hash ? '其他人稍后即可看到更新。' : '没有新内容需要同步。'}`, true);
-        updateSearchStats(sync.commit_hash ? '已同步' : '无新内容');
+        setSyncNotice(`<strong>鍚屾瀹屾垚</strong>锛?{sync.commit_hash ? '鍏朵粬浜虹◢鍚庡嵆鍙湅鍒版洿鏂般€? : '娌℃湁鏂板唴瀹归渶瑕佸悓姝ャ€?}`, true);
+        updateSearchStats(sync.commit_hash ? '宸插悓姝? : '鏃犳柊鍐呭');
       }
-      if (btn) { btn.innerHTML = `<span style="font-size:12px">✅</span> ${res.count}条 · 已同步`; }
+      if (btn) { btn.innerHTML = `<span style="font-size:12px">鉁?/span> ${res.count}鏉?路 宸插悓姝; }
       console.log('rebuild + sync:', res, sync);
       setTimeout(() => { if (btn) { btn.innerHTML = origHtml; } }, 5000);
       isSyncing = false;
@@ -1073,20 +1078,20 @@ async function syncLibrary() {
       console.error('sync to cloud failed:', e);
       pendingLocalChanges = true;
       const errMsg = (typeof e === 'string') ? e : (e.message || JSON.stringify(e));
-      setSyncNotice(`<strong>⚠️ 云端同步失败</strong><br><span style="font-size:12px;opacity:0.7">${errMsg}</span><br>本机数据已保存，<strong>请稍后再点一次同步</strong>，直到成功为止！`, true);
-      if (btn) { btn.innerHTML = '<span style="font-size:12px">⚠️</span> 同步失败'; }
+      setSyncNotice(`<strong>鈿狅笍 浜戠鍚屾澶辫触</strong><br><span style="font-size:12px;opacity:0.7">${errMsg}</span><br>鏈満鏁版嵁宸蹭繚瀛橈紝<strong>璇风◢鍚庡啀鐐逛竴娆″悓姝?/strong>锛岀洿鍒版垚鍔熶负姝紒`, true);
+      if (btn) { btn.innerHTML = '<span style="font-size:12px">鈿狅笍</span> 鍚屾澶辫触'; }
       setTimeout(() => { if (btn) { btn.innerHTML = origHtml; } }, 8000);
       isSyncing = false;
-      // 弹出醒目对话框，确保用户不会忽略推送失败
+      // 寮瑰嚭閱掔洰瀵硅瘽妗嗭紝纭繚鐢ㄦ埛涓嶄細蹇界暐鎺ㄩ€佸け璐?
       setTimeout(() => {
-        alert(`❌ 云端同步失败！\n\n原因：${errMsg}\n\n您的本机修改（新增/删除图片）已保存在本地，但尚未推送到云端。\n\n请稍后再点一次【同步】按钮，直到提示"同步完成"为止。\n否则重启软件后，云端数据不会包含您最新的修改。`);
+        alert(`鉂?浜戠鍚屾澶辫触锛乗n\n鍘熷洜锛?{errMsg}\n\n鎮ㄧ殑鏈満淇敼锛堟柊澧?鍒犻櫎鍥剧墖锛夊凡淇濆瓨鍦ㄦ湰鍦帮紝浣嗗皻鏈帹閫佸埌浜戠銆俓n\n璇风◢鍚庡啀鐐逛竴娆°€愬悓姝ャ€戞寜閽紝鐩村埌鎻愮ず"鍚屾瀹屾垚"涓烘銆俓n鍚﹀垯閲嶅惎杞欢鍚庯紝浜戠鏁版嵁涓嶄細鍖呭惈鎮ㄦ渶鏂扮殑淇敼銆俙);
       }, 100);
     });
   } catch (e) {
     console.error('scan failed:', e);
     pendingLocalChanges = true;
-    setSyncNotice('<strong>扫描失败</strong>，请检查图片目录路径是否正确。', true);
-    if (btn) { btn.innerHTML = '<span style="font-size:12px">⚠️</span> 扫描失败'; }
+    setSyncNotice('<strong>鎵弿澶辫触</strong>锛岃妫€鏌ュ浘鐗囩洰褰曡矾寰勬槸鍚︽纭€?, true);
+    if (btn) { btn.innerHTML = '<span style="font-size:12px">鈿狅笍</span> 鎵弿澶辫触'; }
     setTimeout(() => { if (btn) { btn.disabled = false; btn.innerHTML = origHtml; } }, 5000);
     isSyncing = false;
   }
@@ -1096,7 +1101,7 @@ async function rebuildMetadata() {
   return syncLibrary();
 }
 
-// ── Online Update Functions ──────────────────────────────────────────────────
+// 鈹€鈹€ Online Update Functions 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
 
 
 
@@ -1113,7 +1118,7 @@ function _isVersionNewer(a, b) {
   return false;
 }
 
-// ===== License 验证系统 =====
+// ===== License 楠岃瘉绯荤粺 =====
 
 async function checkAuthStatus() {
   try {
@@ -1159,7 +1164,7 @@ function showLicenseLoading(show) {
 
 async function verifyLicenseKey() {
   const key = document.getElementById('license-key-input').value.trim();
-  if (!key) { showLicenseError('请输入授权码'); return; }
+  if (!key) { showLicenseError('璇疯緭鍏ユ巿鏉冪爜'); return; }
   hideLicenseError();
   showLicenseLoading(true);
   try {
@@ -1169,7 +1174,7 @@ async function verifyLicenseKey() {
     // Re-run init after successful auth
     await init();
   } catch (e) {
-    showLicenseError('授权码无效: ' + e);
+    showLicenseError('鎺堟潈鐮佹棤鏁? ' + e);
   } finally {
     showLicenseLoading(false);
   }
@@ -1178,12 +1183,12 @@ async function verifyLicenseKey() {
 async function verifyLicenseUser() {
   const username = document.getElementById('license-user-input').value.trim();
   const password = document.getElementById('license-pass-input').value.trim();
-  if (!username || !password) { showLicenseError('请输入用户名和密码'); return; }
+  if (!username || !password) { showLicenseError('璇疯緭鍏ョ敤鎴峰悕鍜屽瘑鐮?); return; }
   hideLicenseError();
   showLicenseLoading(true);
   try {
     await invoke('verify_license', { username: username, password: password });
-    // 记住密码：保存凭据到 localStorage
+    // 璁颁綇瀵嗙爜锛氫繚瀛樺嚟鎹埌 localStorage
     const remember = document.getElementById('remember-me-checkbox').checked;
     if (remember) {
       localStorage.setItem('saved_username', username);
@@ -1198,7 +1203,7 @@ async function verifyLicenseUser() {
     localStorage.setItem('license_verified', 'true');
     await init();
   } catch (e) {
-    showLicenseError('登录失败: ' + e);
+    showLicenseError('鐧诲綍澶辫触: ' + e);
   } finally {
     showLicenseLoading(false);
   }
@@ -1213,11 +1218,11 @@ async function _getAppVersion() {
   return '0.1.0';
 }
 
-// Startup version block check — called at the very beginning of init()
+// Startup version block check 鈥?called at the very beginning of init()
 
 
 
-// Auto-check for incremental updates on startup: detect → download one by one → restart
+// Auto-check for incremental updates on startup: detect 鈫?download one by one 鈫?restart
 async function _autoUpdater() {
   setTimeout(async () => {
     try {
@@ -1236,7 +1241,7 @@ async function _autoUpdater() {
       bar.id = 'auto-update-bar';
       bar.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:rgba(30,30,40,.95);border-top:1px solid rgba(74,222,128,.3);padding:14px 24px;display:flex;align-items:center;justify-content:center;gap:20px;z-index:99999;font-size:13px;color:#4ade80;backdrop-filter:blur(10px);';
       bar.innerHTML = '<div style="display:flex;align-items:center;gap:12px;flex:1;max-width:600px;">' +
-        '<span id="auto-update-label" style="white-space:nowrap;color:var(--text3);font-size:12px;">准备更新...</span>' +
+        '<span id="auto-update-label" style="white-space:nowrap;color:var(--text3);font-size:12px;">鍑嗗鏇存柊...</span>' +
         '<div style="flex:1;background:rgba(255,255,255,.08);height:6px;border-radius:3px;overflow:hidden;">' +
         '<div id="auto-update-bar-fill" style="width:0%;height:100%;background:linear-gradient(90deg,#4ade80,#22c55e);border-radius:3px;transition:width 0.3s ease;"></div>' +
         '</div>' +
@@ -1252,7 +1257,7 @@ async function _autoUpdater() {
       for (let i = 0; i < files.length; i++) {
         const f = files[i];
         const fileName = f.path.split('/').pop();
-        if (label) label.textContent = '正在下载 ' + fileName + '...';
+        if (label) label.textContent = '姝ｅ湪涓嬭浇 ' + fileName + '...';
 
         try {
           await invoke('download_single_file', { file: f });
@@ -1267,15 +1272,15 @@ async function _autoUpdater() {
       }
 
       if (completed > 0) {
-        if (label) label.textContent = '✅ 更新完成！';
+        if (label) label.textContent = '鉁?鏇存柊瀹屾垚锛?;
         if (fill) fill.style.background = 'linear-gradient(90deg,#4ade80,#22c55e)';
 
         await invoke('save_update_manifest').catch(() => {});
 
         const actions = document.createElement('div');
         actions.style.cssText = 'display:flex;gap:8px;align-items:center;';
-        actions.innerHTML = '<button onclick="invoke(\'restart_app\')" style="padding:6px 16px;background:rgba(74,222,128,.2);border:1px solid rgba(74,222,128,.4);color:#4ade80;border-radius:6px;cursor:pointer;font-size:12px;white-space:nowrap;">重启程序</button>' +
-          '<button onclick="this.parentElement.parentElement.remove()" style="padding:6px 12px;background:transparent;border:1px solid rgba(255,255,255,.1);color:var(--text3);border-radius:6px;cursor:pointer;font-size:12px;white-space:nowrap;">稍后</button>';
+        actions.innerHTML = '<button onclick="invoke(\'restart_app\')" style="padding:6px 16px;background:rgba(74,222,128,.2);border:1px solid rgba(74,222,128,.4);color:#4ade80;border-radius:6px;cursor:pointer;font-size:12px;white-space:nowrap;">閲嶅惎绋嬪簭</button>' +
+          '<button onclick="this.parentElement.parentElement.remove()" style="padding:6px 12px;background:transparent;border:1px solid rgba(255,255,255,.1);color:var(--text3);border-radius:6px;cursor:pointer;font-size:12px;white-space:nowrap;">绋嶅悗</button>';
         bar.appendChild(actions);
       } else {
         bar.remove();
@@ -1288,7 +1293,7 @@ async function _autoUpdater() {
   }, 2000);
 }
 
-// Settings modal — show current version on open
+// Settings modal 鈥?show current version on open
 async function _settingsShowVersion() {
   const el = document.getElementById('settings-current-version');
   if (el) el.textContent = 'v' + (await _getAppVersion());
@@ -1299,7 +1304,7 @@ async function init() {
   // License verification check
   const isAuth = await checkAuthStatus();
   if (!isAuth) {
-    // 先尝试记住密码自动登录，不显示弹窗
+    // 鍏堝皾璇曡浣忓瘑鐮佽嚜鍔ㄧ櫥褰曪紝涓嶆樉绀哄脊绐?
     if (localStorage.getItem('remember_me') === 'true') {
       const savedUser = localStorage.getItem('saved_username');
       const savedPass = localStorage.getItem('saved_password');
@@ -1307,9 +1312,9 @@ async function init() {
         try {
           await invoke('verify_license', { username: savedUser, password: savedPass });
           localStorage.setItem('license_verified', 'true');
-          // 登录成功，继续初始化
+          // 鐧诲綍鎴愬姛锛岀户缁垵濮嬪寲
         } catch (e) {
-          // 自动登录失败，显示弹窗
+          // 鑷姩鐧诲綍澶辫触锛屾樉绀哄脊绐?
           showLicenseModal();
           return;
         }
@@ -1343,7 +1348,7 @@ async function init() {
   // Removed cdn_node setting
 
   try {
-    document.getElementById('search').placeholder = '正在加载数据...'; document.getElementById('search').dataset.ph = '正在加载数据...';
+    document.getElementById('search').placeholder = '姝ｅ湪鍔犺浇鏁版嵁...'; document.getElementById('search').dataset.ph = '姝ｅ湪鍔犺浇鏁版嵁...';
     
     const btnRebuild = document.getElementById('btn-rebuild');
     if (btnRebuild) {
@@ -1356,7 +1361,7 @@ async function init() {
         const json = await invoke('get_metadata_from_path', { basePath: localBaseDir });
         const cleanJson = json.replace(/^\uFEFF/, '');
         data = JSON.parse(cleanJson);
-        if (!data || !data.length) throw new Error('空数据');
+        if (!data || !data.length) throw new Error('绌烘暟鎹?);
       } catch(e) {
         console.warn('get_metadata_from_path failed, trying rebuild:', e, 'path:', localBaseDir);
         try {
@@ -1377,21 +1382,21 @@ async function init() {
           }
         }
       }
-      updateSearchStats('本地');
+      updateSearchStats('鏈湴');
     } else {
       try {
         await loadOnlineLibrary();
       } catch (e) {
         console.error('Cloud load failed:', e);
-        document.getElementById('empty').innerHTML = '<div class="big">☁️</div><div>云端连接失败<br><small>请检查网络连接后重启软件</small></div>';
+        document.getElementById('empty').innerHTML = '<div class="big">鈽侊笍</div><div>浜戠杩炴帴澶辫触<br><small>璇锋鏌ョ綉缁滆繛鎺ュ悗閲嶅惎杞欢</small></div>';
       }
     }
     console.log('init done: mode=' + appMode + ', entries=' + data.length + ', 360 entries=' + data.filter(function(d) { return d.brand === '360' }).length);
     document.getElementById('search').dataset.ph = document.getElementById('search').placeholder;
     buildBrandSidebar();
   } catch (e) {
-    document.getElementById('search').placeholder = '加载失败'; document.getElementById('search').dataset.ph = '加载失败';
-    document.getElementById('empty').innerHTML = '<div class="big">⚠️</div><div>数据加载失败<br><small>' + (e.message || e) + '</small></div>';
+    document.getElementById('search').placeholder = '鍔犺浇澶辫触'; document.getElementById('search').dataset.ph = '鍔犺浇澶辫触';
+    document.getElementById('empty').innerHTML = '<div class="big">鈿狅笍</div><div>鏁版嵁鍔犺浇澶辫触<br><small>' + (e.message || e) + '</small></div>';
   }
 }
 
@@ -1405,7 +1410,7 @@ async function getImageUrl(brand, model, file) {
       return await promise;
     } catch (e) {
       console.error(e);
-      return 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="140"><rect fill="%23161b22" width="200" height="140"/><text fill="%238b949e" font-size="12" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">加载失败</text></svg>';
+      return 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="140"><rect fill="%23161b22" width="200" height="140"/><text fill="%238b949e" font-size="12" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">鍔犺浇澶辫触</text></svg>';
     }
   } else if (appMode === 'github') {
     const cacheKey = `gh_${brand}/${model}/${file}`;
@@ -1422,26 +1427,26 @@ async function fetchAndDecrypt(fetchUrl, label) {
   console.log('[fetchAndDecrypt] ' + label + ': ' + fetchUrl);
   const dataUrl = await invoke('fetch_and_decrypt', { url: fetchUrl });
   console.log('[fetchAndDecrypt] Got data URL from ' + label + ', len=' + dataUrl.length);
-  if (!dataUrl || !dataUrl.startsWith('data:')) throw new Error(label + ' 返回无效数据');
+  if (!dataUrl || !dataUrl.startsWith('data:')) throw new Error(label + ' 杩斿洖鏃犳晥鏁版嵁');
   return dataUrl;
 }
     
     let lastErr1 = null, lastErr2 = null, lastErr3 = null;
     const promise = fetchAndDecrypt(customUrl, 'custom').catch(e => {
       lastErr1 = e;
-      console.warn('自定义域名加载失败, 尝试 jsDelivr CDN:', e);
+      console.warn('鑷畾涔夊煙鍚嶅姞杞藉け璐? 灏濊瘯 jsDelivr CDN:', e);
       return fetchAndDecrypt(cdnUrl, 'CDN');
     }).catch(e2 => {
       lastErr2 = e2;
-      console.warn('CDN 加载失败, 尝试 GitHub 源:', e2);
+      console.warn('CDN 鍔犺浇澶辫触, 灏濊瘯 GitHub 婧?', e2);
       return fetchAndDecrypt(fallbackUrl, 'raw');
     }).catch(e3 => {
       lastErr3 = e3;
-      console.error('所有源均加载失败:', e3);
+      console.error('鎵€鏈夋簮鍧囧姞杞藉け璐?', e3);
       const fmt = e => (e && typeof e === 'object' && e.message) ? e.message : String(e);
       const msg = fmt(lastErr1) + ' | ' + fmt(lastErr2) + ' | ' + fmt(lastErr3);
-      alert('图片加载失败:\n' + msg);
-      return 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="260" height="140"><rect fill="%23161b22" width="260" height="140"/><text fill="%23f85149" font-size="11" x="50%" y="40%" text-anchor="middle" dominant-baseline="middle">云端加载失败</text><text fill="%238b949e" font-size="9" x="50%" y="70%" text-anchor="middle">' + encodeURIComponent(msg).substring(0,80) + '</text></svg>';
+      alert('鍥剧墖鍔犺浇澶辫触:\n' + msg);
+      return 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="260" height="140"><rect fill="%23161b22" width="260" height="140"/><text fill="%23f85149" font-size="11" x="50%" y="40%" text-anchor="middle" dominant-baseline="middle">浜戠鍔犺浇澶辫触</text><text fill="%238b949e" font-size="9" x="50%" y="70%" text-anchor="middle">' + encodeURIComponent(msg).substring(0,80) + '</text></svg>';
     });
     
     ghBlobCache[cacheKey] = promise;
@@ -1449,9 +1454,9 @@ async function fetchAndDecrypt(fetchUrl, label) {
   }
 }
 
-// ===== 图片懒加载核心函数 =====
+// ===== 鍥剧墖鎳掑姞杞芥牳蹇冨嚱鏁?=====
 function observeVisibleCards() {
-  // 清理旧的 observer
+  // 娓呯悊鏃х殑 observer
   if (gridObserver) { gridObserver.disconnect(); gridObserver = null; }
   imageLoadQueue = [];
   activeImageLoads = 0;
@@ -1465,13 +1470,13 @@ function observeVisibleCards() {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const card = entry.target;
-        gridObserver.unobserve(card); // 只触发一次
+        gridObserver.unobserve(card); // 鍙Е鍙戜竴娆?
         queueImageLoad(card);
       }
     });
   }, {
-    root: grid.parentElement, // 以 main 容器为视口
-    rootMargin: '200px 0px',  // 提前200px开始加载
+    root: grid.parentElement, // 浠?main 瀹瑰櫒涓鸿鍙?
+    rootMargin: '200px 0px',  // 鎻愬墠200px寮€濮嬪姞杞?
     threshold: 0
   });
 
@@ -1486,7 +1491,7 @@ function queueImageLoad(card) {
 function processImageQueue() {
   while (activeImageLoads < MAX_CONCURRENT_LOADS && imageLoadQueue.length > 0) {
     const card = imageLoadQueue.shift();
-    // 检查卡片是否还在 DOM 中（可能已被清除）
+    // 妫€鏌ュ崱鐗囨槸鍚﹁繕鍦?DOM 涓紙鍙兘宸茶娓呴櫎锛?
     if (!card.isConnected || card.dataset.needsLoad !== 'true') continue;
     card.dataset.needsLoad = 'false';
     activeImageLoads++;
@@ -1499,10 +1504,10 @@ function processImageQueue() {
       const img = card.querySelector('.thumb');
       if (img) img.src = url;
     }).catch(err => {
-      console.warn('图片加载失败:', file, err);
+      console.warn('鍥剧墖鍔犺浇澶辫触:', file, err);
     }).finally(() => {
       activeImageLoads--;
-      processImageQueue(); // 加载下一张
+      processImageQueue(); // 鍔犺浇涓嬩竴寮?
     });
   }
 }
@@ -1539,7 +1544,7 @@ function buildBrandSidebar(searchOnly) {
     const isActive = brand === currentBrand;
     const div = document.createElement('div');
     div.className = 'brand' + (isActive ? ' active' : '');
-    div.innerHTML = `<span class="arrow ${isActive ? 'open' : ''}">▶</span><span>${brand}</span><span class="count">${b.models.length}</span>`;
+    div.innerHTML = `<span class="arrow ${isActive ? 'open' : ''}">鈻?/span><span>${brand}</span><span class="count">${b.models.length}</span>`;
     div.onclick = () => selectBrand(brand);
     sidebarList.appendChild(div);
 
@@ -1549,7 +1554,7 @@ function buildBrandSidebar(searchOnly) {
         md.className = 'model' + (model === currentModel ? ' active' : '');
         const entry = data.find(d => d.brand === brand && d.model === model);
         const fc = entry ? entry.fileCount : 0;
-        md.innerHTML = `<span class="icon">📄</span>${model} <span class="count">${fc}</span>`;
+        md.innerHTML = `<span class="icon">馃搫</span>${model} <span class="count">${fc}</span>`;
         md.onclick = (e) => { e.stopPropagation(); selectModel(brand, model) };
         sidebarList.appendChild(md);
       });
@@ -1557,7 +1562,7 @@ function buildBrandSidebar(searchOnly) {
   });
 
   // Ad links fixed at bottom of sidebar
-  sidebarAds.innerHTML = '<div class="ad-link" onclick="openExternal(\'https://shopee.com.my/shop/146154950\')" role="button" tabindex="0">🛒 Shopee 店铺</div><div class="ad-link" onclick="openExternal(\'https://www.tiktok.com/@bavenyang?_r=1&_t=ZS-96Mu2A5wTzM\')" role="button" tabindex="0">🎵 TikTok 关注</div>';
+  sidebarAds.innerHTML = '<div class="ad-link" onclick="openExternal(\'https://shopee.com.my/shop/146154950\')" role="button" tabindex="0">馃洅 Shopee 搴楅摵</div><div class="ad-link" onclick="openExternal(\'https://www.tiktok.com/@bavenyang?_r=1&_t=ZS-96Mu2A5wTzM\')" role="button" tabindex="0">馃幍 TikTok 鍏虫敞</div>';
 }
 
 function selectBrand(brand) {
@@ -1567,7 +1572,7 @@ function selectBrand(brand) {
     closeViewer();
     document.getElementById('grid').style.display = 'none';
     document.getElementById('empty').style.display = 'flex';
-    document.getElementById('empty').innerHTML = '<div class="big">📱</div><div>选择一个品牌开始浏览</div>';
+    document.getElementById('empty').innerHTML = '<div class="big">馃摫</div><div>閫夋嫨涓€涓搧鐗屽紑濮嬫祻瑙?/div>';
     buildBrandSidebar(!!searchTerm);
     return;
   }
@@ -1603,7 +1608,7 @@ async function renderGrid(brand, model) {
 
   grid.style.display = 'none';
   empty.style.display = 'flex';
-  empty.innerHTML = '<div class="big">⏳</div><div>正在加载列表中...</div>';
+  empty.innerHTML = '<div class="big">鈴?/div><div>姝ｅ湪鍔犺浇鍒楄〃涓?..</div>';
 
   if (appMode === 'cloud' && brand && model) {
     await prefetchCloudModelFiles(brand, model);
@@ -1637,7 +1642,7 @@ async function renderGrid(brand, model) {
 
   if (items.length === 0) {
     empty.style.display = 'flex';
-    empty.innerHTML = searchTerm ? '<div class="big">🔍</div><div>未找到匹配 "<span style="color:var(--accent)">'+searchTerm+'</span>"</div>' : '<div class="big">📱</div><div>请选择一个型号</div>';
+    empty.innerHTML = searchTerm ? '<div class="big">馃攳</div><div>鏈壘鍒板尮閰?"<span style="color:var(--accent)">'+searchTerm+'</span>"</div>' : '<div class="big">馃摫</div><div>璇烽€夋嫨涓€涓瀷鍙?/div>';
     return;
   }
 
@@ -1645,20 +1650,20 @@ async function renderGrid(brand, model) {
   grid.style.display = 'grid';
   lbItems = items;
 
-  // 清理旧的 observer，防止对已删除的 DOM 元素操作
+  // 娓呯悊鏃х殑 observer锛岄槻姝㈠宸插垹闄ょ殑 DOM 鍏冪礌鎿嶄綔
   if (gridObserver) { gridObserver.disconnect(); gridObserver = null; }
   imageLoadQueue = [];
   activeImageLoads = 0;
 
   const frag = document.createDocumentFragment();
-  // 限制动画延迟，避免大量卡片时动画堆积
-  const maxAnimDelay = 0.6; // 最多0.6秒内所有卡片出现
+  // 闄愬埗鍔ㄧ敾寤惰繜锛岄伩鍏嶅ぇ閲忓崱鐗囨椂鍔ㄧ敾鍫嗙Н
+  const maxAnimDelay = 0.6; // 鏈€澶?.6绉掑唴鎵€鏈夊崱鐗囧嚭鐜?
   items.forEach((item, idx) => {
     const card = document.createElement('div');
     card.className = 'card';
     const delay = Math.min(idx * 0.03, maxAnimDelay);
     card.style.animation = 'fadeIn .3s ease-out ' + delay + 's both';
-    // 存储图片信息到 data 属性，不立即加载
+    // 瀛樺偍鍥剧墖淇℃伅鍒?data 灞炴€э紝涓嶇珛鍗冲姞杞?
     card.dataset.brand = item.brand;
     card.dataset.model = item.model;
     card.dataset.file = item.file;
@@ -1671,7 +1676,7 @@ async function renderGrid(brand, model) {
   grid.innerHTML = '';
   grid.appendChild(frag);
 
-  // 使用 IntersectionObserver 延迟加载可视区域的图片
+  // 浣跨敤 IntersectionObserver 寤惰繜鍔犺浇鍙鍖哄煙鐨勫浘鐗?
   requestAnimationFrame(() => observeVisibleCards());
 }
 
@@ -1707,7 +1712,7 @@ document.getElementById('search').addEventListener('input', function() {
       document.getElementById('grid').style.display = 'none';
       document.getElementById('viewer').style.display = 'none';
       document.getElementById('empty').style.display = 'flex';
-      document.getElementById('empty').innerHTML = '<div class="big">🔍</div><div>未找到匹配 "<span style="color:var(--accent)">'+searchTerm+'</span>"</div>';
+      document.getElementById('empty').innerHTML = '<div class="big">馃攳</div><div>鏈壘鍒板尮閰?"<span style="color:var(--accent)">'+searchTerm+'</span>"</div>';
     }
   } else {
     searchTerm = '';
@@ -1715,7 +1720,7 @@ document.getElementById('search').addEventListener('input', function() {
     document.getElementById('grid').style.display = 'none';
     document.getElementById('viewer').style.display = 'none';
     document.getElementById('empty').style.display = 'flex';
-    document.getElementById('empty').innerHTML = '<div class="big">📱</div><div>选择一个品牌开始浏览</div>';
+    document.getElementById('empty').innerHTML = '<div class="big">馃摫</div><div>閫夋嫨涓€涓搧鐗屽紑濮嬫祻瑙?/div>';
   }
 });
 
@@ -1943,7 +1948,7 @@ function startDraw(e) {
   startX = pos.x; startY = pos.y;
   if (annotTool === 'free') { freePoints = [{ x: pos.x, y: pos.y }] }
   else if (annotTool === 'text') {
-    const text = prompt('输入标注文字:');
+    const text = prompt('杈撳叆鏍囨敞鏂囧瓧:');
     if (text) {
       annotHistory.push({ type: 'text', x: startX, y: startY, text, color: annotColor, size: annotSize });
       redrawCanvas(); saveAnnotations();
@@ -2013,7 +2018,7 @@ async function saveAnnotations() {
   try {
     await invoke('save_annotation', { brand: item.brand, model: item.model, file: item.file, content });
   } catch (e) {
-    console.error('保存标注文件失败:', e);
+    console.error('淇濆瓨鏍囨敞鏂囦欢澶辫触:', e);
   }
 }
 
@@ -2034,7 +2039,7 @@ async function loadAnnotations() {
       }
     }
   } catch (e) {
-    console.error('加载标注文件失败:', e);
+    console.error('鍔犺浇鏍囨敞鏂囦欢澶辫触:', e);
     const saved = localStorage.getItem('annot_' + key);
     if (saved) {
       try { annotHistory = JSON.parse(saved) } catch(err) { annotHistory = [] }
@@ -2052,7 +2057,7 @@ function undoAnnot() {
 }
 
 function clearAnnot() {
-  if (confirm('清除所有标注?')) {
+  if (confirm('娓呴櫎鎵€鏈夋爣娉?')) {
     annotHistory = [];
     redrawCanvas();
     saveAnnotations();
@@ -2253,10 +2258,10 @@ function toggleAdvancedSettings() {
   const arrow = document.getElementById('adv-arrow');
   if (fields.style.display === 'none') {
     fields.style.display = 'block';
-    arrow.textContent = '▼';
+    arrow.textContent = '鈻?;
   } else {
     fields.style.display = 'none';
-    arrow.textContent = '▶';
+    arrow.textContent = '鈻?;
   }
 }
 
@@ -2271,7 +2276,7 @@ async function winClose() {
 }
 async function uploadImages() {
   if (!currentBrand || !currentModel) {
-    alert("请先在左侧选择品牌和型号");
+    alert("璇峰厛鍦ㄥ乏渚ч€夋嫨鍝佺墝鍜屽瀷鍙?);
     return;
   }
   
@@ -2298,7 +2303,7 @@ async function uploadImages() {
 
     overlay.style.display = 'flex';
     bar.style.width = '0%';
-    text.textContent = '请在弹出的对话框中选择图片...';
+    text.textContent = '璇峰湪寮瑰嚭鐨勫璇濇涓€夋嫨鍥剧墖...';
     filename.textContent = '';
     
     await invoke('upload_local_images', { basePath: localBaseDir, brand: currentBrand, model: currentModel });
@@ -2310,7 +2315,7 @@ async function uploadImages() {
     syncLibrary();
   } catch (e) {
     console.error(e);
-    alert("上传失败: " + e);
+    alert("涓婁紶澶辫触: " + e);
     document.getElementById('upload-progress-overlay').style.display = 'none';
   }
 }
@@ -2328,5 +2333,7 @@ if (window.__TAURI__ && window.__TAURI__.event && window.__TAURI__.event.listen)
 
 init();
 </script>
-</body>
+<script src="boardview.js"></script></body>
 </html>
+
+
