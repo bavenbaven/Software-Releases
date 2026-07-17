@@ -1270,16 +1270,13 @@ async function _autoUpdater() {
         if (label) label.textContent = '✅ 更新完成！';
         if (fill) fill.style.background = 'linear-gradient(90deg,#4ade80,#22c55e)';
 
+        await invoke('save_update_manifest').catch(() => {});
+
         const actions = document.createElement('div');
         actions.style.cssText = 'display:flex;gap:8px;align-items:center;';
         actions.innerHTML = '<button onclick="invoke(\'restart_app\')" style="padding:6px 16px;background:rgba(74,222,128,.2);border:1px solid rgba(74,222,128,.4);color:#4ade80;border-radius:6px;cursor:pointer;font-size:12px;white-space:nowrap;">重启程序</button>' +
           '<button onclick="this.parentElement.parentElement.remove()" style="padding:6px 12px;background:transparent;border:1px solid rgba(255,255,255,.1);color:var(--text3);border-radius:6px;cursor:pointer;font-size:12px;white-space:nowrap;">稍后</button>';
         bar.appendChild(actions);
-
-        // Save manifest to prevent re-downloading next time
-        try {
-          const client_manifest = await invoke('fetch_versions_json');
-        } catch(e) {}
       } else {
         bar.remove();
       }
