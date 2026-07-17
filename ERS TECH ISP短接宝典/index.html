@@ -1217,36 +1217,36 @@ async function _getAppVersion() {
 
 
 
-// Auto-check and apply ALL incremental updates on startup
-async function _autoIncrementalUpdate() {
-  // Wait 2s after startup, then run in background
+// Auto-check for incremental updates on startup: detect → download → restart → apply
+async function _autoUpdater() {
   setTimeout(async () => {
     try {
-      // Update version display
       const verEl = document.getElementById('settings-current-version');
       if (verEl) verEl.textContent = 'v' + (await _getAppVersion());
 
       const result = await invoke('check_incremental_update');
       if (!result || !result.changed_files || result.changed_files.length === 0) return;
 
-      console.log('[AutoUpdate] Found ' + result.changed_files.length + ' files to update, downloading all...');
+      const totalKB = (result.total_download_size / 1024).toFixed(1);
+      console.log('[AutoUpdate] Found ' + result.changed_files.length + ' files (' + totalKB + 'KB)');
 
-      // Download ALL files at once
+      const bar = document.createElement('div');
+      bar.id = 'auto-update-bar';
+      bar.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:rgba(74,222,128,.12);border-top:1px solid rgba(74,222,128,.3);padding:12px 20px;display:flex;align-items:center;justify-content:center;gap:16px;z-index:99999;font-size:13px;color:#4ade80;';
+      bar.innerHTML = '<span>⏳ 正在下载更新 (' + result.changed_files.length + '个文件, ' + totalKB + 'KB)...</span>';
+      document.body.appendChild(bar);
+
       const updated = await invoke('apply_incremental_update', {
         files: result.changed_files
       });
 
       if (updated && updated.length > 0) {
-        console.log('[AutoUpdate] Updated ' + updated.length + ' files');
-
-        // Show restart notification bar
-        const bar = document.createElement('div');
-        bar.id = 'auto-update-bar';
-        bar.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:rgba(74,222,128,.15);border-top:1px solid rgba(74,222,128,.3);padding:12px 20px;display:flex;align-items:center;justify-content:center;gap:16px;z-index:99999;font-size:13px;color:#4ade80;';
-        bar.innerHTML = '<span>✅ 已自动更新 ' + updated.length + ' 个文件，重启后生效</span>' +
+        console.log('[AutoUpdate] Downloaded ' + updated.length + ' files, restarting...');
+        bar.innerHTML = '<span>✅ 已下载 ' + updated.length + ' 个文件，重启后生效</span>' +
           '<button onclick="invoke(\'close_app\')" style="padding:6px 16px;background:rgba(74,222,128,.2);border:1px solid rgba(74,222,128,.4);color:#4ade80;border-radius:6px;cursor:pointer;font-size:12px;">重启程序</button>' +
           '<button onclick="this.parentElement.remove()" style="padding:6px 12px;background:transparent;border:1px solid rgba(255,255,255,.1);color:var(--text3);border-radius:6px;cursor:pointer;font-size:12px;">稍后</button>';
-        document.body.appendChild(bar);
+      } else {
+        bar.remove();
       }
     } catch (e) {
       console.log('[AutoUpdate] Non-critical: ' + e);
@@ -1297,7 +1297,7 @@ async function init() {
   setSyncNotice('', false);
 
   // Auto-check incremental update on startup (non-blocking)
-  _autoIncrementalUpdate();
+  _autoUpdater();
 
   document.querySelectorAll('input[name="work-mode"]').forEach(function(r) { r.checked = (r.value === appMode); });
   document.getElementById('setting-local-path').value = localCustomPath;
