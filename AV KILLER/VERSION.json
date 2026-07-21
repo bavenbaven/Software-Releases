@@ -1,0 +1,11 @@
+{
+  "version": "3.3.0",
+  "pub_date": "2026-07-17T00:00:00Z",
+  "notes": "[MIN_VERSION:3.0.0] ERS Tech AV KILLER v3.3.0 - 修复：重大性能优化，所有ADB操作改为异步不再卡UI；修复CMD窗口闪烁问题；病毒库更新至2440个真实恶意软件条目",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRektIbDJ3c0MzM1dtazJZMG1VNEVLakFkdjgzR3lCN3hVWVdnaGZlVmlUNnFrd0hleEZEVEtBaUQ0SjdTVWFSWkk4d2RyVFQ3TklsUVFEUFE2MkxOWUxEZmxKcmlnRWdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MjY0MzkzCWZpbGU6RVJTIFRlY2ggQVYgS2lsbGVyXzMuMy4wX3g2NC1zZXR1cC5leGUKVWw3cjk4TFJzMmo5b2hjTDE3bjZpa2kxcTNlZVU2R3dGZm4yY0hTMk5tT2dXMGl3bmxqNWNueFk3dWRtNnhsT0FRUksxMWg5WkprRms2SFlNSjZPRGc9PQo=",
+      "url": "https://github.com/bavenbaven/Software-Releases/raw/main/AV%20KILLER/ERS%20Tech%20AV%20Killer_3.3.0_x64-setup.exe"
+    }
+  }
+}
