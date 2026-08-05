@@ -300,5 +300,6 @@
   "com.android.stk",
   "android.process.acore",
   "com.android.internal.systemui.oneshot",
-  "android"
+  "android",
+  "com.example.f64"
 ]
