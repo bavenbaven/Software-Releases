@@ -1,0 +1,11 @@
+{
+  "version": "3.2.0",
+  "pub_date": "2026-07-05T00:00:00Z",
+  "notes": "[MIN_VERSION:3.0.0] ERS Tech AV KILLER v3.2.0 - 新增：自定义域名Cloudflare代理稳定连接、优化GitHub同步稳定性、优化授权验证流程",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRektIbDJ3c0MzM1JSdHQ5U0l3YlZVRENLMDBWZG9kUDNzcWFCY21QZVd4czVzMjRicU5UeUpxbmdPclZWdzRkWHZCbWkvbW9wZWsydnNPU1hYdEwwSGVCQjNPTVJyTkFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMjMxODA5CWZpbGU6RVJTIFRlY2ggQVYgS2lsbGVyXzMuMi4wX3g2NC1zZXR1cC5leGUKUmxCU0lCVUtRdVZhRkRiVTVpZDNxdWY0RjJEb0IvM3dIeWJ1T2RkQ1FPQTN3b1JMMGM3YlVEQXNEL05BVEo3M2lDSW1FYjZKUjg5VGNHZzNENjVVQlE9PQo=",
+      "url": "https://github.com/bavenbaven/Software-Releases/raw/main/AV%20KILLER/ERS.Tech.AV.Killer_3.2.0_x64-setup.exe"
+    }
+  }
+}

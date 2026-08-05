@@ -1,0 +1,31 @@
+{
+  "latest": "3.5.0",
+  "min_version": "2.1.0",
+  "versions": [
+    {
+      "version": "3.5.0",
+      "url": "https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/ERS%20TECH%20ISP%E7%9F%AD%E6%8E%A5%E5%AE%9D%E5%85%B8/ERS%20Tech%20ISP%20%E7%9F%AD%E6%8E%A5%E5%AE%9D%E5%85%B8_3.5.0_x64-setup.exe",
+      "changelog": "v3.5.0 纯JPG模式，移除.ers加密；Cloudflare Worker加速；在线图片直连"
+    },
+    {
+      "version": "3.2.0",
+      "url": "https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/ERS%20TECH%20ISP%E7%9F%AD%E6%8E%A5%E5%AE%9D%E5%85%B8/ERS%20Tech%20ISP%20%E7%9F%AD%E6%8E%A5%E5%AE%9D%E5%85%B8_3.5.0_x64-setup.exe",
+      "changelog": "v3.2.0 纯JPG模式，移除.ers加密；Cloudflare Worker加速；在线图片直连"
+    },
+    {
+      "version": "2.1.0",
+      "url": "https://github.com/bavenbaven/ERS-Tech-ISP--/releases/download/v2.1.0/ERS%20Tech%20ISP%20%E7%9F%AD%E6%8E%A5%E5%AE%9D%E5%85%B8_2.1.0_x64-setup.exe",
+      "changelog": "修复授权验证、修复在线更新URL、新增200个账号"
+    },
+    {
+      "version": "1.1.0",
+      "url": "https://github.com/bavenbaven/ERS-Tech-ISP--/releases/download/v1.1.0/ERS%20Tech%20ISP%20%E7%9F%AD%E6%8E%A5%E5%AE%9D%E5%85%B8_1.1.0_x64-setup.exe",
+      "changelog": "新增 License Key 授权系统、XOR 数据加密、关闭按钮、Tauri updater 签名验证"
+    },
+    {
+      "version": "0.3.0",
+      "url": "https://github.com/bavenbaven/ERS-Tech-ISP--/releases/download/v0.3.0/ERS-Tech-ISP-%E7%9F%AD%E6%8E%A5%E5%AE%9D%E5%85%B8_0.3.0_x64-setup.exe",
+      "changelog": "初始版本"
+    }
+  ]
+}
