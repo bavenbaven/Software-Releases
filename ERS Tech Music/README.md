@@ -1,16 +1,12 @@
-# ERS Tech Music 官方发布专区
+# ERS Tech Music Releases
 
-## 📦 当前最新版本：v3.0.0
+本目录为 **ERS Tech Music** 的公开版本发布和授权配置文件存放处。
 
-### 包含文件：
-1. **安装包**：`ERS Tech Music_3.0.0_x64-setup.exe`
-2. **便携免安装版**：`ERS Tech Music_3.0.0_便携免安装版.exe`
-3. **版本配置文件**：`version.json`
-4. **授权文件**：`auth.json`
+## 文件说明
+- `ERS Tech Music_3.0.0_x64-setup.exe` : 最新 Windows 安装包
+- `version.json` : 版本与在线增量热更新配置文件
+- `auth.json` : 授权与功能特性配置文件
 
-### 💡 核心特性：
-- 聚合四主流音乐引擎全网无损解析与极速播放
-- 桌面歌词、车机/胶囊精简模式、云盘收藏
-- 45° 平滑大圆弧无边框视觉交互
-- 10款精美个性化皮肤中心全景联动
-- 支持在线增量热更新通道
+## 核心源码仓库
+核心业务与工程源码托管于私人仓库：
+https://github.com/bavenbaven/ERS-Tech-Music
