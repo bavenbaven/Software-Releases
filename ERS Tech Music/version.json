@@ -1,15 +1,14 @@
 {
   "name": "ERS Tech Music",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "releaseDate": "2026-08-06",
   "downloadUrl": "https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/ERS%20Tech%20Music/ERS%20Tech%20Music_3.0.0_x64-setup.exe",
   "downloadMirror": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/ERS%20Tech%20Music/ERS%20Tech%20Music_3.0.0_x64-setup.exe",
   "changelog": [
-    "1. 皮肤库升级：扩充至15款精选皮肤（新增晴空天青、落樱倾城、暮色松林、暗夜电音、黑胶留声等QQ音乐高质感主题）",
-    "2. 版本更新体验升级：一键点击【检查更新】即可全自动执行云端增量热更与补丁加载",
-    "3. 完美消除窗口圆角周围阴影与直角溢出，呈现极致丝滑的现代圆弧设计",
-    "4. 关注、音乐云盘、收藏、视频等全场景无死角联动主题配色与暗黑模式",
-    "5. 榜单与歌曲列表自动顺序播放下一首，优化播放连贯度"
+    "1. 软件正式迈入全新大版本 v4.0.0 时代",
+    "2. 音乐云盘重构升级：支持本地/云盘文件一键高速导入、双击无缝秒播与全盘顺序播放",
+    "3. 界面精简瘦身：彻底移除冗余占位说明文字，修复字体变形与边框拉伸问题",
+    "4. 增量热更新全自动无缝生效，极致丝滑"
   ],
   "platforms": {
     "windows-x86_64": {
