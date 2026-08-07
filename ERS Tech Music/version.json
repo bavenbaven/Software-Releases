@@ -2,20 +2,22 @@
   "name": "ERS Tech Music",
   "version": "4.0.0",
   "releaseDate": "2026-08-07",
-  "downloadUrl": "https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/ERS%20Tech%20Music/ERS%20Tech%20Music_3.0.0_x64-setup.exe",
-  "downloadMirror": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/ERS%20Tech%20Music/ERS%20Tech%20Music_3.0.0_x64-setup.exe",
+  "downloadUrl": "https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/ERS%20Tech%20Music/ERS%20Tech%20Music_4.0.0_x64-setup.exe",
+  "downloadMirror": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/ERS%20Tech%20Music/ERS%20Tech%20Music_4.0.0_x64-setup.exe",
   "authUrl": "https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/ERS%20Tech%20Music/auth.json",
   "authMirror": "https://cdn.jsdelivr.net/gh/bavenbaven/Software-Releases@main/ERS%20Tech%20Music/auth.json",
   "changelog": [
     "1. 软件正式迈入全新大版本 v4.0.0 时代",
-    "2. 引入全新 ERS Tech 终端安全授权登录系统（支持 12 位卡密激活与 VIP 账号密码登录）",
-    "3. 音乐云盘重构升级：支持本地/云盘文件一键高速导入、双击无缝秒播与全盘顺序播放",
-    "4. 界面精简瘦身：彻底移除冗余占位说明文字，修复字体变形与边框拉伸问题",
-    "5. 全新极速增量热更与云端多镜像容灾校验，秒速生效"
+    "2. 全球 FM 电台彻底重构修复：引入全新超清央广/流行/粤港澳/海外/治愈电台流与 HLS.js 引擎，秒级畅听",
+    "3. FM 电台新增自定义添加电台、分类筛选、实时搜索与故障备用线路无缝切换",
+    "4. 引入全新 ERS Tech 终端安全授权登录系统（支持 12 位卡密激活与 VIP 账号密码登录）",
+    "5. 音乐云盘重构升级：支持本地/云盘文件一键高速导入、双击无缝秒播与全盘顺序播放",
+    "6. 激活界面精简排版：去除冗余锁图标与说明文字，极简高级视觉体验",
+    "7. 全新极速增量热更与云端多镜像容灾校验，秒速生效"
   ],
   "platforms": {
     "windows-x86_64": {
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/ERS%20Tech%20Music/ERS%20Tech%20Music_3.0.0_x64-setup.exe"
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/ERS%20Tech%20Music/ERS%20Tech%20Music_4.0.0_x64-setup.exe"
     }
   }
 }
