@@ -1,0 +1,4 @@
+# Keep plaintext credential backups local and private (do not push to public GitHub)
+*backup*.csv
+*backup*.txt
+*.csv

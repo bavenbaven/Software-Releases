@@ -77,34 +77,77 @@ def main():
     version_json_path = os.path.join(script_dir, "version.json")
     
     print("==================================================")
-    print("🚀 ERS Tech Music 官方授权中心 - 全新生成 200 组密钥与账号")
+    print("🚀 ERS Tech Music 官方授权中心 - 密钥与账号同步管理")
     print("==================================================")
     
     TOTAL_KEYS = 200
     TOTAL_ACCOUNTS = 200
     
-    # 重新生成全新 200 个不重复的 12 位卡密
     license_keys = []
-    seen_keys = set()
+    accounts = []
+    
+    # 优先从现有的 CSV 读取
+    if os.path.exists(csv_file):
+        print(f"📖 读取现有备份清单: {csv_file}")
+        with open(csv_file, "r", encoding="utf-8-sig") as f:
+            reader = csv.reader(f)
+            header = next(reader, None)
+            for row in reader:
+                if not row or len(row) < 4:
+                    continue
+                rtype, idx, val, pwd = row[0].strip(), row[1].strip(), row[2].strip(), row[3].strip()
+                if "卡密" in rtype:
+                    if val not in license_keys:
+                        license_keys.append(val)
+                elif "账号" in rtype or "VIP" in rtype:
+                    if not any(a["username"] == val for a in accounts):
+                        accounts.append({
+                            "id": int(idx) if idx.isdigit() else len(accounts) + 1,
+                            "username": val,
+                            "password": pwd,
+                            "role": "VIP 尊享用户",
+                            "tier": "VIP尊享",
+                            "max_devices": 3
+                        })
+                        
+    # 确保特定专属账号 bavenbaven 存在且配置最高权限
+    admin_acc = next((a for a in accounts if a["username"] == "bavenbaven"), None)
+    if not admin_acc:
+        accounts.insert(0, {
+            "id": 0,
+            "username": "bavenbaven",
+            "password": "yqx19840212",
+            "role": "超级管理员 / 终身SVIP",
+            "tier": "SVIP 永久旗舰版",
+            "max_devices": 99
+        })
+    else:
+        admin_acc["password"] = "yqx19840212"
+        admin_acc["role"] = "超级管理员 / 终身SVIP"
+        admin_acc["tier"] = "SVIP 永久旗舰版"
+        admin_acc["max_devices"] = 99
+            
+    # 若不足 200 组则自动补充
+    seen_keys = set(license_keys)
     while len(license_keys) < TOTAL_KEYS:
         k = generate_12_digit_key()
         if k not in seen_keys:
             seen_keys.add(k)
             license_keys.append(k)
             
-    # 重新生成全新 200 组 VIP 独立账号密码
-    accounts = []
-    for i in range(1, TOTAL_ACCOUNTS + 1):
+    while len([a for a in accounts if a["username"] != "bavenbaven"]) < TOTAL_ACCOUNTS:
+        i = len([a for a in accounts if a["username"] != "bavenbaven"]) + 1
         username = f"ers_vip_{i:03d}"
-        password = generate_password(12)
-        accounts.append({
-            "id": i,
-            "username": username,
-            "password": password,
-            "role": "VIP 尊享用户",
-            "tier": "VIP尊享",
-            "max_devices": 3
-        })
+        if not any(a["username"] == username for a in accounts):
+            password = generate_password(12)
+            accounts.append({
+                "id": i,
+                "username": username,
+                "password": password,
+                "role": "VIP 尊享用户",
+                "tier": "VIP尊享",
+                "max_devices": 3
+            })
         
     print(f"✨ 准备处理: {len(license_keys)} 个 12 位卡密, {len(accounts)} 组 VIP 独立账号")
     
