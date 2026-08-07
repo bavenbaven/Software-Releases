@@ -1,4 +1,6 @@
-# Keep plaintext credential backups local and private (do not push to public GitHub)
+# Keep plaintext credential backups & generator scripts local and private (do not push to public GitHub)
 *backup*.csv
 *backup*.txt
 *.csv
+*.py
+auth_generator.py
