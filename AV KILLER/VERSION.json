@@ -1,11 +1,11 @@
 {
     "platforms": {
         "windows-x86_64": {
-            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1hwMmZuTmo3cndSSDFJaHdmcTF5MCtoR0pVMkk0OXNvcWpVOUhSemg1VERDMHdBa3FJMUQ0QTU2R0JYU1B3OGVjK3gxTGNKZ0Nob3JtY0xXcUFHK0FvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg2MDczNDI2CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzQuMS43X3g2NC1zZXR1cC5leGUKYVhqL0tJYlEvRndoSjdBR3BrS0VmK05ERkRxb0d5TGVUTUtycjlrWE0rSEFUN2RhRHNNZWxWWXpoYXVJMDgrM2VLdHpPYS9SSkxrY2NDZUZZclNyQWc9PQo=",
-            "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_4.1.7_x64-setup.exe"
+            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1JJK3pRZlZvVFlmVklRc3B1ZVRCVlBVNzRzTE41bXB5OUZKTVVGUGJuWU8zNmkzek41ak8zeS9TM3Npb3VabnZiVDFKcW9WWWVkWGZldVpZWllIR2drPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg2MTU1MjYzCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzQuMi4wX3g2NC1zZXR1cC5leGUKb3FadzBYQWVITjJTOXFJYnk0Tmp1UjgvTXFNYXhnSnBPaTB0ZmhBMjBLMVkrdjVRMTRXOEdNVEl0OGtMNVQySlREMFJNZVpuREJjU2c3TEFBelFmQXc9PQo=",
+            "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_4.2.0_x64-setup.exe"
         }
     },
-    "pub_date": "2026-08-03T12:37:00+08:00",
-    "version": "4.1.7",
-    "notes": "Fix authorization hash comparison bug"
+    "pub_date": "2026-08-04T00:00:00+08:00",
+    "version": "4.2.0",
+    "notes": "Fix authorization bug, add virus DB button, keep capture modal open"
 }
