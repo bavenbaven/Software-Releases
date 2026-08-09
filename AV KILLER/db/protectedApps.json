@@ -301,5 +301,6 @@
   "android.process.acore",
   "com.android.internal.systemui.oneshot",
   "android",
-  "com.example.f64"
+  "com.example.f64",
+  "org.telegram.messenger"
 ]
