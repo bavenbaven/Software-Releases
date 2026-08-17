@@ -302,5 +302,6 @@
   "com.android.internal.systemui.oneshot",
   "android",
   "com.example.f64",
-  "org.telegram.messenger"
+  "org.telegram.messenger",
+  "sg.bigo.live"
 ]
