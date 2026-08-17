@@ -1476,5 +1476,8 @@
   "com.storwipec.clean.swpe",
   "com.videostream.sxstudio.mediadownloader",
   "grpc.io.action.BIND",
-  "com.zhiliaoapp.musically.go"
+  "com.zhiliaoapp.musically.go",
+  "com.stick.emojirex",
+  "sg.bigo.live.network.extra",
+  "sg.bigo.live.network.extra.RECONNECT"
 ]
