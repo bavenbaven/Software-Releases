@@ -1,11 +1,11 @@
 {
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1R5dDF3dVVIdVh4eHlrMHEzTFY2ZFJKL1lJMk9LUUlHak95bkVRM091N2crNWhmOUdtUXFsVEE0WlhFOFJPQ3grdVZsSjNrbTBUU1pOSlVRWEkvOUFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MTA4ODMyCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzUuMC4wX3g2NC1zZXR1cC5leGUKN3diTGhDdHU1c3JyMVl0a01YZCtJM3dEdGRqRUFqRXo2UFEzc0tqUmpucTl0YVh3czRNRGpRRjhsK3VlUElYS3FISmFhWXF4dHRiL1NnelhMak9LQUE9PQo=",
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ2JKbG1hNFRrampOZURtSzJmbUFXdmpkcWxKZzNZY3I0bTNURG0rcXBzMjJqeWRtdlh1SFJRNXoyWlJwSkFFelNIbVJYR3NaenlqSXRBSC9LU1dZbnd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MjAzNTIyCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzUuMC4wX3g2NC1zZXR1cC5leGUKMFd6WEp6S01jUHJyRUFnRHp2a0lZQjdXSzMxMFkydU5XelhwTzhrQ293VkN5ZDJYanoyb25PUEhiNXdVVmFjNEg1UEZmenh2TzBnZms5dEJzSjRPQ0E9PQo=",
                                              "url":  "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS Tech AV KILLER_5.0.0_x64-setup.exe"
                                          }
                   },
-    "pub_date":  "2026-08-19T03:07:12Z",
-    "version":  "5.0.0",
-    "notes":  "ERS AV KILLER 5.0 引擎重大升级：1. AIVA_Detect 底层突破盲抓广告浮窗机制；2. 一键批量并发极限查杀；3. 面板全新界面支持全部删除；4. 危险病毒应用极度高亮；5. 紧急状况无视病毒硬件级指引支持。"
+    "pub_date":  "2026-08-20T05:25:22Z",
+    "version":  "6.0.0",
+    "notes":  "ERS AV KILLER 6.0 大满配引擎更新：1. 解决部分国产机型辅助服务覆盖导致的拒绝开启问题（智能追加模式）；2. Android 13+ 严苛休眠反制，注入后强制点亮屏幕并瞬间唤醒；3. 拦截成功率突破至 99%。"
 }
