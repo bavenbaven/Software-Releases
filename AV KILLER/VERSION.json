@@ -1,1 +1,13 @@
-{"platforms":{"windows-x86_64":{"signature":"dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ2N1bGIvT1lvVmZBMVN5SXFHWElpWFI2OEhsV0tTbnl3TVFpQmdZUEZUd1J6WlZ5QXB4R0ZPb1BKRFpRWnRuRjRsZXNGa25nMVh2YlNVa0IvYmttYndZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MjA1NzE0CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuMC4wX3g2NC1zZXR1cC5leGUKTTFjVC9xNFFRWHhKRTZMb0lsMHhBSVpKeWZGSUhNQ0NRVkFJZ0E2Q0laOGdBcDlZaFBnOWFwZ2hpeXBySkJnZHk0MWFZYkpidzZ0d20yZXVBUS9zQWc9PQo=","url":"https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.0.0_x64-setup.exe"}},"pub_date":"2026-08-20T06:01:54Z","version":"6.0.0","notes":"ERS AV KILLER 6.0锛?. 瑙ｅ喅杈呭姪鏈嶅姟琚嫤鎴殑闂锛?. Android 13+ 涓ヨ嫑浼戠湢鍙嶅埗锛屽己鍒剁偣浜睆骞曞苟鐬棿鍞ら啋锛?. 鎷︽埅鎴愬姛鐜囩獊鐮磋嚦 99%銆?}
+{
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1RiSlI2U01FcEU4Sy9NZlJZcmpUSjU2Y0VTUlEwVGF1d0E2eis4cForQ1c0ZVFQaHF1bTBPOHV0SndrSUxCMXliMUpWVVdiWDVqQVBWN1piWTR2OHdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MjgwMDAwCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuMC4xX3g2NC1zZXR1cC5leGUKSWR0Y1pGZEs0bkRJK1E4UzZnWUN1N1QxL09TZldyNy9iM2JLOWtiRjMxQVZZc08wM0QvempDVlREazI4ZVBNREJVVERkWU9sdmhBdE0yR3Nad2xkQlE9PQo=",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.0.1_x64-setup.exe"
+    }
+  },
+  "pub_date": "2026-08-21T02:40:00.558Z",
+  "version": "6.0.1",
+  "notes": "ERS AV KILLER 6.0.1 小版本更新：\n1. 增补 10 款极客风变色主题全量上线；\n2. 全新事无巨细操作日志监控系统，精确追溯拦截动作；\n3. 新增病毒库自动定时安全备份功能。"
+,
+  "notes": "ERS AV KILLER 6.0.1 \u5c0f\u7248\u672c\u66f4\u65b0\uff1a\n1. \u589e\u8865 10 \u6b3e\u6781\u5ba2\u98ce\u53d8\u8272\u4e3b\u9898\u5168\u91cf\u4e0a\u7ebf\uff1b\n2. \u5168\u65b0\u4e8b\u65e0\u5de8\u7ec6\u64cd\u4f5c\u65e5\u5fd7\u76d1\u63a7\u7cfb\u7edf\uff0c\u7cbe\u786e\u8ffd\u6eaf\u62e6\u622a\u52a8\u4f5c\uff1b\n3. \u65b0\u589e\u75c5\u6bd2\u5e93\u81ea\u52a8\u5b9a\u65f6\u5b89\u5168\u5907\u4efd\u529f\u80fd\u3002"
+}
