@@ -1,11 +1,11 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1Z3UUl6a2FzclA5eHNTTWFJU2g1ZHRJR3hDbFk3cVFyYUNZRGtLWlE3OFlPV2JRaUluc2RiaFR4VjdVamJOV2Q1WGtkVTllVnVKZHVGTGxTRGs0WlFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MjkyNzEwCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuMC4xX3g2NC1zZXR1cC5leGUKRU5LWGlLdXRJM0NtWkV6M2JDNVZ0RklNN0pJT0VPVlV6bUZ3dGZkZkt1ZEJndjZkSTVIZGVIbVgxUytWVFpRMTNUMFhXSitjbEh1RFROQmxHVXV5Q1E9PQo=",
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.0.1_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1YzcEo1L1pMOXdGK0xhdTErL0VSUVdPd1dEMnJEWEJGUjBUVnRYOGZVYlNMaUVDS1FvWmEyRzVrNzlsVm5YQXlFVHFkcE9lZFJZanVOYTFCSW5XVlFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MjkzNDkzCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuMC4yX3g2NC1zZXR1cC5leGUKbytrTnNkei82bDdIbUhBRzRUYWw1MkdqeHJZbWI2QmVHV09yQmhWaFg3bzAwNE9wR2VuZkdGb0d1eUVIdE5vVEgrWDVpbUozaElJdFVERXQ2T0xIQmc9PQo=",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.0.2_x64-setup.exe"
     }
   },
-  "pub_date": "2026-08-21T06:12:10.056Z",
-  "version": "6.0.1",
-  "notes": "ERS AV KILLER 6.0.1 小版本更新：\\n1. 增补 10 款极客风变色主题全量上线；\\n2. 全新操作日志监控系统，精确追溯拦截动作；\\n3. 新增病毒库自动定时安全备份功能。"
+  "pub_date": "2026-08-21T06:25:22.626Z",
+  "version": "6.0.2",
+  "notes": "ERS AV KILLER 6.0.2 内核数据与控制台微调：\\n1. 仪表盘 4 大核心指标卡状态栏合并折叠，高度精简压缩一半，优化操作排版空间；\\n2. 进一步优化 GITHUB 与 静态数据库接口。"
 }
