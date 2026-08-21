@@ -1,11 +1,11 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1Jib0J6OUt1bmRaV0dlalpJa01leGNwUGR6VnA4TU41Q3g5UXhvajJoai9BK3k2MTNUVnZyVFdtL2FjL1JVdCtCN3V5aWxWTjJ1bzErTjU2NHZPVmd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3Mjg0MDc0CWZpbGU6RDZjN21qOUhLMWRlT0NGRUQ2aGZXZHVIMDFKSTZLdUUwKzczeERPRmc1WTdnSFBNa1o5NTYrVmlqS0hzRERtcGkwS3FaZFdnVDBRc1dTZUs0em55Qnc9PQo=",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1QxYmJNRUptSnk4YkVNOXJOb1RLajRzaWNyUFNCZGZoWHE5ZExqQnZzYzFFeFBqQUx3eUZPZVYzTjNTVEVPSWQzakRzR0cxV0MrY1k3eGcwZ2k3SndrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3Mjg2MDY1CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuMC4xX3g2NC1zZXR1cC5leGUKZnRNT2ovU2RtaU13Ymo0Y1NjUk1abExobng1aTFVS05vNUVlMjZuc3ZwOC9id2VVb3VUTXVSbUVGZ29hbG5BNXlkTnQ2ZW9ITS9LN1Z1LzdwR2dHQ1E9PQo=",
       "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.0.1_x64-setup.exe"
     }
   },
-  "pub_date": "2026-08-21T03:49:01.594Z",
+  "pub_date": "2026-08-21T04:21:21.061Z",
   "version": "6.0.1",
   "notes": "ERS AV KILLER 6.0.1 小版本更新：\\n1. 增补 10 款极客风变色主题全量上线；\\n2. 全新操作日志监控系统，精确追溯拦截动作；\\n3. 新增病毒库自动定时安全备份功能。"
 }
