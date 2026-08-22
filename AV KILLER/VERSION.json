@@ -1,11 +1,11 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1YzcEo1L1pMOXdGK0xhdTErL0VSUVdPd1dEMnJEWEJGUjBUVnRYOGZVYlNMaUVDS1FvWmEyRzVrNzlsVm5YQXlFVHFkcE9lZFJZanVOYTFCSW5XVlFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MjkzNDkzCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuMC4yX3g2NC1zZXR1cC5leGUKbytrTnNkei82bDdIbUhBRzRUYWw1MkdqeHJZbWI2QmVHV09yQmhWaFg3bzAwNE9wR2VuZkdGb0d1eUVIdE5vVEgrWDVpbUozaElJdFVERXQ2T0xIQmc9PQo=",
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.0.2_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ2Q0bi94ZGVENGpwRkFNU3dLQTBCWFZrazFxeFUxNCtOcitBMHFkd3pkTXc1YTMzSlB1dmpSK2FXa3VlUHlVTktpMlZSck96c3E0L0tHR0c0cTRDQUFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MzYyNjEwCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuMC4zX3g2NC1zZXR1cC5leGUKODUvMk5lb3JUeE9kQzNjVEk3V3E1enFKQjhNZFJoSHlLMnlDSTFFWFRMVVRWdVpzcFRpU1grekpxMVF4MWIydUxhN0tpN2s1MEpRelBoSkZwRjU3RHc9PQo=",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.0.3_x64-setup.exe"
     }
   },
-  "pub_date": "2026-08-21T06:25:22.626Z",
-  "version": "6.0.2",
-  "notes": "ERS AV KILLER 6.0.2 内核数据与控制台微调：\\n1. 仪表盘 4 大核心指标卡状态栏合并折叠，高度精简压缩一半，优化操作排版空间；\\n2. 进一步优化 GITHUB 与 静态数据库接口。"
+  "pub_date": "2026-08-22T01:37:16.877Z",
+  "version": "6.0.3",
+  "notes": "ERS AV KILLER 6.0.3 精确热拦截补丁：\\n1. 修复底层日志解析在遇到 Action 指令匹配（如 Orca.START）时发生偏移捕获的 Bug，防止将合法的 Instagram 等应用识别为拦截病毒的问题；\\n2. 初始化自动过滤和净化本地可能被污染的大写指令名库。"
 }
