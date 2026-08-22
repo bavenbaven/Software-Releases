@@ -1,11 +1,11 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ2NMRUtzSTRLV2t1NWlIa0dLRFhsdUN1b1dDeHN3WWFmWG9aY3VVbDRRZEp3eHRnNEludCtzcEZDeFNPUWg3TjdtT2V2ODJjNWFSK29XKzlmUlU1b3c0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MzYzODE5CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuMC40X3g2NC1zZXR1cC5leGUKQko0bGVUTHQ5d1pEMGxoM0lWd29YTGpRVmhGbXB0Z0dZRG82MWxmYkxNL3l5OU5raTNhY2k1WXF5TzB3TkxRTEcxbXdqbnJkOUtRQXB2R1hVd2pMQmc9PQo=",
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.0.4_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1pxTVRqcHp5WTNtLzE0b3JCdjNFZlI2cWpzWDFycnVoKzdnMzR4S1h4eiszdkpWQkpoUTNjcjRnYWJYVU9HbTNWYWhWVGtuMDB4a2FYaGQ1MWYxNkFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MzY0MzcyCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuMC41X3g2NC1zZXR1cC5leGUKOTQ5aGdLYVM5QTdWOE1sajZZVnoyQ1Zldmw3ZEUybGtPQWJhYkZUQW5iSmxWQUo4RGl3U04zRC9saURheFkzOWZjaUVzR2R5WTNoRGdnR0NkcmxtQmc9PQo=",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.0.5_x64-setup.exe"
     }
   },
-  "pub_date": "2026-08-22T01:57:18.421Z",
-  "version": "6.0.4",
-  "notes": "ERS AV KILLER 6.0.4 独立日志系统精细补丁：\\n1. 控制台操作日志正式支持“分设备”查看。可通过下拉选择框在“本地系统”、“设备A”、“设备B”的独立记录历史间无缝切换；\\n2. 连接手机日志改版，预先拉取厂商、机型、安卓及开发SDK版本数据，生成规格化连接报告。"
+  "pub_date": "2026-08-22T02:06:28.511Z",
+  "version": "6.0.5",
+  "notes": "ERS AV KILLER 6.0.5 日志累加补丁：\\n1. 修复由于 500ms 批流量写入节流控制定时器导致的日志列表覆盖的 Bug，现在所有历史日志会持久且累加到数据库中。\\n2. 进一步优化分设备过滤稳定性。"
 }
