@@ -1,11 +1,11 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1pxTVRqcHp5WTNtLzE0b3JCdjNFZlI2cWpzWDFycnVoKzdnMzR4S1h4eiszdkpWQkpoUTNjcjRnYWJYVU9HbTNWYWhWVGtuMDB4a2FYaGQ1MWYxNkFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MzY0MzcyCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuMC41X3g2NC1zZXR1cC5leGUKOTQ5aGdLYVM5QTdWOE1sajZZVnoyQ1Zldmw3ZEUybGtPQWJhYkZUQW5iSmxWQUo4RGl3U04zRC9saURheFkzOWZjaUVzR2R5WTNoRGdnR0NkcmxtQmc9PQo=",
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.0.5_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1NBVFdoQVljUWFtWUlNeldKR2pwb0MxOVd4MW5vazZwZ0E2MzlId0V6TElOZlcvWFRTZWVKWENGY3F2bXdqSXIrUDlIWTN3ZGZDV3drc3N6cTAwNEFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3NjIxMjcwCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuMC42X3g2NC1zZXR1cC5leGUKNDZ6UHJreEx6cHR0RW5MK3RzMTBsWWtqYVN6TG9qbVhzZ1NReFhBb09QV25lbEs3eDY5N2dKOVpWd2ZrTUpLNmhjN2hDRUM5MzNNM0lzWDQvM0JOQ1E9PQo=",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.0.6_x64-setup.exe"
     }
   },
-  "pub_date": "2026-08-22T02:06:28.511Z",
-  "version": "6.0.5",
-  "notes": "ERS AV KILLER 6.0.5 日志累加补丁：\\n1. 修复由于 500ms 批流量写入节流控制定时器导致的日志列表覆盖的 Bug，现在所有历史日志会持久且累加到数据库中。\\n2. 进一步优化分设备过滤稳定性。"
+  "pub_date": "2026-08-25T01:28:32.547Z",
+  "version": "6.0.6",
+  "notes": "ERS AV KILLER 6.0.6 底层设备连接修复版：\\n1. 修复了当操作导致重新授权时，由于手动暂停机制和监听并发导致界面永久卡在“等待连接”不刷新的逻辑 Bug；\\n2. 重构了刷新端口流程，按“刷新”将强制向 ADB 发起活跃读取而不用死等底层推送流。"
 }
