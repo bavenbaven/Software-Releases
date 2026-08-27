@@ -1,11 +1,11 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ2VTUnB1N2JBdzRwc1NOdE44WUFQYklRWVZCQVRiTWdXazlxM3VyMEk5ZzZXTkZ6WEEyUm9QMzg2ekJkVzI1Z1NwaGVpYnlZd2lxMjgybmlZQ1RjOFFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3ODAwNzc0CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuMS4wX3g2NC1zZXR1cC5leGUKdk8ycXZuS01LNzc3TWtwUVFPeUdmeDhCcHlLSTRvQjc3M2MvVTM1ZXBOMHM2WmZKRFc0Zm1iNTJWblowaGx5SDNoV0tZVUlKWXhOejZpR1lzdWNHQVE9PQo=",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1pjaW5IUzlQbGV5a0p0OFkrM25XT00vRkVsQlY0RTdWdVJMTmhmdVNBVWZ6RGRPWEtKMW5sbXh0ZjljY3VHMEIrVk5uQ0VwY2cyb0RiajRHOGNmQ2dBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3ODE0MTMxCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuMS4wX3g2NC1zZXR1cC5leGUKdXRValhla01rZWpVaDdVYmdtQ1RJdEhNanQzT0diT0p0NFJlSWpCU2YvdmF2UzZFb2FTMHhsTmxBTDljSEMyWlQ5dkE4bjNKSlNwalRlMXo2NHdHQmc9PQo=",
       "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.1.0_x64-setup.exe"
     }
   },
-  "pub_date": "2026-08-27T03:21:23.700Z",
+  "pub_date": "2026-08-27T07:04:04.927Z",
   "version": "6.1.0",
-  "notes": "ERS AV KILLER 6.1.0 重装级自动备份与云端验证更新：\\n1. 重构本地病毒库“静默自动同步”机制：抛弃基于 UTC 与强制鉴权的弱轮询锁定，现支持任意时刻程序启动即按需脱密写入存储，100%覆盖全生命周期；\\n2. 云端授权验证机制升级：采用强预检逻辑同步支持中大版本热更；\\n3. 合并小幅度版本分支功能。"
+  "notes": "ERS AV KILLER 6.1.0 应用面板重新洗牌更新：\\n1. 根据工作流优先级重排了应用类目的位置，将【病毒应用】置前并染红预警，系统应用退居三位；\\n2. 重构了底层读取配置顺序。"
 }
