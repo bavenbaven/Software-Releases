@@ -1,11 +1,11 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1pjaW5IUzlQbGV5a0p0OFkrM25XT00vRkVsQlY0RTdWdVJMTmhmdVNBVWZ6RGRPWEtKMW5sbXh0ZjljY3VHMEIrVk5uQ0VwY2cyb0RiajRHOGNmQ2dBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3ODE0MTMxCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuMS4wX3g2NC1zZXR1cC5leGUKdXRValhla01rZWpVaDdVYmdtQ1RJdEhNanQzT0diT0p0NFJlSWpCU2YvdmF2UzZFb2FTMHhsTmxBTDljSEMyWlQ5dkE4bjNKSlNwalRlMXo2NHdHQmc9PQo=",
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.1.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ2RnUFZRbGxMVXZnd2RXd3FVTnpNTWVsYUMxQkJ2dlNYSk13SUs5eW9pV2NzNFMySnBtZk5ybDVVZkhGS3NJbUwyaElTVlVBRmFJYVAxQys3VEM1akFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3ODc4NjA3CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuMi4wX3g2NC1zZXR1cC5leGUKMjdRNngweTRBVDVVeGJCL0IydkpBMlExUXBDK2g3d2RFVDdhVGFkU1RFLzdEaGgvUEZkS0xZZFR4Q0t2eFJKWHRSZDY1bGc3VStXeGpQOW1COW1rQkE9PQo=",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.2.0_x64-setup.exe"
     }
   },
-  "pub_date": "2026-08-27T07:04:04.927Z",
-  "version": "6.1.0",
-  "notes": "ERS AV KILLER 6.1.0 应用面板重新洗牌更新：\\n1. 根据工作流优先级重排了应用类目的位置，将【病毒应用】置前并染红预警，系统应用退居三位；\\n2. 重构了底层读取配置顺序。"
+  "pub_date": "2026-08-28T00:57:46.038Z",
+  "version": "6.2.0",
+  "notes": "ERS AV KILLER 6.2.0 跨域图标流与底层更新：\\n1. 在底层 Android Helper 服务植入全新 IconServerService Socket 系统，实现 ADB 热端口直透，实现应用图标在桌面真正的“本地流极速秒开”读取而不经过解包解压消耗；\\n2. 进一步优化 Gradle 编译与 ADB 系统底层调用接口支持。"
 }
