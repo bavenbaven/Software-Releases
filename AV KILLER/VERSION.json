@@ -1,11 +1,11 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ2RnUFZRbGxMVXZnd2RXd3FVTnpNTWVsYUMxQkJ2dlNYSk13SUs5eW9pV2NzNFMySnBtZk5ybDVVZkhGS3NJbUwyaElTVlVBRmFJYVAxQys3VEM1akFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3ODc4NjA3CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuMi4wX3g2NC1zZXR1cC5leGUKMjdRNngweTRBVDVVeGJCL0IydkpBMlExUXBDK2g3d2RFVDdhVGFkU1RFLzdEaGgvUEZkS0xZZFR4Q0t2eFJKWHRSZDY1bGc3VStXeGpQOW1COW1rQkE9PQo=",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ2Q4eW0ybitjeHVVNSsrOHFzM1hZd2t5S2pyYzhET2lVelpyT2JiUjFZWUlpMHNpbkdIQ2NsSlRvdGRPbnZWWFdjS1RWWHNXRkYrVFplY3phdERkb3c0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3ODgxMDQ0CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuMi4wX3g2NC1zZXR1cC5leGUKYkNvNXA4MXNJcUtLMXFIbUMrWEU0eG1aRURFOERreE1WUWhYSDFpRWlMMldCbVltc1RNWmVhWk41cUdNbFFpbVdCdFhVOCtpWGh5SWNwRFNPY0ErRFE9PQo=",
       "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.2.0_x64-setup.exe"
     }
   },
-  "pub_date": "2026-08-28T00:57:46.038Z",
+  "pub_date": "2026-08-28T01:40:28.669Z",
   "version": "6.2.0",
-  "notes": "ERS AV KILLER 6.2.0 跨域图标流与底层更新：\\n1. 在底层 Android Helper 服务植入全新 IconServerService Socket 系统，实现 ADB 热端口直透，实现应用图标在桌面真正的“本地流极速秒开”读取而不经过解包解压消耗；\\n2. 进一步优化 Gradle 编译与 ADB 系统底层调用接口支持。"
+  "notes": "ERS AV KILLER 6.2.0 底层模块指令修正热更新："
 }
