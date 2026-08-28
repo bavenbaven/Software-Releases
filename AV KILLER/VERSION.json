@@ -5,7 +5,7 @@
       "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.2.1_x64-setup.exe"
     }
   },
-  "pub_date": "2026-08-28T02:38:03.333Z",
+  "pub_date": "2026-08-28T02:39:17.469Z",
   "version": "6.2.1",
-  "notes": "ERS AV KILLER 6.2.1 底层驱动强制分发补丁：\\n修复 6.2.0 在连接携带旧版 ERS Helper 的设备时，并未触发微服务热更新和 Socket 通道创建指令，导致图标资源请求挂起的死锁 Bug。"
+  "notes": "ERS AV KILLER 6.2.1 底层驱动强制分发补丁："
 }
