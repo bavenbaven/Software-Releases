@@ -1,11 +1,11 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1VNWEp4UVFZSklpNi9HRjRFZDdTcGJCMzRQZFVTUTZObE9kajJtaVdobGNkanBSY0Zkb2g2MW56YldlOUs5OVQvT1ZKeWlobjh1MWVrK2xQYzMyekFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3ODk5MTgxCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuMi4yX3g2NC1zZXR1cC5leGUKOG9vT2VpaFByTHA4RmpRL0lQNUZYLzlIaUFGQ0FHS0JsZmIwQ0pJRUZaWG5rNW5CZllndkFubXV2SHd2czdLbjFDVjVBUFVhalVLSkFNRThTUVFjQ0E9PQo=",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ2ZkWGtDaXF4NmtGNzk1TUloTVRZakp6MmxGdDYyc1kwcFFUOWNjZEc3aTV4QkhRaXBqU3Q4QVhSY0tTbU1ad1JCcTdsZXJNNWhjZEpSM3JtbTI3VXdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3OTAyNjUwCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuMi4yX3g2NC1zZXR1cC5leGUKOHhJMWo1eW1SaDdJRFlhK2MyU0pDUER6VmM3dGZudk1NOXREL0o3L1A1UzI5VFZ6MkdWeHJ2aWV5ajdqVXNEQ1ZueWFnc25KS29CTGdJNTdtU2gxQ0E9PQo=",
       "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.2.2_x64-setup.exe"
     }
   },
-  "pub_date": "2026-08-28T06:47:30.016Z",
+  "pub_date": "2026-08-28T07:41:04.800Z",
   "version": "6.2.2",
   "notes": "ERS AV KILLER 6.2.2 客户端应用支持与辅助修复更新：\\n1. 修复由于授权机制导致的本地存储过期后需要每次强制重输入授权码的 Bug，现已完美执行本地免感验权机制；\\n2. 进一步优化 Android Helper 自动推送功能组件。"
 }
