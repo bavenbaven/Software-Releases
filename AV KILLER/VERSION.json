@@ -1,11 +1,11 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ2R5dnFabGNHSDFwazI3YmdLUEY4Mkc5N01ZSzZmOXM2SUJCa1p6NFFiL0RvVUFFYUN3S3BFS0d5aDA3NXFLWTdrUkduOXgrWU4yZTVnUUZQMFY2cXdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3OTY3ODE0CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuMy4wX3g2NC1zZXR1cC5leGUKd1hzaXRRT3J2cnFwV3JRQ0pXSVUybXo1MnpQUE93WXE5Y0R1ejdwNFhrZjFLZlBiU3dXMTVKT00rRDZmbzhicGxhK1ZsMkUwRFZBNnNNVldUaXRCQkE9PQo=",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ2MxY3J6MUdQUXJUUzRtZmZrNHJvRUkvcUlpOHE4TDArSmdybnFVblRxV1hiZ3ZjNUpmYUxxUGpOdjFVZUFJbjRpdVBhNVBReXNXUlEvTk82REMvZ1F3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3OTY5NTMzCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuMy4wX3g2NC1zZXR1cC5leGUKQyszTWZlbTZoNmdVeC9lNXUrOWJtallYRlVaY3MzZUNOYjhkMk11Z2xaTStuUEVjdUZLUktpa0hPK0ExNisrZjV3VVZLazc3NFQyRzlaQ2hMeFR6REE9PQo=",
       "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.3.0_x64-setup.exe"
     }
   },
-  "pub_date": "2026-08-29T01:46:59.638Z",
+  "pub_date": "2026-08-29T02:13:42.870Z",
   "version": "6.3.0",
-  "notes": "ERS AV KILLER 6.3.0 自动备份常驻核心升级发布："
+  "notes": "ERS AV KILLER 6.3.0 跨端图像流与断连逻辑重构更新："
 }
