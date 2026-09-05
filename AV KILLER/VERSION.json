@@ -1,11 +1,11 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1RHUCtqNEl5bWZFNnBZOEU3TkJWV0JIUyt4SlBzWTFrVlF5VXM1eGxVZzNjYzg1R2ZMdGxVei9vd2NtUTdYV2lzd09LSmhrREJoeFk0SnpqTjlOWndrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3OTcxNzI0CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuMy4wX3g2NC1zZXR1cC5leGUKMUttYjJKd2JSQ001OTBzWUwrcEo1aWVtYjByQzRQVjVNM0FUanF4blhQOGJNcGVsNC9NQXRXVkprQVNXVXdpM25rQkhHS2tscEVXQS8yc1AyZER0RGc9PQo=",
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.3.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ2FKcnI5N2xzTHNHQmR0TDRRdndCM01kd1QyRTdjZVI3dVV0c1hvR1BWdUJ5bWJ3SDZKdUlRSGpSSUphcTZ2WEdBZEpuWG82YWZ3dWo5QjUzTmRuUFFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4NTc4OTAwCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuNC4wX3g2NC1zZXR1cC5leGUKOHAzY0RjalFFSFRUMG9IV2NtVGZIMTIyUEdIaWRsLzJnbmljZFNmVWQzeFQrS2JFelZpMy9QVS9JODhjUjRBNmZkSStubHJxU1hHSTRSVU9mdWZFRFE9PQo=",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.4.0_x64-setup.exe"
     }
   },
-  "pub_date": "2026-08-29T02:49:45.030Z",
-  "version": "6.3.0",
-  "notes": "ERS AV KILLER 6.3.0 跨端图像流与断连逻辑重构更新："
+  "pub_date": "2026-09-05T06:07:15Z",
+  "version": "6.4.0",
+  "notes": "ERS AV KILLER 6.4.0 每天完整大库自动备份重构及优化"
 }
