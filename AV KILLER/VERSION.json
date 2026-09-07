@@ -1,11 +1,11 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1pjR2wyTUlNMVBCSGhSQkZOcUU2RjlSNTc2UElaMW52UTVXdFVZUTVnUi9TN0tmWHpjdk5zRlMyQmJVY2tOb3BDT2p2Q2pzMG9CMGU2NDBRbkxKVGdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4NzU2NDg5CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuNS4wX3g2NC1zZXR1cC5leGUKUnJCWHhVVzlEUUxiaERWUkh4KzdwQmxvWUJya1VSVU9CSFd6Y3ViWFBKa3NOVUJUeGdTMGg1SnZmYXA3NS9jR2dVMlB0MmwvYm5HSURhMWtXTEcwQXc9PQo=",
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS Tech AV KILLER_6.5.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ2Q0b2xtclJMOCtEZjd0MWoyUWZnb1BiZE9mK0c2ckNrenhLVXBObkxxN2JqT0x6bm43NXZieVJLVVZwSEkvVnRvQ0R6OFl1elV6NGpPd3hxb2Z5NGdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4NzY5NzU2CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuNi4wX3g2NC1zZXR1cC5leGUKRHZJRVJ4QlBrYmQ2blFZQTZiLzJrQ1RyNjBhQ21Xc0YxRmc3WElsdFIzSEEwcXUxRmY0WTQ1YzBIWWF3aVdjdHZCQWh2QTJGZWNnTlhBQ3d2NUNpQ0E9PQo=",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS Tech AV KILLER_6.6.0_x64-setup.exe"
     }
   },
-  "pub_date": "2026-09-07T04:48:09Z",
-  "version": "6.5.0",
-  "notes": "ERS AV KILLER 6.5.0 增加华为/荣耀底层连接优化；首发潜伏病毒雷达，可一键在手机打开不明软件排查"
+  "pub_date": "2026-09-07T08:29:17Z",
+  "version": "6.6.0",
+  "notes": "ERS AV KILLER 6.6.0：UI全面优化，雷达按键并排化，去除冗余刷新；彻底修复获取真机应用图标的问题；隐形病毒抓捕弹窗内修复手机原名显现和无类别防误删启动限制。"
 }
