@@ -1,11 +1,11 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ2ZZVkFiQzM1VER0V0hCeWxxdjJsMTMrMUlzbElYRUw4MzdPTEJ5RS9Pc2tPY3phYk0yYTFuWlFObS9jVzFOR0l2eVRtZnZkbFVJZC81cWNheVJMc1FvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4ODM4ODYyCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOC4wX3g2NC1zZXR1cC5leGUKWkZ5RGJONmNEYWVCdjQxMENZUTZ0bFVGUmtrZEtsd0ZOWE9GbWtFZU1VZXVNb1BmN3pJTnZTN0cyOVlMT3pwMnd2aFVEK1VZTnRZalpWbXlUK1dEQUE9PQo=",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ2FTaE9jaExqeTl5SG9MMXlRcWdvRVZzSmUydnlVTk1vMG5MNEZTUkZTTFB0VStjRi9OQ2ZqMzA5ZzRuOHh1Mm5ocE5MZ2RVREZiNDhIc3czRlpXbEFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4ODQyODQ5CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOC4wX3g2NC1zZXR1cC5leGUKa245S3JmVnQrb1ZxeWF3RXdTUzM1TEtyTlhUMWpqNnJub2xIQVZ4MlNaVUpxRlRQTEIrclpDMitzZTY4WXhVeWhPR1pReUFrYnRYeHo0cm5YNGtWQXc9PQo=",
       "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.8.0_x64-setup.exe"
     }
   },
-  "pub_date": "2026-09-08T03:41:03Z",
+  "pub_date": "2026-09-08T04:47:29Z",
   "version": "6.8.0",
   "notes": "ERS AV KILLER 6.8.0：彻底重排雷达面板样式与全屏展开；精简了“运行”功能等容易引起安卓拦截的模块，保留原真机应用详情核心体验；图标核心显示服务全链路恢复。"
 }
