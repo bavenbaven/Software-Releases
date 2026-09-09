@@ -309,5 +309,8 @@
   "Unknown",
   "Orca.START",
   "com.spreadtrum.ims",
-  "com.erstech.aivahelper"
+  "com.erstech.aivahelper",
+  "com.oplus.powermonitor",
+  "com.oplus.camera",
+  "com.oplus.uxdesign"
 ]
