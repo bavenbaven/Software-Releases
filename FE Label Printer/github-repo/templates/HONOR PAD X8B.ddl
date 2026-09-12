@@ -4,9 +4,7 @@
     <labelobjects>
       <drawobj l="0.328760" t="0.500395" w="58.141382" h="40.065344" itemtype="5" rotate="0.000000" zvalue="1" lock="false" fontfamily="微软雅黑" fontsize="22.5" fontbold="false" fontitalic="false" fontunderline="false" fontstrikeout="false" alignment="4" fontletterspacing="0.000000" stretch="100" hormirror="false" blackground="false" datasource="0" repeat="1" memory="0">
         <textlist>
-          <text value="HONOR PAD X8B
-2ND 6+128GB
-RM458"/>
+          <text value="HONOR PAD X8B 2ND 6+128GB RM788"/>
         </textlist>
       </drawobj>
     </labelobjects>
