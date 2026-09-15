@@ -1,4 +1,9 @@
-﻿# FE Label Printer v2.6.0
+﻿# FE Label Printer
 
-## 文件说明
-- FE Label Printer_2.6.0_x64-setup.exe - 安装包
+标签打印工具
+
+## 最新版本
+- v2.6.0
+
+## 下载
+点击上方 FE_Label_Printer_2.6.0.exe 下载安装

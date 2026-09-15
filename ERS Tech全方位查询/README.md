@@ -1,5 +1,9 @@
-﻿# ERS Tech 全维度查询 v2.7.0
+﻿# ERS Tech 全方位查询
 
-## 文件说明
-- data/auth.json - 授权数据
-- version_info.json - 版本信息
+手机全方位信息查询工具
+
+## 最新版本
+- v3.0.0
+
+## 下载
+点击上方 ERS Tech 全方位查询_3.0.0_x64-setup.exe 下载安装

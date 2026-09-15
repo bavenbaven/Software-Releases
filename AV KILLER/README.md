@@ -1,7 +1,9 @@
-# ERS Tech AV Killer v4.1.7
+﻿# ERS Tech AV KILLER
 
-## 文件说明
-- db/brandDB.json - 品牌数据库
-- db/keywordDB.json - 关键字数据库
-- db/virusDB.json - 病毒数据库
-- ERS Tech AV KILLER_4.1.7_x64-setup.exe - 最新 4.1.7 安装程序
+手机病毒查杀工具
+
+## 最新版本
+- v6.8.2 (2026)
+
+## 下载
+点击上方 ERS Tech AV KILLER_6.8.2_x64-setup.exe 下载安装
