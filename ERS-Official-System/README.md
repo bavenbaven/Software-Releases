@@ -6,37 +6,39 @@
 
 | 文件名 | 用途 |
 |--------|------|
-| `ers-license.json` | Base64 + AES-256 双重加密的授权许可证 |
+| `ers-license.json` | **AES-256 + Base64 双重加密**的授权许可证 |
 
-## 授权账号
+## ⚠️ 安全警告
 
-- **用户名**: bavenbaven
-- **密码**: YQXyqx19840212#（已加密存储）
+此文件使用 **AES-256-CBC** 加密，**不包含明文密码**！
 
-## 使用方法
+## 加密信息
 
-### Worker 代码引用
+- **算法**: AES-256-CBC
+- **密钥长度**: 256 位
+- **编码**: Base64
+
+## Worker 代码使用示例
 
 ```javascript
-// 第一步：Base64 解码
-var LICENSE_DATA = atob("BASE64_ENCODED_CONTENT");
+// 1. 从 GitHub 获取 Base64 内容
+var encryptedBase64 = "SFNYSWtJb1pL..."; // 从 ers-license.json 读取
 
-// 第二步：AES-256 解密（需要实现解密函数）
-var license = decryptAES(LICENSE_DATA);
-var USERS = JSON.parse(license).users;
+// 2. AES-256 解密（需要 Crypto API）
+var encrypted = atob(encryptedBase64);
+var decrypted = decryptAES(encrypted);
+var USERS = JSON.parse(decrypted).users;
 
-// 第三步：验证登录
-if (USERS[username] && USERS[username] === password) {
+// 3. 验证登录
+if (USERS[username] === password) {
     // 登录成功
 }
 ```
 
-### 密钥信息（仅保存在安全位置）
+## 加密脚本
 
-- **算法**: AES-256-CBC
-- **Key**: 固定密钥（建议生产环境动态生成）
-- **IV**: 固定初始化向量
+参见项目根目录的 `generate-encrypted-license.js` 了解如何生成新的授权文件。
 
 ## 版本历史
 
-- v1.0 - 初始版本，使用 Base64 + AES-256 双重加密 (2024)
+- v1.0 - 初始版本，使用 AES-256 + Base64 双重加密 (2024)
