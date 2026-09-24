@@ -1,11 +1,11 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1N3bVlqbHZJazZ4Q2k1SHhZKzl6dEN3ZFlOZlR5c3dIclV6a1BZa3c4dVJUb3JmcFJPRnp4cFBUWFZyMlRvMTBrTjYzbGpzOS9ickRIRTU3bWJPNFFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjE1MzgyCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOC4zX3g2NC1zZXR1cC5leGUKSE1kQ1BEUi9vV0ZBMnBwSkdOMGZGbXVjSnNJRXlSU1hNZTZxeUpFL3R6eGdsQnpZRlcwVGJiRHVmbzhhODB6SDc3dXB2VDE2MG9wRFZ1d3ZRSGtlRGc9PQo=",
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.8.3_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1FoV1JKdm5ETGtXVzNMSXRDMmQrWjFqYWhxVEFDUzNkellXc2VEWWhJZmlpNGZCZXVFd2N6eVZRa0NXOXluNTNkc21HaWFCOERibEdLQ0oycUFiTWcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjM2MDA2CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOC40X3g2NC1zZXR1cC5leGUKSkVzU0tXK3FlL05oY3gzWTc3UWNvazVLaW5UZ3VMRXJuajlLNU1LaXJJYlRFeHdQSWFtck85Zm1JZStKeE03YitLVk5RQnhReEJPVjV5ZEZ3TVltRGc9PQo=",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.8.4_x64-setup.exe"
     }
   },
-  "pub_date": "2026-09-24T02:03:02Z",
-  "version": "6.8.3",
-  "notes": "ERS AV KILLER 6.8.3：修复安装被小米核心拦截时的真实错误提示（指引开启\"USB安全\"）；应用管理器面板扩展铺满界面；剥离无用的运行按钮并保留详情。"
+  "pub_date": "2026-09-24T07:46:46Z",
+  "version": "6.8.4",
+  "notes": "ERS AV KILLER 6.8.4：修复安装被小米核心拦截时的真实错误提示（指引开启\"USB安全\"）；应用管理器面板扩展铺满界面；剥离无用的运行按钮并保留详情。"
 }
