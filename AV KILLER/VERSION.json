@@ -1,11 +1,11 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1FoV1JKdm5ETGtXVzNMSXRDMmQrWjFqYWhxVEFDUzNkellXc2VEWWhJZmlpNGZCZXVFd2N6eVZRa0NXOXluNTNkc21HaWFCOERibEdLQ0oycUFiTWcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjM2MDA2CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOC40X3g2NC1zZXR1cC5leGUKSkVzU0tXK3FlL05oY3gzWTc3UWNvazVLaW5UZ3VMRXJuajlLNU1LaXJJYlRFeHdQSWFtck85Zm1JZStKeE03YitLVk5RQnhReEJPVjV5ZEZ3TVltRGc9PQo=",
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.8.4_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1VleXBFQWRRNGRrM0ZXYWpuRFFBZFpDK0x1bTd6eGtWSFBYSFBYcDREWk9uWXFFU252bjUvdW1jUlNkMmQ3c1FyRi92NFBaV2xNTzVGK21YdkJUOFFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjQyMjMzCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOC41X3g2NC1zZXR1cC5leGUKQmZzRWFaY2gwUlJaUnd5bHhvR2kydS9CcWdkZ2l2ZnJRRlpTbFoyb2RoL25oRFRDR2dFTkJmTmdIZ3JoMmRsNWk2dlFmQ0k0T1V4MWNDRVpLU3VBRGc9PQo=",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.8.5_x64-setup.exe"
     }
   },
-  "pub_date": "2026-09-24T07:46:46Z",
-  "version": "6.8.4",
-  "notes": "ERS AV KILLER 6.8.4：修复安装被小米核心拦截时的真实错误提示（指引开启\"USB安全\"）；应用管理器面板扩展铺满界面；剥离无用的运行按钮并保留详情。"
+  "pub_date": "2026-09-24T09:30:33Z",
+  "version": "6.8.5",
+  "notes": "ERS AV KILLER 6.8.5：彻底修复因全屏渲染引发的 xiaomiFallbackMode 定义丢失崩溃问题，软件恢复正常加载；UI全系优化上线。"
 }
