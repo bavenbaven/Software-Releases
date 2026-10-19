@@ -1,11 +1,11 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1VleXBFQWRRNGRrM0ZXYWpuRFFBZFpDK0x1bTd6eGtWSFBYSFBYcDREWk9uWXFFU252bjUvdW1jUlNkMmQ3c1FyRi92NFBaV2xNTzVGK21YdkJUOFFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjQyMjMzCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOC41X3g2NC1zZXR1cC5leGUKQmZzRWFaY2gwUlJaUnd5bHhvR2kydS9CcWdkZ2l2ZnJRRlpTbFoyb2RoL25oRFRDR2dFTkJmTmdIZ3JoMmRsNWk2dlFmQ0k0T1V4MWNDRVpLU3VBRGc9PQo=",
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.8.5_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ2QxaXd0NDRwNitYY1VtbVBZb2oxVUhyVktLdUNJMnVYMmFhVHlYYld0Z3pRL3AvZnJQbWRzRDd2dnFOMTV5YXhUVmRaRW1tOTUycnhuTlZad3F6Q1FnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDA0NDg2CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOS4wX3g2NC1zZXR1cC5leGUKRVk4U2VCNHEvdWJ6ZElFcWdWeTUyL1BLSTVXWlkwK0s5MGJEd002S2IvSGlSZmkwckpqN0tKdlA5Q3VtU1pmMjhoU1ZsR3FpMDgwY3JyYUtvQ2wrQmc9PQo=",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.9.0_x64-setup.exe"
     }
   },
-  "pub_date": "2026-09-24T09:30:33Z",
-  "version": "6.8.5",
-  "notes": "ERS AV KILLER 6.8.5：彻底修复因全屏渲染引发的 xiaomiFallbackMode 定义丢失崩溃问题，软件恢复正常加载；UI全系优化上线。"
+  "pub_date": "2026-10-19T10:08:06Z",
+  "version": "6.9.0",
+  "notes": "ERS AV KILLER 6.9.0：重磅升级！全面替换旧版落后的截图投屏，引入 AVA 同款 scrcpy 60FPS 硬件加速极速真机投屏与毫秒级触控引擎！"
 }
