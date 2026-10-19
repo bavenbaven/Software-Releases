@@ -1,11 +1,11 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ2QxaXd0NDRwNitYY1VtbVBZb2oxVUhyVktLdUNJMnVYMmFhVHlYYld0Z3pRL3AvZnJQbWRzRDd2dnFOMTV5YXhUVmRaRW1tOTUycnhuTlZad3F6Q1FnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDA0NDg2CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOS4wX3g2NC1zZXR1cC5leGUKRVk4U2VCNHEvdWJ6ZElFcWdWeTUyL1BLSTVXWlkwK0s5MGJEd002S2IvSGlSZmkwckpqN0tKdlA5Q3VtU1pmMjhoU1ZsR3FpMDgwY3JyYUtvQ2wrQmc9PQo=",
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.9.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ2JpcXZvNmJzdEtNRzBTcEdRU3pvdlo1dWRTeXdHeFJFeFJVbzZHeHlDdkhSaTN3M1RYTVp3L0FiQ1gxZWovYkhSNjZSMzVNRXU3alF3U2k3SjVyY1FJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDA3MzMwCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOS4xX3g2NC1zZXR1cC5leGUKcTdKODZKdlZJbnNCODRuaXYySXVLdUJJZDJxYWdkSGFZNXZUWVZudFg2UzFhSHY0NXVCenYyMGk0cWJGMXFIcG5zdjB6SkFxVVhGdlFLcWFjbEo3QkE9PQo=",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.9.1_x64-setup.exe"
     }
   },
-  "pub_date": "2026-10-19T10:08:06Z",
-  "version": "6.9.0",
-  "notes": "ERS AV KILLER 6.9.0：重磅升级！全面替换旧版落后的截图投屏，引入 AVA 同款 scrcpy 60FPS 硬件加速极速真机投屏与毫秒级触控引擎！"
+  "pub_date": "2026-10-19T10:55:31Z",
+  "version": "6.9.1",
+  "notes": "ERS AV KILLER 6.9.1：紧急修复投屏组件启动路径相对化导致无法创建窗口的问题，全面改为绝对规范化路径；极速真机投屏正式上线！"
 }
