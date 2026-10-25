@@ -1,11 +1,11 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ2RTQ0FvNXhiemQ2MXBONU1Jd0QwRUlvN1hRRXZYQXVUeHV1VUw2cExxRkNiUy8rTzNhRWZNN2MvQVpDbkNCRUZqYTh3OVgxV3JsdFNYUkk2RHNnandzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDcwMzkzCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOS4yX3g2NC1zZXR1cC5leGUKQkxyYlBzYUgxTmpqQUhLVjJEL1ZtRExtcDE3K2k3QkFHZWVpRTk4UGttK3lCL0VQeTFnbzJZYjZKVW5vdGdjUGhKRVIwNHdCVWhkc2ZTbCtVVUo2RFE9PQo=",
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.9.2_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1VWODc4Tnl6N0t3VVFMcktQbDFOSjdTM08wc1Bsa05jUkF1eDhxNlVGSC9KQ21VWjBpZGY0TkREYnFGOStCait3aTlscXZHZnJObG5hK0I0U2xvQ2dRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyODk1Mjc4CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOS4zX3g2NC1zZXR1cC5leGUKSkNvK1JLdW9xWjE0bXdoQzhIbS8rQjhrMUJGcG5ZL1RYZ2EvNi9ON0tMaFlpTG5GY09yNnY5VVNTRnIzUUxmdkV5WkNYQnZRRFg3a09tSnFKVXhHRGc9PQo=",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.9.3_x64-setup.exe"
     }
   },
-  "pub_date": "2026-10-20T04:26:33Z",
-  "version": "6.9.2",
-  "notes": "ERS AV KILLER 6.9.2：全面删除旧版所有难看的屏幕按钮，将 60FPS 极速真机投屏直接嵌入软件主窗口中央大屏显示！"
+  "pub_date": "2026-10-25T02:27:58Z",
+  "version": "6.9.3",
+  "notes": "ERS AV KILLER 6.9.3：修复特定手机保活权限拦截崩溃问题，改用无边框无缝嵌入大屏；完全修复关闭投屏后的状态显示。"
 }
