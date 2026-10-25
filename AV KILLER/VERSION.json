@@ -1,11 +1,11 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ2Ftbk1zekh5YkxycFNmKzN0UG02bU5vNElkc3dLMFRYTXNuMmJ6N21rbEN6eFU1dDZ5SVNmbzdpeHNMQ1ZMSmtIbU1iSmIrcGNTRnVFb3hkSExyR3dnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyOTAwMjU2CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOS42X3g2NC1zZXR1cC5leGUKcSttUU9EVC9BWHFvM1l5UnhXVGREaHpMWkJzMkdDQ2ZCWFJrQksrbituOG1WRG92bVlXb1hyM013U1o3NjNNeTQwa1VBYjBNWFdlOCtEM2JJdkd0RFE9PQo=",
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.9.6_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1RRYmtPZFZxNUpqODJIcG9SY1oxMDVQYWdqekQ2encxSUZJK3FqNVIzUkYwd0pUV1N3akNVcFdMcE5UeVY0OExWT1RodDBFUVFzTnQwTzVtcGN4TGdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyOTAxNTYzCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOS43X3g2NC1zZXR1cC5leGUKOVJYMUhLYlpKajd5WDBEdGl4ME1yTWRGTmlGaVpkbXNKTDMxTC9rdzhGTWVFQXByUWVwdVB3cTZST21aY0drQU1DalZMa0xPMnZjUDFvVTlMTmN0Q1E9PQo=",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.9.7_x64-setup.exe"
     }
   },
-  "pub_date": "2026-10-25T03:50:56Z",
-  "version": "6.9.6",
-  "notes": "ERS AV KILLER 6.9.6：投屏界面完美重构！左侧红框全部作为真机大屏投屏，右侧绿框放置精美工具栏；彻底解决投屏被覆盖或最小化浮空的终极问题。"
+  "pub_date": "2026-10-25T04:12:43Z",
+  "version": "6.9.7",
+  "notes": "ERS AV KILLER 6.9.7：投屏屏幕顶格置顶展示，删除多余装饰外框，底部再也不会溢出；删除 ADB Shell 冗余栏；完美修复电脑直接发送中文文字到手机的功能。"
 }
