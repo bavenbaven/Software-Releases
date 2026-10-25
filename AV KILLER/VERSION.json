@@ -1,11 +1,11 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1FMV056TWR3eXZlbTBZWUFuTExTbnZVMU0wMnM3aEFJN3VGdzlUd2FJY1NWbzdHZlBFMVlHVHJKR0FlejBUME8yTFBDNzBlWEphUTFGVlpmV3FkdVFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyODk2OTM1CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOS40X3g2NC1zZXR1cC5leGUKUUo2S1l4MDdHY2N6SDJzbG9xTkNIbW5PL25ZeXRkajhJbnNOaUNZWncxVUpkQk5ZNktLUnpUNGZBNjhlRzNQTHRSVFIxMjJueGd2RTFFbTBFcFVmQmc9PQo=",
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.9.4_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1U5LzMrSWlGekg2UmxmWGdWdEFNNWlpV2cxUDQzSzhEOXpSZWxHbDVsc3NId2lVYkZLVklINWVjOVFPNG14VlJ3QzIwU09zeDJxMTlIUS9qdWY2eEE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyODk4MzQ2CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOS41X3g2NC1zZXR1cC5leGUKK2p6eE9uWXpFa1ZPZ2tMcTRjTm5odTQrT2swZ0l5NmIrdUVFVUlLaEltWU9RTmhBQUxVU0hMY3gzeStQZlpCdFRJeEJ4WVpHMU5KeXlOM1A5aXVXRHc9PQo=",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.9.5_x64-setup.exe"
     }
   },
-  "pub_date": "2026-10-25T02:55:35Z",
-  "version": "6.9.4",
-  "notes": "ERS AV KILLER 6.9.4：升级为左右並排布局，彻底删除顶部说明条，真机屏幕加宽并置顶展示，将控制按钮精简移至右侧工具栏。"
+  "pub_date": "2026-10-25T03:19:06Z",
+  "version": "6.9.5",
+  "notes": "ERS AV KILLER 6.9.5：使用 SetParent 正式将 scrcpy 投屏窗口真正嵌入主窗口为子窗口，最小化与移动严丝合缝跟随，绝不多余浮空；调整主窗口高度与比例，底部不再溢出。"
 }
