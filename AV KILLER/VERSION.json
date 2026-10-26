@@ -1,11 +1,11 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ2NMMUpITWNyTWRHMmhhOGhLT0ZWUWY2ZUdBL05SbU1DTmUxR0V6bTB0UFlYVDczTTQwNVpDVHBPZlVqdTZWYTJ6Q0R4cWd3R0VXc3kyNDVENVF2Y3dvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyOTc2NTU4CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOS45X3g2NC1zZXR1cC5leGUKV2xoNzZnVjhDQXVqZ2ZrcGphUTlJTmdFRy9KSTdqWXExL1BNMlpGL3ZxdTE1LzhjK0Z3dFdrMGw5WXhYYnIzTGM5UUJEaTFNWE5hVEpiSCtVYk4rQkE9PQo=",
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.9.9_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1RzWlBuTHBWTWpHelZ3T0pMaWx6bEpsSjNOQXR2Y1VIU0lHR2poTlIvekptOHVnemdacU1WMkFTbW55eXFZUGNFeHNWbXJnMjhLQzRSejJWRXFCTVFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyOTgyODE1CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOS4xMF94NjQtc2V0dXAuZXhlCmY2ZDdPVUtDNlJlUGRDZ2czRTFqMmpXWk4yb1Q4ZjJBZkRWbGhqRVZNQ2lQTkZYT24wQ1cvSlJUTWh6SytCU2ZpbVJVck9WQTR6M3REdW9rd0t4cUJBPT0K",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.9.10_x64-setup.exe"
     }
   },
   "pub_date": "2026-10-26T01:02:38Z",
-  "version": "6.9.9",
-  "notes": "ERS AV KILLER 6.9.9：投屏宽度拓宽至 520px 完美填充红框区域；彻底解决投屏不跟随移动与最小化浮空的病灶，真正 SetParent 嵌入主窗口为子窗口。"
+  "version": "6.9.10",
+  "notes": "ERS AV KILLER 6.9.10：解决屏幕被 WebView2 遮挡问题；实现 60FPS 实时跟随主窗口移动，最小化跟随隐藏；520px 大屏视野。"
 }
