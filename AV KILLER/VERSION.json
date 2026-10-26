@@ -1,11 +1,11 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ2VJODF5WWZtTGFwUFFhd1JLZ0FMQXo3REVydVNvMkJEUXZFYWlDNXA0akVEUkZlcCtrS2dsOW54bG90UUFXbXBhL3pJR0xDY3VTQ1Q0VlJZTHhKcXcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyOTEyNzYxCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOS44X3g2NC1zZXR1cC5leGUKdXYwcUlqU2dKVlZ3MTI0SjhZRVhPRVBCcEJ4WC92TWdkSm1xN1NoaUppanJZUWN0L1JBVGt4UmNEemJFUS84UVN6THA0SFhrU3crMm1zNyt2TitwQ3c9PQo=",
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.9.8_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ2NMMUpITWNyTWRHMmhhOGhLT0ZWUWY2ZUdBL05SbU1DTmUxR0V6bTB0UFlYVDczTTQwNVpDVHBPZlVqdTZWYTJ6Q0R4cWd3R0VXc3kyNDVENVF2Y3dvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyOTc2NTU4CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOS45X3g2NC1zZXR1cC5leGUKV2xoNzZnVjhDQXVqZ2ZrcGphUTlJTmdFRy9KSTdqWXExL1BNMlpGL3ZxdTE1LzhjK0Z3dFdrMGw5WXhYYnIzTGM5UUJEaTFNWE5hVEpiSCtVYk4rQkE9PQo=",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.9.9_x64-setup.exe"
     }
   },
-  "pub_date": "2026-10-25T07:19:21Z",
-  "version": "6.9.8",
-  "notes": "ERS AV KILLER 6.9.8：投屏真正嵌入主窗口（移动跟随/最小化不残留/放大至红框区域），完美修复电脑直接发送中文到手机的功能。"
+  "pub_date": "2026-10-26T01:02:38Z",
+  "version": "6.9.9",
+  "notes": "ERS AV KILLER 6.9.9：投屏宽度拓宽至 520px 完美填充红框区域；彻底解决投屏不跟随移动与最小化浮空的病灶，真正 SetParent 嵌入主窗口为子窗口。"
 }
