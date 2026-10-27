@@ -1,11 +1,11 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1RzWlBuTHBWTWpHelZ3T0pMaWx6bEpsSjNOQXR2Y1VIU0lHR2poTlIvekptOHVnemdacU1WMkFTbW55eXFZUGNFeHNWbXJnMjhLQzRSejJWRXFCTVFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyOTgyODE1CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOS4xMF94NjQtc2V0dXAuZXhlCmY2ZDdPVUtDNlJlUGRDZ2czRTFqMmpXWk4yb1Q4ZjJBZkRWbGhqRVZNQ2lQTkZYT24wQ1cvSlJUTWh6SytCU2ZpbVJVck9WQTR6M3REdW9rd0t4cUJBPT0K",
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.9.10_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1JnVktIOHdHcDI5VXFMOHEwSDBDay9YRkx0cEkrTWFOcDBhTTFPNnhuOFR3QUE5RjEzQ2k2eXpLZEpJRDJmQnZoRUhhNlA5ckpRVFpNT0RlV0J5OHdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMDgxNzY1CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOS4xMV94NjQtc2V0dXAuZXhlCkJXTEh3aDU4U1BPbCtLUlI5TVg3UlYzWkRhZmYzK25CdEN1UFlEaFIyYnVqbjFEcms1V3RZVGMwVzZ3OHFYRU5uWE84QlN6SXNYY1hmOTdMTXNjMERnPT0K",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/bavenbaven/Software-Releases/main/AV%20KILLER/ERS%20Tech%20AV%20KILLER_6.9.11_x64-setup.exe"
     }
   },
-  "pub_date": "2026-10-26T01:02:38Z",
-  "version": "6.9.10",
-  "notes": "ERS AV KILLER 6.9.10：解决屏幕被 WebView2 遮挡问题；实现 60FPS 实时跟随主窗口移动，最小化跟随隐藏；520px 大屏视野。"
+  "pub_date": "2026-10-27T06:16:14Z",
+  "version": "6.9.11",
+  "notes": "ERS AV KILLER 6.9.11：修复电脑发文字到手机功能（改用逐字符 ADB input text 注入，不依赖电脑剪贴板）"
 }
