@@ -1728,5 +1728,8 @@
   "com.wumfzg.txtpdf",
   "scanner.barcodescanner.qrscanner.qrcodecreator",
   "com.anti.cleaner.phoener",
-  "com.clean.cleananti.ultra"
+  "com.clean.cleananti.ultra",
+  "com.officeapp.pdf.readerapp",
+  "com.documentreader.fileviewer.alldoc.pdfreader.officeviewer",
+  "com.a1.xlsx.reader.spread.sheets.viewer.xls.files.sheet.editor.converter"
 ]
