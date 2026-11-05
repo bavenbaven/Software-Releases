@@ -1,13 +1,13 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSaWlpT3NXUUpienVKOEtyT1lyYWRnMjNKdEpiSmt6dXEwb2RlNmtPUFY2TkphMS9udWVKTW05RDY0aFFKUWxlUklmNnhoK1p3Um11a2NMQjJKSWQ5a3lGdDdoQWFEL0FJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzODQ5OTE5CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOS4yM194NjQtc2V0dXAuZXhlCmNib2pERDVDc1JWVElrSjdSYnhDR2Y1NEl5OXA4TzRNbjljY0lJeVBFb0x0bXRuenJ3b05pRjZrMlVGeFlkanV2Q01ySUVWbDlNc0wrd0JFSHJTS0JBPT0K",
-      "url": "https://ers-tech.net/updates/av-killer/6.9.23/ERS%20Tech%20AV%20KILLER_6.9.23_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSaWlpT3NXUUpiem1VVE5pWXdUSkJxSlhwdVpUMTVXQUxQbktLR0tYcmdXM2hobnBFNk9vVytJaGRPTGh3alcrTEJjdktUUUkwUlN0TjRHMkg1RThwZmx3OFRqRTA4SFFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzODUzMDQ0CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOS4yNF94NjQtc2V0dXAuZXhlCnlWcDhjZ1pjQzNxUjExUVBkampxR0NkeW1UMExIUC9iMnZjTStQU2VmYmtlaEZVcTZTNWhmNWtvbFp0bVU3K3lPWUxlbW1lT2oyeGV0ek9WRVphRkRRPT0K",
+      "url": "https://ers-tech.net/updates/av-killer/6.9.24/ERS%20Tech%20AV%20KILLER_6.9.24_x64-setup.exe"
     }
   },
-  "pub_date": "2026-11-05T03:39:09.794Z",
-  "version": "6.9.23",
-  "notes": "ERS AV KILLER 6.9.23: 潜伏病毒雷达 2.0 重磅升级！新增全机深度风险透视、桌面无图标隐形应用智能捕获、外部未知侧载源识别、悬浮窗弹窗权限审计；修复隐形特征Tab筛选与排序、运行中状态显示异常、连续抓捕ADB锁与病毒库扫描优化。",
+  "pub_date": "2026-11-05T04:30:44.312Z",
+  "version": "6.9.24",
+  "notes": "ERS AV KILLER 6.9.24: 修复潜伏病毒雷达弹窗响应问题；升级正宗高清圆滑桌面图标 (512x512 高精度多分辨率打包)；持续优化隐形流氓应用穿透识别。",
   "allowed_versions": [
     "6.9.16",
     "6.9.17",
@@ -16,6 +16,7 @@
     "6.9.20",
     "6.9.21",
     "6.9.22",
-    "6.9.23"
+    "6.9.23",
+    "6.9.24"
   ]
 }
