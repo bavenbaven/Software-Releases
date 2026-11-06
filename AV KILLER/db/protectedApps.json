@@ -313,5 +313,6 @@
   "com.oplus.powermonitor",
   "com.oplus.camera",
   "com.oplus.uxdesign",
-  "com.transsion"
+  "com.transsion",
+  "com.debug.loggerui"
 ]
