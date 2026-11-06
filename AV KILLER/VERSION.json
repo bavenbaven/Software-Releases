@@ -1,15 +1,15 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSaWlpT3NXUUpiem1VVE5pWXdUSkJxSlhwdVpUMTVXQUxQbktLR0tYcmdXM2hobnBFNk9vVytJaGRPTGh3alcrTEJjdktUUUkwUlN0TjRHMkg1RThwZmx3OFRqRTA4SFFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzODUzMDQ0CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOS4yNF94NjQtc2V0dXAuZXhlCnlWcDhjZ1pjQzNxUjExUVBkampxR0NkeW1UMExIUC9iMnZjTStQU2VmYmtlaEZVcTZTNWhmNWtvbFp0bVU3K3lPWUxlbW1lT2oyeGV0ek9WRVphRkRRPT0K",
-      "url": "https://ers-tech.net/updates/av-killer/6.9.24/ERS%20Tech%20AV%20KILLER_6.9.24_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSaWlpT3NXUUpiem9GdVBFc3RIc2swTW1oUjlVeGNxRkdvd2RyWEZSNXA4aXdwYjRNMkZjWEt0K0lKMVZDNlJwdXhpKzIwVVN0RG9UZWFHWSs3dE1IdGtyUVJ2aWtYUUFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzOTMzNDgxCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOS4yNV94NjQtc2V0dXAuZXhlCi8rTUdEZzNMcFR5ckJVZ3BhbTJCNXhFMUE5WmtXNW1WSms1TnFkcVdqdU1qR2pZSjlHdE1ZMWptUUk1Mm5yM081Y1lqTEwxMHgwMG9aVExDR0tjNkJBPT0K",
+      "url": "https://ers-tech.net/updates/av-killer/6.9.25/ERS%20Tech%20AV%20KILLER_6.9.25_x64-setup.exe"
     }
   },
-  "pub_date": "2026-11-05T04:30:44.312Z",
-  "version": "6.9.24",
-  "notes": "ERS AV KILLER 6.9.24: 修复潜伏病毒雷达弹窗响应问题；升级正宗高清圆滑桌面图标 (512x512 高精度多分辨率打包)；持续优化隐形流氓应用穿透识别。",
+  "pub_date": "2026-11-06T02:51:21.239Z",
+  "version": "6.9.25",
+  "notes": "ERS AV KILLER 6.9.25: 修复操作日志重复显示两行问题；修复远程控制电脑直接发送中文/网址/文字到手机失败问题，并新增一键发送文件/APK到手机；bavenbaven私人账号默认管理员权限。",
   "allowed_versions": [
-    "6.9.23",
-    "6.9.24"
+    "6.9.24",
+    "6.9.25"
   ]
 }
