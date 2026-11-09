@@ -1759,5 +1759,6 @@
   "com.wapi.wapicertmanager",
   "com.amap.android.location",
   "com.location.phonenumber.tracker",
-  "com.lmtech.cameralocation.gpstagcamera"
+  "com.lmtech.cameralocation.gpstagcamera",
+  "jna.vision.barcode"
 ]
