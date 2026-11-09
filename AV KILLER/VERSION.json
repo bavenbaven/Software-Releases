@@ -1,15 +1,15 @@
 {
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSaWlpT3NXUUpiem9GdVBFc3RIc2swTW1oUjlVeGNxRkdvd2RyWEZSNXA4aXdwYjRNMkZjWEt0K0lKMVZDNlJwdXhpKzIwVVN0RG9UZWFHWSs3dE1IdGtyUVJ2aWtYUUFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzOTMzNDgxCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOS4yNV94NjQtc2V0dXAuZXhlCi8rTUdEZzNMcFR5ckJVZ3BhbTJCNXhFMUE5WmtXNW1WSms1TnFkcVdqdU1qR2pZSjlHdE1ZMWptUUk1Mm5yM081Y1lqTEwxMHgwMG9aVExDR0tjNkJBPT0K",
-      "url": "https://ers-tech.net/updates/av-killer/6.9.25/ERS%20Tech%20AV%20KILLER_6.9.25_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSaWlpT3NXUUpiemx6SEVGaVVoaURWemhnVFlGOVltWWRsWW1KRDNlTFB2WkV2dUhQRnk1OVllQ2JWSngzdit3UXlpQnRUNlBqemRrQVB5bGFqQ0llMGR4YjgzTnNDdHc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MjAzNzcyCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOS4yNl94NjQtc2V0dXAuZXhlCmNaempCSHp2eVozOEFtcFVwUHNvMkRDOFE5b1ZDSzFWRGVmQ1JBNXdxRFR4VDBuT3h3S2IzM2ZOWXp2VVNScTRIcm5NdVFlYnRzSFlzRzhnU0puNkJBPT0K",
+      "url": "https://ers-tech.net/updates/av-killer/6.9.26/ERS%20Tech%20AV%20KILLER_6.9.26_x64-setup.exe"
     }
   },
-  "pub_date": "2026-11-06T02:51:21.239Z",
-  "version": "6.9.25",
-  "notes": "ERS AV KILLER 6.9.25: 修复操作日志重复显示两行问题；修复远程控制电脑直接发送中文/网址/文字到手机失败问题，并新增一键发送文件/APK到手机；bavenbaven私人账号默认管理员权限。",
+  "pub_date": "2026-11-09T05:56:12.161Z",
+  "version": "6.9.26",
+  "notes": "ERS AV KILLER 6.9.26: 新增「🛠️ 远程工具箱」模块与 HONOR FRP KEY 官方授权码专区（支持一键读取手机型号/SN、Fastboot 写入 FRP KEY、多模式重启及通用指令台）。",
   "allowed_versions": [
-    "6.9.24",
-    "6.9.25"
+    "6.9.25",
+    "6.9.26"
   ]
 }
