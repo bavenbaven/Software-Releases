@@ -314,5 +314,6 @@
   "com.oplus.camera",
   "com.oplus.uxdesign",
   "com.transsion",
-  "com.debug.loggerui"
+  "com.debug.loggerui",
+  "tech.palm.id"
 ]
