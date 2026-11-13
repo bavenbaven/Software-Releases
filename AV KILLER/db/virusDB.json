@@ -1808,5 +1808,6 @@
   "com.thetrojanapps.qrcode.reader.scanner",
   "com.spreadtrum.proxy.nfwlocation",
   "com.chija.HarvestDropandPop",
-  "videoplayer.videodownloader.downloader"
+  "videoplayer.videodownloader.downloader",
+  "com.lbe.security.miui"
 ]
