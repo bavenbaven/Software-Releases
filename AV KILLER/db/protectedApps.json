@@ -316,5 +316,7 @@
   "com.transsion",
   "com.debug.loggerui",
   "tech.palm.id",
-  "com.wssyncmldm"
+  "com.wssyncmldm",
+  "com.mediatek",
+  "com.wapi.wapicertmanager"
 ]
