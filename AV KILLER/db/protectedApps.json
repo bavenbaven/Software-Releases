@@ -318,5 +318,7 @@
   "tech.palm.id",
   "com.wssyncmldm",
   "com.mediatek",
-  "com.wapi.wapicertmanager"
+  "com.wapi.wapicertmanager",
+  "com.sh.smart.caller",
+  "com.sh.smart.caller.overlay"
 ]
