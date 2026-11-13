@@ -1766,12 +1766,9 @@
   "com.zaz.translate",
   "com.talpa.hibrowser",
   "com.talpa.hiservice",
-  "com.xui.xhide",
   "com.silead.factorytest",
   "com.fpsensor.fpSensorExtensionSvc2",
-  "com.theme.icondefaultshape",
   "com.reallytek.wg",
-  "com.idea.questionnaire",
   "gallery.photo.vault.photogallery.album",
   "com.funbase.xradio",
   "com.skyroam.silverhelper",
@@ -1802,9 +1799,7 @@
   "com.gogo.launcher",
   "com.jeyluta.timestampcamerafree",
   "com.thetrojanapps.qrcode.reader.scanner",
-  "com.spreadtrum.proxy.nfwlocation",
   "com.chija.HarvestDropandPop",
   "videoplayer.videodownloader.downloader",
-  "com.lbe.security.miui",
-  "com.purgo.zencleana.icem"
+  "com.lbe.security.miui"
 ]
