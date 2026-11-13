@@ -320,5 +320,11 @@
   "com.mediatek",
   "com.wapi.wapicertmanager",
   "com.sh.smart.caller",
-  "com.sh.smart.caller.overlay"
+  "com.sh.smart.caller.overlay",
+  "com.xui.xhide",
+  "com.idea.questionnaire",
+  "com.spreadtrum.proxy.nfwlocation",
+  "com.spreadtrum.sgps",
+  "com.theme.icondefaultshape",
+  "com.purgo.zencleana.icem"
 ]
