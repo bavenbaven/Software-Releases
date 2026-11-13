@@ -1,15 +1,15 @@
-{
-  "platforms": {
-    "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSaWlpT3NXUUpiemx6SEVGaVVoaURWemhnVFlGOVltWWRsWW1KRDNlTFB2WkV2dUhQRnk1OVllQ2JWSngzdit3UXlpQnRUNlBqemRrQVB5bGFqQ0llMGR4YjgzTnNDdHc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MjAzNzcyCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOS4yNl94NjQtc2V0dXAuZXhlCmNaempCSHp2eVozOEFtcFVwUHNvMkRDOFE5b1ZDSzFWRGVmQ1JBNXdxRFR4VDBuT3h3S2IzM2ZOWXp2VVNScTRIcm5NdVFlYnRzSFlzRzhnU0puNkJBPT0K",
-      "url": "https://ers-tech.net/updates/av-killer/6.9.26/ERS%20Tech%20AV%20KILLER_6.9.26_x64-setup.exe"
-    }
-  },
-  "pub_date": "2026-11-09T05:56:12.161Z",
-  "version": "6.9.26",
-  "notes": "ERS AV KILLER 6.9.26: 新增「🛠️ 远程工具箱」模块与 HONOR FRP KEY 官方授权码专区（支持一键读取手机型号/SN、Fastboot 写入 FRP KEY、多模式重启及通用指令台）。",
-  "allowed_versions": [
-    "6.9.25",
-    "6.9.26"
-  ]
+﻿{
+    "platforms":  {
+                      "windows-x86_64":  {
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUa2RJbTkrdzNMQ1h3Q2piUzNLMFUxaE5McXNMeDhWOVRUejdZaWFlS01oazVhb0tMcU9uV0MwVWpSc0NFSjdXT2tVTjhlSmQ4d2szb3A2VlNkUDF5ZklVNU54ejNSL1FJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTQ5NTE5CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOS4yN194NjQtc2V0dXAuZXhlCkZRR1haMldpK3RmdnlwN1QxZmc5cXBGY2FMRnBsbHNJQlJPMWtEYVd6RW9iNklhSzNGTW9kc3lPVEcweVdSaC9YS1VQckR0Z3J5TE1JQmk2TkhIdUNnPT0K",
+                                             "url":  "https://ers-tech.net/updates/av-killer/6.9.27/ERS%20Tech%20AV%20KILLER_6.9.27_x64-setup.exe"
+                                         }
+                  },
+    "pub_date":  "2026-11-13T05:58:39Z",
+    "version":  "6.9.27",
+    "notes":  "ERS AV KILLER 6.9.27: 1) 新增底层焦点窗口(mCurrentFocus)嗅探，秒捕获全屏透明悬浮窗劫持木马；2) 核心病毒库新增拦截 Zen Clean 等伪装木马；3) 新增「🛠️ 远程工具箱」HONOR FRP KEY 官方授权码专区；4) 修复操作日志重复显示问题；5) 修复电脑直接向手机发送文件功能；6) 云端服务器保留最近 2 次 EXE 安装包。",
+    "allowed_versions":  [
+                             "6.9.26",
+                             "6.9.27"
+                         ]
 }
