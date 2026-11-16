@@ -1812,5 +1812,6 @@
   "com.flex.downloader.vidkeeper",
   "com.fast.video.downloader.saver.hub",
   "com.digi.hddownloader.fastvideo",
-  "com.videosaver.wallpaper.allmediadownloader"
+  "com.videosaver.wallpaper.allmediadownloader",
+  "android_framework_res_overlay.multiuser.maxuser"
 ]
