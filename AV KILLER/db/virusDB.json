@@ -1781,7 +1781,6 @@
   "com.amazon.appmanager",
   "com.redteamobile.roaming",
   "com.aiunit.aon",
-  "com.daemon.shelper",
   "oplus.frameworkres.overlay.oplus.product",
   "com.software.update.phone.updateallapps",
   "com.aiphoto.photoenhance.photomusic.photoeditor",
@@ -1815,5 +1814,12 @@
   "com.videosaver.wallpaper.allmediadownloader",
   "android_framework_res_overlay.multiuser.maxuser",
   "com.flowersathletics.snakevenom",
-  "com.caf.fmradio"
+  "com.caf.fmradio",
+  "maxplayer.mediaplayer.videoplayer",
+  "musicplayer.musicapps.music.mp3player",
+  "com.pure.indosat.care",
+  "com.procleaner.clean",
+  "com.cluttergo.clean.usager",
+  "com.applovin.array.apphub.vincere",
+  "com.xvx.hd.video.downloader.player.app"
 ]
