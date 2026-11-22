@@ -1,15 +1,15 @@
 {
-  "platforms": {
-    "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSaWlpT3NXUUpiemp6Z1JhQUkxS1gxSGVWeDBmbWFmTDlPRklPeUZGM1JuVHhSVnc4aUR3bG1Sczk3VFJDcndrTE1HdktDa2pJeEJveEtMWDdqODZSTW1UTUNwdUhvbkFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTQ5ODQ5CWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOS4yN194NjQtc2V0dXAuZXhlCnNtOE5JVE5WVTh6MFR5MUFKVkxTY2V1Q3loTVpveTh1d284amtTWkpkODNCVkNjSDcvUGp3MVRFbHZCemVETW1XeVZwS0N2UTRuWWM3RWhTV3Q0R0JBPT0K",
-      "url": "https://ers-tech.net/updates/av-killer/6.9.27/ERS%20Tech%20AV%20KILLER_6.9.27_x64-setup.exe"
-    }
-  },
-  "pub_date": "2026-11-13T06:05:19.163Z",
-  "version": "6.9.27",
-  "notes": "ERS AV KILLER 6.9.27: 1) 新增底层焦点窗口(mCurrentFocus)嗅探，秒捕获全屏透明悬浮窗劫持木马；2) 核心病毒库新增拦截 Zen Clean 等伪装木马；3) 新增「🛠️ 远程工具箱」HONOR FRP KEY 官方授权码专区；4) 修复操作日志重复显示问题；5) 修复电脑直接向手机发送文件功能；6) 云端服务器保留最近 2 次 EXE 安装包。",
-  "allowed_versions": [
-    "6.9.26",
-    "6.9.27"
-  ]
+    "platforms":  {
+                      "windows-x86_64":  {
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSaWlpT3NXUUpiemgzSzNzRlJUNWREM1VSMkVzNUxLOEhYbWJoS0h5V1hpRFRDOURaY29LVUF0b1VzbU1OTjVzUzAwN0psUG1jdW9BaHU1UEJQWlFHRWI2ZzA1ZkdLdFFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MzE0NDAzCWZpbGU6RVJTIFRlY2ggQVYgS0lMTEVSXzYuOS4yOF94NjQtc2V0dXAuZXhlCm9TdVR0MENJeGo4UEdoR0dHWStsSGNDVDQ1TWhDU2VDcG5Tay8yM3RLTFVVZGdYYXowMUJHYWNiR0lnS2NsTDNEMlM4Rjl5dU9xS0hYSHdtUmlTWEJBPT0K",
+                                             "url":  "https://ers-tech.net/updates/av-killer/6.9.28/ERS%20Tech%20AV%20KILLER_6.9.28_x64-setup.exe"
+                                         }
+                  },
+    "pub_date":  "2026-11-22T02:26:43Z",
+    "version":  "6.9.28",
+    "notes":  "ERS AV KILLER 6.9.28: 1) 侧边栏重命名：原「远程控制」优化为「屏幕镜像」，原「远程工具箱」升级为「HONOR FRP」；2) 快捷模式控制升级：ADB/Fastboot 引导与重启功能重构为下拉选择执行；3) 新增 Fastboot 核心设备信息一键读取(型号/BL锁/基带/SN/运行状态)；4) 移除手动检测，开启 Fastboot 与 ADB 全自动实时状态监听；5) 全局加入极简晴空、清泉浅波等全新高质感主题。",
+    "allowed_versions":  [
+                             "6.9.27",
+                             "6.9.28"
+                         ]
 }
